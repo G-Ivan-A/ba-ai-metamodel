@@ -37,9 +37,9 @@ capability требуется, как она связана со стандар�
 
 | Источник | Что уже полезно | Что нужно добавить в taxonomy |
 | --- | --- | --- |
-| [research/mango/classification.md](classification.md) | Пять продуктовых семейств Mango, рабочая связка TM Forum + UNSPSC + ОКПД 2, российский standards/compliance overlay, список реальных фич. | Стабильные capability ID, версии, ownership, отделение feature type от product family, явная модель зрелости. |
-| [research/mango/classification-tz.md](classification-tz.md) | Проверка на корпусе 30 ТЗ, временный классификатор A/B/C, частотность требований, выявленные gaps: карусельные номера, голосовые SMS, self-service, mobile agent, commercial layer. | Единый процесс "сырое требование -> нормализация -> классификация -> маршрутизация", атрибуты uncertainty и multi-tagging. |
-| [research/mango/requirements-flow.md](requirements-flow.md) | Flow AI-анализа ТЗ, атомаризация требований, статусы покрытия, evidence, BA review, статистика gap. | Формальный интерфейс для команд: какие поля попадают в backlog, кто принимает taxonomy change, как аудитить изменения. |
+| [research/mango/2026-05-classification.md](2026-05-classification.md) | Пять продуктовых семейств Mango, рабочая связка TM Forum + UNSPSC + ОКПД 2, российский standards/compliance overlay, список реальных фич. | Стабильные capability ID, версии, ownership, отделение feature type от product family, явная модель зрелости. |
+| [research/mango/2026-05-classification-tz.md](2026-05-classification-tz.md) | Проверка на корпусе 30 ТЗ, временный классификатор A/B/C, частотность требований, выявленные gaps: карусельные номера, голосовые SMS, self-service, mobile agent, commercial layer. | Единый процесс "сырое требование -> нормализация -> классификация -> маршрутизация", атрибуты uncertainty и multi-tagging. |
+| [research/mango/2026-05-requirements-flow.md](2026-05-requirements-flow.md) | Flow AI-анализа ТЗ, атомаризация требований, статусы покрытия, evidence, BA review, статистика gap. | Формальный интерфейс для команд: какие поля попадают в backlog, кто принимает taxonomy change, как аудитить изменения. |
 | [mango_ba_prompts](https://github.com/G-Ivan-A/mango_ba_prompts) | Mango описан как spoke-проект с mini-agent подходом и `kb/` как источником стабильного контекста. | Taxonomy должна стать одним из `kb/`-совместимых источников для controlled generation, но после пилота. |
 
 Главный пробел текущей базы: уже есть богатая классификация продуктов и ТЗ, но
