@@ -30,7 +30,7 @@ ai-generated: true
 
 **Связанные артефакты / Related artifacts.**
 
-- Зависимость: [RFC: Независимое видение структуры](repository-structure-vision-2026-06.md)
+- Зависимость: [RFC: Независимое видение структуры](2026-06-repository-structure-vision.md)
   (PR #254) — целевая архитектура спока, с которой это предложение должно быть
   совместимо.
 - Стандарт-адресат: [`standards/research-profile.md`](../../standards/research-profile.md)
@@ -127,7 +127,7 @@ LLM, (2) объяснение для человека, (3) запись исто
 ### 2.5. Учёт PR #254 и практик Хаба / Alignment with PR #254 and Hub
 
 Согласие: предложения **встраиваются** в Вариант B из
-[repository-structure-vision-2026-06.md](repository-structure-vision-2026-06.md).
+[2026-06-repository-structure-vision.md](2026-06-repository-structure-vision.md).
 Разделение `Full`/`Executable` (R1) естественно ложится на разделение
 Public/Private и на единый контракт `runs/RUN-XXXX/`. Дедупликация (R2)
 усиливает принцип «один мост к Хабу» и Anti-Inflation principle
@@ -364,7 +364,7 @@ baseline) и context caching на стороне SDK.
 
 **Внутренние (Хаб `hybrid-Intelligence-lab`):**
 
-- [RFC: Независимое видение структуры](repository-structure-vision-2026-06.md) (PR #254) — целевая архитектура.
+- [RFC: Независимое видение структуры](2026-06-repository-structure-vision.md) (PR #254) — целевая архитектура.
 - [`standards/research-profile.md`](../../standards/research-profile.md) — структура и frontmatter research-документа.
 - [`governance/repo-model.md`](../../governance/repo-model.md) — Anti-Inflation principle.
 - Issue [#255](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/255) — постановка задачи (traceability).

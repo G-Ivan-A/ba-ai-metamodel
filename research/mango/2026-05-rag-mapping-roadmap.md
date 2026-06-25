@@ -25,7 +25,7 @@ method: structural-proposal + source-assessment + planning
 | Operating Mode | `creative` - предлагаем структуру, варианты и roadmap, не блокируя прогресс при неопределенности. |
 | В фокусе | Запросы на доработку системы или новую фичу; этап `2` Gap-анализ и его связь с этапами `0 -> 1`; документационная стратегия для `kb/`. |
 | Вне фокуса | Валидация готовых ТЗ, детальная инвентаризация `docs.mango-office.ru`, формирование полного glossary, копирование внешней документации в репозиторий. |
-| Опора | [taxonomy-concept-2026-05.md](taxonomy-concept-2026-05.md), [requirements-lifecycle-uncertainty-2026-05.md](requirements-lifecycle-uncertainty-2026-05.md), [mango_ba_prompts](https://github.com/G-Ivan-A/mango_ba_prompts). |
+| Опора | [2026-05-taxonomy-concept.md](2026-05-taxonomy-concept.md), [2026-05-requirements-lifecycle-uncertainty.md](2026-05-requirements-lifecycle-uncertainty.md), [mango_ba_prompts](https://github.com/G-Ivan-A/mango_ba_prompts). |
 | Принцип | Anti-Inflation: создаем research draft и план `kb/`, а не новый стандарт и не полный проектный каталог. |
 
 Рабочая модель: БА получил сырой сигнал, провел Signal Extract и
@@ -458,11 +458,11 @@ package "mango_ba_prompts/kb" {
 
 | Файл | Что уже закрыто | Чем дополняет текущий документ |
 | --- | --- | --- |
-| [taxonomy-concept-2026-05.md](taxonomy-concept-2026-05.md) | Unified Capability Taxonomy: 7 доменов, maturity `L0-L5`, поля capability, mapping к продуктам, owner_route, evidence_refs, uncertainty. | Использует taxonomy как вход для RAG-навигатора: `capability_id` и `taxonomy_path` становятся ключами поиска источников. Не переопределяет домены и модель зрелости. |
-| [requirements-lifecycle-uncertainty-2026-05.md](requirements-lifecycle-uncertainty-2026-05.md) | Движение требования `0 -> 1`, Ambiguity Map, кейсы One-to-One / неполное / Cross-Product, список артефактов автоматизации. | Закрывает пробел этапа `2`: как `kb/product-matrix.md` помогает Gap-анализу после нормализации и как связать процесс с documentation strategy. |
-| [requirements-flow.md](requirements-flow.md) | Flow AI-анализа готовых тендерных ТЗ: атомизация, coverage status, evidence, BA review и state machine. | Берет идею evidence и статусов покрытия, но применяет ее к запросу на доработку/новую фичу, где сначала нужен RAG-навигатор по продуктам/фичам. |
-| [classification.md](classification.md) | Рабочая классификация продуктов MANGO OFFICE, продуктовые семейства, международные и российские классификаторы, compliance overlay. | Использует продуктовые семейства и compliance triggers как source для `source_type`, `domain` и owner routing, но не повторяет продуктовый каталог. |
-| [classification-tz.md](classification-tz.md) | Анализ корпуса 30 ТЗ, частотность функций, gaps и рекомендации к классификатору. | Дает реалистичные pilot cases и regression examples для проверки `product-matrix.md`, особенно API, CRM, QM, WFM, voice-bot и multi-lot RFI. |
+| [2026-05-taxonomy-concept.md](2026-05-taxonomy-concept.md) | Unified Capability Taxonomy: 7 доменов, maturity `L0-L5`, поля capability, mapping к продуктам, owner_route, evidence_refs, uncertainty. | Использует taxonomy как вход для RAG-навигатора: `capability_id` и `taxonomy_path` становятся ключами поиска источников. Не переопределяет домены и модель зрелости. |
+| [2026-05-requirements-lifecycle-uncertainty.md](2026-05-requirements-lifecycle-uncertainty.md) | Движение требования `0 -> 1`, Ambiguity Map, кейсы One-to-One / неполное / Cross-Product, список артефактов автоматизации. | Закрывает пробел этапа `2`: как `kb/product-matrix.md` помогает Gap-анализу после нормализации и как связать процесс с documentation strategy. |
+| [2026-05-requirements-flow.md](2026-05-requirements-flow.md) | Flow AI-анализа готовых тендерных ТЗ: атомизация, coverage status, evidence, BA review и state machine. | Берет идею evidence и статусов покрытия, но применяет ее к запросу на доработку/новую фичу, где сначала нужен RAG-навигатор по продуктам/фичам. |
+| [2026-05-classification.md](2026-05-classification.md) | Рабочая классификация продуктов MANGO OFFICE, продуктовые семейства, международные и российские классификаторы, compliance overlay. | Использует продуктовые семейства и compliance triggers как source для `source_type`, `domain` и owner routing, но не повторяет продуктовый каталог. |
+| [2026-05-classification-tz.md](2026-05-classification-tz.md) | Анализ корпуса 30 ТЗ, частотность функций, gaps и рекомендации к классификатору. | Дает реалистичные pilot cases и regression examples для проверки `product-matrix.md`, особенно API, CRM, QM, WFM, voice-bot и multi-lot RFI. |
 | [research/mango/README.md](README.md) | Навигация по исследовательским материалам Mango. | Должен получить ссылку на текущий roadmap-файл как на новый active research artifact. |
 
 Вывод: текущий файл занимает нишу между Unified Capability Taxonomy и
@@ -549,15 +549,15 @@ evidence**, а не на вопрос **как устроена taxonomy** ил�
 
 Внутренние артефакты:
 
-- [research/mango/taxonomy-concept-2026-05.md](taxonomy-concept-2026-05.md) -
+- [research/mango/2026-05-taxonomy-concept.md](2026-05-taxonomy-concept.md) -
   Unified Capability Taxonomy и модель capability/evidence/owner.
-- [research/mango/requirements-lifecycle-uncertainty-2026-05.md](requirements-lifecycle-uncertainty-2026-05.md) -
+- [research/mango/2026-05-requirements-lifecycle-uncertainty.md](2026-05-requirements-lifecycle-uncertainty.md) -
   процесс `0 -> 1`, Ambiguity Map и prompt-chain artifacts.
-- [research/mango/requirements-flow.md](requirements-flow.md) - evidence и
+- [research/mango/2026-05-requirements-flow.md](2026-05-requirements-flow.md) - evidence и
   coverage status для анализа готовых ТЗ.
-- [research/mango/classification.md](classification.md) - продуктовая
+- [research/mango/2026-05-classification.md](2026-05-classification.md) - продуктовая
   классификация Mango и compliance overlay.
-- [research/mango/classification-tz.md](classification-tz.md) - корпус ТЗ и
+- [research/mango/2026-05-classification-tz.md](2026-05-classification-tz.md) - корпус ТЗ и
   regression candidates.
 - [mango_ba_prompts](https://github.com/G-Ivan-A/mango_ba_prompts) - контекст
   spoke-проекта Mango и будущей `kb/` структуры.
