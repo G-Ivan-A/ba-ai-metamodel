@@ -11,8 +11,8 @@ scope: mango-only
 # Fixed per draft-triage RFC Phase 1: local relations use path-only values;
 # the live Mango glossary remains an external spoke artifact.
 related_artifacts:
-  - research/mango/2026-05-classification.md
-  - research/mango/2026-05-classification-tz.md
+  - research/mango/2026-05-22-classification.md
+  - research/mango/2026-05-22-classification-tz.md
   - https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/standards/GLOSSARY.md
 ---
 
@@ -36,15 +36,15 @@ Mango — `voice-ucaas`, `contact-center`, `digital-channels`. Он отвеча
 
 | Документ | Что отвечает | Чем отличается от этого справочника |
 | --- | --- | --- |
-| [2026-05-classification.md](2026-05-classification.md) v3.0, §`📊 Product Layer` | Какие `Domain → Capability → Feature → Atomic Function` существуют и каков их `Mango status`. | Перечисляет функции списком с краткими параметрами; здесь — полная детализация (типы, диапазоны, источники, примеры, НФТ). |
+| [2026-05-22-classification.md](2026-05-22-classification.md) v3.0, §`📊 Product Layer` | Какие `Domain → Capability → Feature → Atomic Function` существуют и каков их `Mango status`. | Перечисляет функции списком с краткими параметрами; здесь — полная детализация (типы, диапазоны, источники, примеры, НФТ). |
 | [mango_ba_prompts/standards/GLOSSARY.md](https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/standards/GLOSSARY.md) | Что означают уровни иерархии и термины. | Термины берём из глоссария, не переопределяем. |
-| [2026-05-classification-tz.md](2026-05-classification-tz.md) | Какой реальный спрос виден в корпусе из 30 ТЗ (классы A/B/C). | Здесь — источник примеров требований (`example_requirements`) и НФТ-классов (`related_nfr`). |
-| [2026-05-rag-mapping-roadmap.md](2026-05-rag-mapping-roadmap.md) | Как `kb/product-matrix.md` навигирует промпт к документации. | Здесь — формат запроса «требование → функция» и связь со схемой записи `product-matrix`. |
+| [2026-05-22-classification-tz.md](2026-05-22-classification-tz.md) | Какой реальный спрос виден в корпусе из 30 ТЗ (классы A/B/C). | Здесь — источник примеров требований (`example_requirements`) и НФТ-классов (`related_nfr`). |
+| [2026-05-26-rag-mapping-roadmap.md](2026-05-26-rag-mapping-roadmap.md) | Как `kb/product-matrix.md` навигирует промпт к документации. | Здесь — формат запроса «требование → функция» и связь со схемой записи `product-matrix`. |
 
 > Идентификаторы доменов, capability, features и функций намеренно совпадают с
-> §`📊 Product Layer` файла `2026-05-classification.md` v3.0. Если функция уже описана
+> §`📊 Product Layer` файла `2026-05-22-classification.md` v3.0. Если функция уже описана
 > там, этот справочник добавляет детализацию, не меняя её идентификатор. Новые
-> функции, отсутствующие в `2026-05-classification.md`, помечены `(новая)`.
+> функции, отсутствующие в `2026-05-22-classification.md`, помечены `(новая)`.
 
 ## Как пользоваться справочником
 
@@ -61,8 +61,8 @@ Mango — `voice-ucaas`, `contact-center`, `digital-channels`. Он отвеча
 парсинга промптом. Поля записи:
 
 ```yaml
-domain: "<lowercase-with-hyphens>"          # домен из 2026-05-classification.md
-capability: "<lowercase-with-hyphens>"      # capability из 2026-05-classification.md
+domain: "<lowercase-with-hyphens>"          # домен из 2026-05-22-classification.md
+capability: "<lowercase-with-hyphens>"      # capability из 2026-05-22-classification.md
 feature: "<lowercase-with-hyphens>"         # настраиваемая возможность
 atomic_functions:
   - id: "<lowercase-with-hyphens>"          # стабильный ID функции
@@ -76,7 +76,7 @@ atomic_functions:
         description: "<назначение параметра>"
     international_sources: ["<источник 1>", "<источник 2>"]   # >= 2
     example_requirements: ["<цитата/перефраз из ТЗ> (TZ N)"]  # >= 1
-    related_nfr: ["<класс НФТ из 2026-05-classification-tz.md>"]      # опционально
+    related_nfr: ["<класс НФТ из 2026-05-22-classification-tz.md>"]      # опционально
 ```
 
 > ⚠️ **О диапазонах параметров.** Диапазоны и значения по умолчанию приведены
@@ -127,7 +127,7 @@ overlay**, а не новый domain.
 
 ### 🔹 Capability: ivr-voice-menu (Голосовое меню IVR и автоинформирование)
 
-`2026-05-classification.md` row 4 · Mango status: Есть.
+`2026-05-22-classification.md` row 4 · Mango status: Есть.
 
 #### Feature: ivr-scenarios (Сценарии голосового меню)
 
@@ -289,7 +289,7 @@ atomic_functions:
 
 ### 🔹 Capability: call-recording (Запись разговоров и журналирование)
 
-`2026-05-classification.md` row 6 · Mango status: Есть.
+`2026-05-22-classification.md` row 6 · Mango status: Есть.
 
 #### Feature: recording-capture (Захват и согласие на запись)
 
@@ -451,7 +451,7 @@ atomic_functions:
 
 ### 🔹 Capability: cloud-pbx (Виртуальная / облачная АТС)
 
-`2026-05-classification.md` row 1 · Mango status: Есть.
+`2026-05-22-classification.md` row 1 · Mango status: Есть.
 
 #### Feature: call-routing-rules (Правила обработки звонков)
 
@@ -615,7 +615,7 @@ atomic_functions:
 
 ### 🔹 Capability: call-routing (Распределение звонков, очереди, маршрутизация)
 
-`2026-05-classification.md` row 5 · Mango status: Есть.
+`2026-05-22-classification.md` row 5 · Mango status: Есть.
 
 #### Feature: skill-based-routing (Маршрутизация по навыкам)
 
@@ -772,7 +772,7 @@ atomic_functions:
 
 ### 🔹 Capability: outbound-calling (Исходящий обзвон и кампании)
 
-`2026-05-classification.md` row 13 · Mango status: Есть.
+`2026-05-22-classification.md` row 13 · Mango status: Есть.
 
 #### Feature: campaign-management (Режимы набора кампании)
 
@@ -929,7 +929,7 @@ atomic_functions:
 
 ### 🔹 Capability: quality-management (Управление качеством операторов / QM)
 
-`2026-05-classification.md` row 20 · Mango status: Есть.
+`2026-05-22-classification.md` row 20 · Mango status: Есть.
 
 #### Feature: scorecards (Оценка по чек-листам)
 
@@ -1088,7 +1088,7 @@ atomic_functions:
 
 ### 🔹 Capability: omnichannel-messaging (Омниканальные коммуникации)
 
-`2026-05-classification.md` row 14 · Mango status: Есть.
+`2026-05-22-classification.md` row 14 · Mango status: Есть.
 
 #### Feature: channel-integration (Подключение каналов)
 
@@ -1245,7 +1245,7 @@ atomic_functions:
 
 ### 🔹 Capability: website-chat (Чат для сайта)
 
-`2026-05-classification.md` row 15 · Mango status: Есть.
+`2026-05-22-classification.md` row 15 · Mango status: Есть.
 
 #### Feature: chat-widget (Виджет чата)
 
@@ -1402,7 +1402,7 @@ atomic_functions:
 
 ### 🔹 Capability: sms-messaging (SMS-рассылки)
 
-`2026-05-classification.md` row 10 · Mango status: Есть.
+`2026-05-22-classification.md` row 10 · Mango status: Есть.
 
 #### Feature: bulk-sms (Массовые рассылки)
 
@@ -1574,7 +1574,7 @@ atomic_functions:
 Атомарная функция описывает «что делает продукт». Нефункциональные требования
 (НФТ) описывают «насколько хорошо и при каких ограничениях». Их связь — это
 **overlay**, а не отдельный домен (см. глоссарий). Классы НФТ берём из
-[2026-05-classification-tz.md](2026-05-classification-tz.md), §«B. Нефункциональные классы».
+[2026-05-22-classification-tz.md](2026-05-22-classification-tz.md), §«B. Нефункциональные классы».
 
 ### Модель связывания
 
@@ -1588,7 +1588,7 @@ Atomic Function ── triggers ──> NFR class (overlay)
    └─ пример требования            └─ источник acceptance criteria
 ```
 
-| Класс НФТ (2026-05-classification-tz.md) | Типичный триггер на уровне функции | Примеры функций |
+| Класс НФТ (2026-05-22-classification-tz.md) | Типичный триггер на уровне функции | Примеры функций |
 | --- | --- | --- |
 | B1 SLA / доступность | Функции реального времени и маршрутизации | `queue-overflow-routing`, `operator-fallback-transfer`, `delivery-status-tracking` |
 | B2 Производительность / масштабируемость | Параллельная нагрузка, throughput | `predictive-dialing`, `call-recording-capture`, `bulk-sms-dispatch` |
@@ -1623,7 +1623,7 @@ related_nfr: B10 (реклама/abandon), B2 (производительнос�
 Справочник — источник для поля `taxonomy_path` и кандидат `keywords` в записях
 [`mango_ba_prompts/kb/product-matrix.md`](https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/kb/product-matrix.md)
 (структура записи описана в
-[2026-05-rag-mapping-roadmap.md](2026-05-rag-mapping-roadmap.md), §1.2). Здесь —
+[2026-05-26-rag-mapping-roadmap.md](2026-05-26-rag-mapping-roadmap.md), §1.2). Здесь —
 точка входа для промпта: «сырое требование → нормализация → поиск функции».
 
 ### Формат запроса промпта
@@ -1691,20 +1691,20 @@ lookup_request:
 | 2. Источники | Автор | Добавить ≥2 международных источника и ≥1 пример требования (желательно с TZ #). |
 | 3. Параметры | Автор + SME | Заполнить параметры с `origin` (`standard`/`mango-custom`) и диапазонами. |
 | 4. НФТ | Автор | Указать `related_nfr`, если функция триггерит НФТ-класс. |
-| 5. Ревью | Human reviewer (не автор) | Проверить атомарность, непротиворечивость с `2026-05-classification.md` и глоссарием. |
+| 5. Ревью | Human reviewer (не автор) | Проверить атомарность, непротиворечивость с `2026-05-22-classification.md` и глоссарием. |
 | 6. Версионирование | Reviewer | Bump `version` (semver: правка — patch/minor), обновить `updated`, при готовности `status: draft → reviewed`. |
-| 7. Регистрация | Reviewer | Если меняется набор capability — синхронизировать с `2026-05-classification.md` §`Product Layer`. |
+| 7. Регистрация | Reviewer | Если меняется набор capability — синхронизировать с `2026-05-22-classification.md` §`Product Layer`. |
 
 Принципы версионирования:
 
-- **Аддитивность**: новые функции добавляются, существующие id не переименовываются (как в `2026-05-classification.md` v3.0 — 37 строк сохранены).
+- **Аддитивность**: новые функции добавляются, существующие id не переименовываются (как в `2026-05-22-classification.md` v3.0 — 37 строк сохранены).
 - **Конфликт источников**: если источники противоречат (например, разные значения по умолчанию), фиксировать 2–3 варианта с плюсами/минусами, не блокируя прогресс.
-- **Single source of truth для иерархии**: набор `Domain → Capability → Feature` ведётся в `2026-05-classification.md`; этот файл детализирует уровень функций.
+- **Single source of truth для иерархии**: набор `Domain → Capability → Feature` ведётся в `2026-05-22-classification.md`; этот файл детализирует уровень функций.
 
 ## 📋 Сводка примеров требований из реальных ТЗ
 
 Явная traceability «функция → реальное требование из корпуса» (см.
-[2026-05-classification-tz.md](2026-05-classification-tz.md)) для иллюстрации (≥5):
+[2026-05-22-classification-tz.md](2026-05-22-classification-tz.md)) для иллюстрации (≥5):
 
 | # | Атомарная функция | Класс ТЗ | Пример требования | TZ # |
 | --- | --- | --- | --- | --- |
@@ -1722,7 +1722,7 @@ lookup_request:
 ## ❓ Вопросы для согласования с PO/Founder
 
 1. **Достаточен ли уровень детализации?** Хватает ли 3 capability × 2 feature ×
-   3 функции на домен для пилота, или нужны все capability из `2026-05-classification.md`?
+   3 функции на домен для пилота, или нужны все capability из `2026-05-22-classification.md`?
 2. **Диапазоны параметров.** Кто и когда подтверждает рабочие диапазоны
    (`status: draft → reviewed`): product SME по каждому домену или единый owner?
 3. **`standard` vs `mango-custom`.** Согласен ли PO с правилом «параметр у ≥3
@@ -1736,11 +1736,11 @@ lookup_request:
 
 ## Связанные артефакты
 
-- [research/mango/2026-05-classification.md](2026-05-classification.md) — иерархия `Domain → Capability → Feature → Atomic Function` (v3.0), §`📊 Product Layer`.
+- [research/mango/2026-05-22-classification.md](2026-05-22-classification.md) — иерархия `Domain → Capability → Feature → Atomic Function` (v3.0), §`📊 Product Layer`.
 - [mango_ba_prompts/standards/GLOSSARY.md](https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/standards/GLOSSARY.md) — термины уровней и mapping.
-- [research/mango/2026-05-classification-tz.md](2026-05-classification-tz.md) — корпус ТЗ, классы A/B/C, источник примеров и НФТ.
-- [research/mango/2026-05-rag-mapping-roadmap.md](2026-05-rag-mapping-roadmap.md) — структура `kb/product-matrix.md` и интерфейс промпта.
-- [research/mango/2026-05-taxonomy-concept.md](2026-05-taxonomy-concept.md) — мета-модель capability и принципы версионирования.
+- [research/mango/2026-05-22-classification-tz.md](2026-05-22-classification-tz.md) — корпус ТЗ, классы A/B/C, источник примеров и НФТ.
+- [research/mango/2026-05-26-rag-mapping-roadmap.md](2026-05-26-rag-mapping-roadmap.md) — структура `kb/product-matrix.md` и интерфейс промпта.
+- [research/mango/2026-05-26-taxonomy-concept.md](2026-05-26-taxonomy-concept.md) — мета-модель capability и принципы версионирования.
 - [standards/research-profile.md](../../standards/research-profile.md) — правила research-артефактов и цитирования.
 
 ## Источники

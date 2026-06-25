@@ -11,7 +11,7 @@ temperature: 0.1
 
 Зафиксировать результат сравнения **независимо извлечённой системы понятий
 Вигерса** (исследование
-[research/external-knowledge/2026-06-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-wigers-requirements-analysis.md))
+[research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-18-wigers-requirements-analysis.md))
 с действующей онтологией требований проекта `mango_ba_prompts` (ADR #003–#010) и
 предложить **точечную синхронизацию** там, где mango переизобретает уже устоявшиеся
 у Вигерса понятия («велосипеды») или имеет содержательный пробел.
@@ -379,7 +379,7 @@ mango — НФТ совместимости mango):
 Внешние стандарты и mango-ADR — по полным URL (mango-ADR в репозитории
 `mango_ba_prompts`, редактируются только там). Первичный источник Вигерса и полный
 разбор измерений — в исследовании
-[research/external-knowledge/2026-06-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-wigers-requirements-analysis.md).
+[research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-18-wigers-requirements-analysis.md).
 
 - **Первоисточник:** Wiegers, K., Beatty, J. *Software Requirements*, 3rd ed.,
   Microsoft Press, 2013 (рус. «Разработка требований к ПО», 2020).
@@ -400,7 +400,7 @@ mango — НФТ совместимости mango):
 
 ## Связанные артефакты
 
-- [research/external-knowledge/2026-06-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-wigers-requirements-analysis.md)
+- [research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-18-wigers-requirements-analysis.md)
   — независимое извлечение Вигерса (ФТ-1…ФТ-4), доказательная база этого RFC.
 - [governance/rfc/research-memory-source-intelligence.md](../../governance/rfc/research-memory-source-intelligence.md)
   — PR #242: Knowledge Status (`Candidate`/`Applied`), source intelligence (для
