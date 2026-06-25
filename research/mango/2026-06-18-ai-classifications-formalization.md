@@ -19,9 +19,9 @@ ai-generated: true
 ## Назначение
 
 Документ продолжает линию исследования Вигерса
-([research/external-knowledge/2026-06-wigers-requirements-analysis.md](../external-knowledge/2026-06-wigers-requirements-analysis.md))
+([research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../external-knowledge/2026-06-18-wigers-requirements-analysis.md))
 и синхронизирующего RFC
-([research/mango/2026-requirements-engineering-ai-era.md](2026-requirements-engineering-ai-era.md)).
+([research/mango/2026-06-18-requirements-engineering-ai-era.md](2026-06-18-requirements-engineering-ai-era.md)).
 Если RFC отвечал на вопрос «**что** в онтологии mango стоит синхронизировать с
 Вигерсом (С1–С5)», то этот документ отвечает на вопрос «**как именно** новые
 AI-подпроцессы устроены внутри (операции / артефакты / связь с классикой) и **как**
@@ -141,7 +141,7 @@ spec промпта — это требование к AI-компоненту, 
 **Опора (trusted source).** LangChain (`ext-016`,
 [реестр](../external-knowledge/external-sources-registry.md)) — паттерны
 prompt-templates; инсайт о компонуемых паттернах
-([building-effective-agents](../external-knowledge/external-insights/2026-06-building-effective-agents.md),
+([building-effective-agents](../external-knowledge/external-insights/2026-06-13-building-effective-agents.md),
 `ext-001`): промпт как простой компонуемый шаг, сложность — только под боль.
 
 ### 2. Настройка RAG (RAG Configuration)
@@ -169,7 +169,7 @@ AI-компонентов: выбор хранилища знаний, стра�
 
 **Пример использования.**
 > Для AI-навигатора по продуктам Mango (см.
-> [2026-05-rag-mapping-roadmap.md](2026-05-rag-mapping-roadmap.md)) операция 2.1
+> [2026-05-26-rag-mapping-roadmap.md](2026-05-26-rag-mapping-roadmap.md)) операция 2.1
 > выбирает векторную базу под `kb/product-matrix.md`; 2.2 задаёт chunking по
 > разделам матрицы (1 фича = 1 chunk); 2.3 настраивает retrieval с ранжированием по
 > домену (`voice-ucaas` / `contact-center` / `digital-channels`).
@@ -219,7 +219,7 @@ RAG. Утверждения о применимости — доверие E1–
 **Опора (trusted source).** Anthropic «Building Effective Agents» (`ext-001`) —
 паттерны orchestrator-workers / routing / evaluator-optimizer; CrewAI (`ext-017`) —
 примеры мультиагентной координации; 12-factor agents
-([insight](../external-knowledge/external-insights/2026-06-12-factor-agents.md)) —
+([insight](../external-knowledge/external-insights/2026-06-13-12-factor-agents.md)) —
 дисциплина границ агента. Все — `Candidate`.
 
 ### 4. Тестирование AI-компонентов (AI Testing)
@@ -450,9 +450,9 @@ AI-ассистированная операция требует осознан
     `ext-019`
   - Microsoft — Agentic AI adoption maturity model — `ext-029`
 - **Инсайты Хаба:**
-  [building-effective-agents](../external-knowledge/external-insights/2026-06-building-effective-agents.md)
+  [building-effective-agents](../external-knowledge/external-insights/2026-06-13-building-effective-agents.md)
   (`ext-001`),
-  [12-factor-agents](../external-knowledge/external-insights/2026-06-12-factor-agents.md).
+  [12-factor-agents](../external-knowledge/external-insights/2026-06-13-12-factor-agents.md).
 - **mango-ADR (внешний репозиторий `mango_ba_prompts`, не редактируются здесь):**
   ADR-003 <https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/docs/adr/003-ba-ontology.md> ·
   ADR-004 <https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/docs/adr/004-operations-taxonomy.md> ·
@@ -460,15 +460,15 @@ AI-ассистированная операция требует осознан
 
 ## Связанные артефакты
 
-- [research/mango/2026-requirements-engineering-ai-era.md](2026-requirements-engineering-ai-era.md)
+- [research/mango/2026-06-18-requirements-engineering-ai-era.md](2026-06-18-requirements-engineering-ai-era.md)
   — RFC синхронизации Вигерс ↔ mango (С1–С5); базовый контракт этого документа.
-- [research/external-knowledge/2026-06-wigers-requirements-analysis.md](../external-knowledge/2026-06-wigers-requirements-analysis.md)
+- [research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../external-knowledge/2026-06-18-wigers-requirements-analysis.md)
   — независимое извлечение системы Вигерса (доказательная база).
 - [governance/rfc/research-memory-source-intelligence.md](../../governance/rfc/research-memory-source-intelligence.md)
   — Knowledge Status (`Candidate`/`Applied`) для разметки AI-практик.
 - [governance/rfc/methodology-research-and-proposals.md](../../governance/rfc/methodology-research-and-proposals.md)
   — ось доверия E0–E4.
-- [research/mango/2026-05-rag-mapping-roadmap.md](2026-05-rag-mapping-roadmap.md)
+- [research/mango/2026-05-26-rag-mapping-roadmap.md](2026-05-26-rag-mapping-roadmap.md)
   — roadmap автоматизации БА и RAG-навигатор Mango (контекст RAG-подпроцесса).
 - [governance/repo-model.md](../../governance/repo-model.md) — Anti-Inflation
   principle.
