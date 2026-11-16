@@ -5,7 +5,7 @@
 | Этап | Статус | Pull request | Доказательство |
 | --- | --- | --- | --- |
 | E1 Скелет генома | ✅ | #2 | `genome.tsv`, `manifest.tsv` |
-| E2 Импорт с историей | ⬜ | | `verify-import.json`, `verify-filtered.json`, `commit-map.txt`, `commit-count.txt`, `history.txt` |
+| E2 Импорт с историей | ✅ | #3 | `verify-import.json`, `verify-filtered.json`, `commit-map.txt`, `commit-count.txt`, `history.txt` |
 | E3 Ссылки | ⬜ | | `rewrite-links.jsonl`, `verify-links.json` |
 | E4 Код и CI | ⬜ | | `scan-before.txt`, `scan-after.txt`, `adapted.txt` |
 | E5 Бэклог | ⬜ | | `backlog-ids.txt` |
