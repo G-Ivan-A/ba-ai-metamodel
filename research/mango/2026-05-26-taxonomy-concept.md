@@ -223,7 +223,7 @@ discipline, а TOGAF/ArchiMate - как слой связи с архитект�
 | Deprecation / merge / split capability | Taxonomy owner | PO council / Founder if strategic | Квартальный release. |
 
 После пилота можно создать `standards/feature-taxonomy.md`, но сейчас это было
-бы преждевременно: по [ops/repo-model.md](../../ops/repo-model.md)
+бы преждевременно: по [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md)
 новый standard оправдан только после повторяющейся операционной боли и review.
 
 ## План пилота на 1-2 спринта
@@ -257,7 +257,7 @@ AI, аналитику, интеграции и compliance.
 | --- | --- | --- |
 | Перегрузка классификации | Команды перестанут использовать taxonomy из-за слишком многих полей. | В пилоте обязательны только `capability_id`, `domain`, `feature_type`, `mango_status`, `owner_route`, `evidence_refs`, `uncertainty`. |
 | Ригидность стандарта | Новые фичи и рыночные формулировки не попадают в taxonomy вовремя. | Квартальный release + fast-track `candidate` для тендеров. |
-| Семантический дрейф | Одни и те же термины начинают значить разное в BA, PO и sales. | Все новые термины сверять со [standards/glossary.md](../../standards/glossary.md) и проектным Mango glossary после его создания. |
+| Семантический дрейф | Одни и те же термины начинают значить разное в BA, PO и sales. | Все новые термины сверять со [standards/glossary.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/standards/glossary.md) и проектным Mango glossary после его создания. |
 | Двойное ведение | Каталог продукта и taxonomy расходятся. | Product package не дублируется; taxonomy хранит capability ID и ссылку на evidence/catalog. |
 | Ложная точность | AI присваивает уверенный mapping при неоднозначном требовании. | Multi-tagging, `uncertainty`, confidence threshold и обязательный BA review. |
 | Ownership conflict | Требование затрагивает несколько команд. | Основной owner + secondary owners; конфликт решает Taxonomy owner и affected PO. |
@@ -268,11 +268,11 @@ AI, аналитику, интеграции и compliance.
 
 Внутренние артефакты:
 
-- [standards/glossary.md](../../standards/glossary.md) - контролируемый словарь
+- [standards/glossary.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/standards/glossary.md) - контролируемый словарь
   governance и AI-assisted terms.
-- [ops/repo-model.md](../../ops/repo-model.md) - правило
+- [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md) - правило
   размещения и Anti-Inflation principle.
-- [ops/artifact-map.md](../../ops/artifact-map.md) - навигация
+- [ops/artifact-map.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/artifact-map.md) - навигация
   по активным артефактам.
 - `standards/research-profile.md` -
   профиль research-артефактов и правила source-backed analysis.

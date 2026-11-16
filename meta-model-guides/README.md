@@ -66,6 +66,6 @@ temperature: 0.1
 ## Визуальный гайд
 
 Автономная версия для чтения в браузере:
-[`gigacode-cli/mango-ba-ai-runtime-cli-user-guide.html`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/meta-model-guides/gigacode-cli/mango-ba-ai-runtime-cli-user-guide.html).
+[`gigacode-cli/mango-ba-ai-runtime-cli-user-guide.html`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/meta-model-guides/gigacode-cli/mango-ba-ai-runtime-cli-user-guide.html).
 Она служит обзором; актуальные команды и границы выше имеют приоритет в рамках
 issue #593.

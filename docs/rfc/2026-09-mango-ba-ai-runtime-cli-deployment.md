@@ -321,7 +321,7 @@ handlers, секретов и локальных абсолютных путей
 ### 8. HTML user guide и Golden Set
 
 Целевой операторский документ:
-[`mango-ba-ai-runtime-cli-user-guide.html`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/meta-model-guides/gigacode-cli/mango-ba-ai-runtime-cli-user-guide.html).
+[`mango-ba-ai-runtime-cli-user-guide.html`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/meta-model-guides/gigacode-cli/mango-ba-ai-runtime-cli-user-guide.html).
 Он описывает реализованный в Source копируемый пакет; перенос во внешний runtime
 остаётся отдельным implementation PR. Руководство покрывает установку, preflight,
 запуск, resume, KB/MCP, reject, публикацию и golden workflow.
@@ -476,10 +476,10 @@ RFC возвращается в `draft`; изменение не перенос�
 
 ## Related Artifacts
 
-- [Execution package MVP BCREQ](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/dist/execution-package-gigacode-cli)
-- [BA meta-model decision framework](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/30-decision-framework.md)
+- [Execution package MVP BCREQ](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/dist/execution-package-gigacode-cli)
+- [BA meta-model decision framework](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/30-decision-framework.md)
 - [Runtime repository](https://github.com/G-Ivan-A/mango-ba-ai-runtime-cli)
-- [HTML operator guide](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/meta-model-guides/gigacode-cli/mango-ba-ai-runtime-cli-user-guide.html)
+- [HTML operator guide](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/meta-model-guides/gigacode-cli/mango-ba-ai-runtime-cli-user-guide.html)
 - [External Sources Registry](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/external-knowledge/external-sources-registry.md)
 - [Issue #591](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/591)
 - [Issue #593](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/593)

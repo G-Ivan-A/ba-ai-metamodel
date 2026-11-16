@@ -11,7 +11,7 @@ temperature: 0.1
 
 Зафиксировать результат сравнения **независимо извлечённой системы понятий
 Вигерса** (исследование
-[research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-18-wigers-requirements-analysis.md))
+[research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/2026-06-18-wigers-requirements-analysis.md))
 с действующей онтологией требований проекта `mango_ba_prompts` (ADR #003–#010) и
 предложить **точечную синхронизацию** там, где mango переизобретает уже устоявшиеся
 у Вигерса понятия («велосипеды») или имеет содержательный пробел.
@@ -24,14 +24,14 @@ temperature: 0.1
    **(a) настоящий велосипед/пробел**, **(b) нужен мост (alias)**,
    **(c) обоснованная локализация** (не велосипед).
 3. Предлагает синхронизацию **под реальную операционную боль** (Anti-Inflation,
-   [ops/repo-model.md](../../ops/repo-model.md)): какие понятия Вигерса стоит
+   [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md)): какие понятия Вигерса стоит
    добавить как явную ось/тип, какие — только как crosswalk, какие — оставить как
    есть.
 
 RFC фиксирует исследование, сравнение и rationale. Любая обязательная норма после
 решения человека делегируется в active artifact (`standards/`, либо в issue
 проекта `mango_ba_prompts`) — до этого документ остаётся draft-рекомендацией
-([docs/rfc/README.md](../../docs/rfc/README.md)). RFC **сам по себе не меняет** ни один
+([docs/rfc/README.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/README.md)). RFC **сам по себе не меняет** ни один
 mango-ADR: эти ADR живут в отдельном репозитории и редактируются там.
 
 ## Decision Scope
@@ -44,12 +44,12 @@ mango-ADR: эти ADR живут в отдельном репозитории и
   как замена BABOK / ISO 29148 / ГОСТ 34.602, на которых mango построен осознанно.
 - Это **не** ввод AI-трендов как норм. Утверждения AI-эры (§«AI-слой») имеют
   доверие E1–E2 и статус `Candidate`; они фиксируются как наблюдение, не как
-  стандарт (НФТ Trust & Evidence, [research-memory RFC](../../docs/rfc/research-memory-source-intelligence.md)).
+  стандарт (НФТ Trust & Evidence, [research-memory RFC](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/research-memory-source-intelligence.md)).
 - Это **не** немедленное создание артефактов в Хабе. Целевые изменения (если
   приняты) делаются пофазно под боль, а не этим PR.
 - Это **не** замена решений человека. Принятие/отклонение рекомендаций,
   публикация, синхронизация с mango остаются за Пользователем
-  ([AI_GOVERNANCE.md](../../ai-governance/ai-governance.md), правило 4).
+  ([AI_GOVERNANCE.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ai-governance/ai-governance.md), правило 4).
 
 ## Почему текущей ситуации недостаточно
 
@@ -116,7 +116,7 @@ SRS). Это граница данного RFC.
 (`requirement_level ∈ {business, user, functional, non-functional}`) поверх
 существующей классификации функциональности — **не заменяя** `Domain→…→Atomic
 Function`. Это даёт семантику без сноса принятой модели (по образцу того, как
-[methodology RFC](../../docs/rfc/methodology-research-and-proposals.md) ввёл ось E0–E4
+[methodology RFC](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/methodology-research-and-proposals.md) ввёл ось E0–E4
 ортогонально Knowledge Status).
 
 ### В2 — Бизнес-правила как тип отсутствуют (🔴, главный пробел)
@@ -173,7 +173,7 @@ mango — НФТ совместимости mango):
 артефакт 7), словарь Вигерса (Прил. А) — отдельный источник. Это не дубль, но
 определения местами расходятся (например, «фича/feature» у Вигерса = набор связанных
 функциональных требований). **Предложение (С4):** при работе над опциональной ФТ-6
-([standards/glossary.md](../../standards/glossary.md)) добавлять термин Вигерса с
+([standards/glossary.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/standards/glossary.md)) добавлять термин Вигерса с
 явной пометкой расхождения, если оно есть; не дублировать там, где определения
 совпадают (Anti-Inflation).
 
@@ -328,7 +328,7 @@ mango — НФТ совместимости mango):
 | С1 | Ось-тег `requirement_level` (Бизнес/Пользователь/Функция/НФТ) поверх классификации функциональности. | 🔴 | issue в `mango_ba_prompts` → ADR-003/стандарт онтологии | Нельзя однозначно определить уровень требования; нет трассировки вверх по Вигерсу. |
 | С2 | Тип-артефакт **«Бизнес-правило»** + 5-категорийная таксономия. | 🔴 | issue в `mango_ba_prompts` → реестр артефактов ADR-003 | Нет опоры для автопроверки правил ИИ; пробел в типологии. |
 | С3 | Alias-crosswalk Вигерс ↔ операции mango ↔ BCREQ (без переименований). | 🟡 | этот RFC (таблица В3) + опц. примечание в таксономии mango | Нет кросс-ссылок с Вигерс-литературой. |
-| С4 | Сверка терминов Вигерса в глоссарии при расхождении определений. | 🟢/🟡 | [standards/glossary.md](../../standards/glossary.md) (ФТ-6, опц.) | Тихие расхождения в терминологии. |
+| С4 | Сверка терминов Вигерса в глоссарии при расхождении определений. | 🟢/🟡 | [standards/glossary.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/standards/glossary.md) (ФТ-6, опц.) | Тихие расхождения в терминологии. |
 | С5 | Маппинг секций SRS → разделы ГОСТ ТЗ (диагностика, не замена). | 🟢 | опц. issue/исследование | Возможная потеря сильных сторон SRS в ТЗ. |
 
 > 🧭 **Anti-Inflation.** Приоритет — С1 и С2 (настоящие пробелы под реальную боль).
@@ -379,7 +379,7 @@ mango — НФТ совместимости mango):
 Внешние стандарты и mango-ADR — по полным URL (mango-ADR в репозитории
 `mango_ba_prompts`, редактируются только там). Первичный источник Вигерса и полный
 разбор измерений — в исследовании
-[research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-18-wigers-requirements-analysis.md).
+[research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/2026-06-18-wigers-requirements-analysis.md).
 
 - **Первоисточник:** Wiegers, K., Beatty, J. *Software Requirements*, 3rd ed.,
   Microsoft Press, 2013 (рус. «Разработка требований к ПО», 2020).
@@ -400,15 +400,15 @@ mango — НФТ совместимости mango):
 
 ## Связанные артефакты
 
-- [research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../../research/external-knowledge/2026-06-18-wigers-requirements-analysis.md)
+- [research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/2026-06-18-wigers-requirements-analysis.md)
   — независимое извлечение Вигерса (ФТ-1…ФТ-4), доказательная база этого RFC.
-- [docs/rfc/research-memory-source-intelligence.md](../../docs/rfc/research-memory-source-intelligence.md)
+- [docs/rfc/research-memory-source-intelligence.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/research-memory-source-intelligence.md)
   — PR #242: Knowledge Status (`Candidate`/`Applied`), source intelligence (для
   разметки AI-практик).
-- [docs/rfc/methodology-research-and-proposals.md](../../docs/rfc/methodology-research-and-proposals.md)
+- [docs/rfc/methodology-research-and-proposals.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/methodology-research-and-proposals.md)
   — PR #246: 5-слойная модель и ось доверия E0–E4 (использованы для классификации).
-- [AI_GOVERNANCE.md](../../ai-governance/ai-governance.md) — Operating Modes, правило 4 (решения
+- [AI_GOVERNANCE.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ai-governance/ai-governance.md) — Operating Modes, правило 4 (решения
   за человеком), Creative-mode.
-- [ops/repo-model.md](../../ops/repo-model.md) — Anti-Inflation principle.
-- [standards/glossary.md](../../standards/glossary.md) — цель опциональной ФТ-6
+- [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md) — Anti-Inflation principle.
+- [standards/glossary.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/standards/glossary.md) — цель опциональной ФТ-6
   (синхронизация терминов С4).

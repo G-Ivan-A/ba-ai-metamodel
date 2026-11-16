@@ -6,10 +6,10 @@ temperature: 0.3
 type: presentation
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/646"
-based_on: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/presentation/2026-09-29-meta-model-presentation-slides.md"
+based_on: "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/presentation/2026-09-29-meta-model-presentation-slides.md"
 related_artifacts:
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/presentation/2026-09-29-meta-model-presentation-slides.md"
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/presentation/2026-09-29-meta-model-presentation-slides.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md"
   - "https://github.com/G-Ivan-A/mango_ba_prompts"
 related_issues:
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/646"
@@ -18,7 +18,7 @@ related_issues:
 # Мета-модель бизнес-анализа и среды её исполнения: сценарий для диктора
 
 Сценарий к
-[слайдам](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/presentation/2026-09-29-meta-model-presentation-slides.md);
+[слайдам](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/presentation/2026-09-29-meta-model-presentation-slides.md);
 номера разделов совпадают с номерами слайдов. Текст тезисный: его
 пересказывают своими словами, а не читают.
 
@@ -80,7 +80,7 @@ related_issues:
 - Мы говорим о командах крупных клиентов. Там ТЗ — не рабочая заметка, а
   основа разработки и часть договора.
 - Продукт широкий: в нашей
-  [таксономии](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/product-taxonomy/mango-products.yaml)
+  [таксономии](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/product-taxonomy/mango-products.yaml)
   42 продуктовые возможности в 8 доменах. У каждой свой словарь и свои
   ловушки: очередь и группа, SLA и AHT, IVR и автоинформатор.
 - Одно обращение проходит минимум три передачи. На каждой теряется часть
@@ -103,7 +103,7 @@ related_issues:
 **Текст.**
 
 - Мы разобрали
-  [все 67 прогонов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md),
+  [все 67 прогонов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md),
   которые были на момент разбора. Прогон за прогоном, по артефактам.
 - 17 итоговых документов с требованиями — 17 разных структур. Метрика
   структурной воспроизводимости `M-1` равна нулю. Независимый замер на трёх
@@ -156,7 +156,7 @@ related_issues:
   [не встречаются ни в одном](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/2026-09-09-legacy-normative-influence-facts.md)
   из 24 промптов.
 - Вывод
-  [форензики](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md):
+  [форензики](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md):
   четыре независимых класса отказа. Неподтверждённый факт повышается до
   требования. Текущее поведение системы выдаётся за требование к доработке.
   Согласованный текст теряется между итерациями. Отраслевая классификация
@@ -189,7 +189,7 @@ related_issues:
   продукта и системы, одной операцией, одним актором — через контракт и
   гейт — получается выход со следом происхождения.
 - Четыре
-  [инварианта](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/10-theory.md)
+  [инварианта](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/10-theory.md)
   — ответы на измеренные дефекты. Нет шага без входа — потому что 50 из 67
   прогонов входа не объявляли. Продукт объявляется до шага — потому что
   лексика задачи указывает больше чем на один домен в 66 из 67 прогонов.
@@ -216,7 +216,7 @@ related_issues:
   8 галлюцинаций, одна дошла до документа. Вывод самого прогона: «Механика
   промпта соблюдена, достоверность фактов не обеспечена».
 - Поэтому мы разложили работу на
-  [31 атомарную операцию](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/operation-taxonomy/10-theory.md)
+  [31 атомарную операцию](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/operation-taxonomy/10-theory.md)
   в пяти когнитивных классах. Класс определяется тем, откуда берётся
   содержание выхода.
 - Класс задаёт механизм контроля. Извлечение сверяется с источником.
@@ -251,11 +251,11 @@ related_issues:
 - Сверка: каждый факт привязывается к документации или кейсу. Неясность
   превращается в вопрос заказчику, а не в допущение.
 - Генерация по золотому шаблону. Мы
-  [проверили](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md):
+  [проверили](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md):
   одна форма BCREQ из 7 разделов подходит для API, личного кабинета и
   контакт-центра. Для контакт-центра в пакете 2 положительных и 4
   отрицательных
-  [золотых кейса](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/golden)
+  [золотых кейса](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/dist/execution-package-gigacode-cli/golden)
   — на типовые путаницы вроде SLA и AHT.
 - Гейты: машина проверяет структуру и схему, человек — смысл и спорные
   выборы. Человек не перепроверяет то, что может проверить машина.
@@ -266,7 +266,7 @@ related_issues:
 
 - Работает и воспроизводимо: машинная проверка и сборка Release. Две сборки
   одного рабочего документа дают
-  [побайтно одинаковый результат](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-cline-package-expectation-gap.md).
+  [побайтно одинаковый результат](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-cline-package-expectation-gap.md).
 - В пилоте на АРМ: нормализация, сверка, генерация — на срезе
   `contact-center`.
 - Не измерено: выдача каждой проекции и человекочитаемый вид результата.
@@ -286,14 +286,14 @@ related_issues:
 **Текст.**
 
 - Архитектура разделена по
-  [ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md):
+  [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md):
   Source хранит модель и контракты, Distribution — скомпилированный пакет,
   Runtime — среду исполнения, Feedback возвращает наблюдения в Source.
 - Сейчас два пакета для АРМ аналитика: GigaCode CLI и Cline с Mango AI.
   Компилятор общий, в обоих пакетах он побайтово одинаков. Отличаются
   адаптеры.
 - Главный пробел нашёл
-  [аудит сред](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md):
+  [аудит сред](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md):
   у роли оркестратора нет исполнителя. В CLI каждый переход набирает БА, в
   Cline модель читает правила и решает сама.
 - Проба это подтвердила: текст «lorem ipsum» прошёл узлы n1–n3, потому что
@@ -330,7 +330,7 @@ related_issues:
   где у каждого требования есть след до источника. Передача перестаёт быть
   пересказом.
 - Качество измеряется
-  [пятью метриками](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/40-practice-and-cases.md):
+  [пятью метриками](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/40-practice-and-cases.md):
   воспроизводимость структуры, доля отказов машинного гейта, правки
   человека после машины, полнота следа, доля пустых слотов с причиной.
 - Правило честности: если машинный гейт ничего не отклоняет, он ничего не
@@ -394,7 +394,7 @@ RAG решает доступ к знаниям, и он в конвейере �
 
 ### «Чем это отличается от LangGraph, n8n, Dify?»
 
-Мы [сравнивали](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md).
+Мы [сравнивали](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md).
 Dify, Flowise, Temporal и Camunda отклонены как ядро. n8n допустим только
 как интеграционная оболочка: граф пришлось бы перерисовывать, узел AI Agent
 недетерминирован, а в начале 2026 года у n8n была критическая уязвимость
@@ -427,7 +427,7 @@ CVE-2026-21858 с CVSS 10.0. LangGraph под лицензией MIT — кан�
 ### «Что с безопасностью и данными?»
 
 Правила записаны в
-[ADR-019](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/adr/2026-09-adr-019-cline-mango-ai-pilot.md).
+[ADR-019](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/adr/2026-09-adr-019-cline-mango-ai-pilot.md).
 Endpoint Mango AI доступен только из корпоративной сети или VPN. Ключ
 персональный и не попадает в Git, чат или скриншот. Прогоны и секреты
 исключены из публичного Git. Агенту запрещено менять инструменты,
@@ -437,7 +437,7 @@ PR в Source и перекомпиляцией.
 Пробел, который надо назвать самим: «только чтение» для Jira и Confluence
 через MCP сейчас — организационная мера. Hook пакета Cline пропускает
 любой MCP-вызов, реальная граница — ручное подтверждение аналитиком
-([Г-12](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-cline-package-expectation-gap.md#г-12)).
+([Г-12](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-cline-package-expectation-gap.md#г-12)).
 Исправление — allowlist пар «сервер/инструмент» только на чтение. В
 серверной среде этот вопрос решается на стороне кода: модель не вызывает
 инструменты сама.
@@ -461,7 +461,7 @@ Cline работает с Mango AI. Source один, компилятор общ
 прогонах предотвращало выдумывание; один стандарт выхода подходит для
 разных продуктов. Не доказано: сквозной прогон на реальных задачах в двух
 клиентах — это открытый gate
-[RFC проверки на пилоте](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-source-pilot-verification.md).
+[RFC проверки на пилоте](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-source-pilot-verification.md).
 Смысловая проверка пока частично держится на самодекларации модели:
 машина проверяет наличие отметки «источник прочитан», а не её истинность.
 Это закрывается проверкой цитаты по файлу базы знаний и человеческим

@@ -27,14 +27,14 @@ information security)**, **внешнего хранилища (external storage
 обязательная норма после решения Пользователя (human decision) должна быть
 делегирована в active artifact самого спока (`standards/`, validators,
 операционный контракт), а до этого остаётся рекомендацией
-([docs/rfc/README.md](../../docs/rfc/README.md)).
+([docs/rfc/README.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/README.md)).
 
 ## Decision Scope / Границы решения
 
 - Это **RFC по архитектуре спока** `mango_ba_prompts`. Хаб
   (`hybrid-Intelligence-lab`) — источник методологии; физическая
   реструктуризация Mango выполняется **отдельным PR в самом споке**, не здесь
-  (ср. [projects/repo-development/docs/mango-ba-prompts-repository-migration-plan-2026-06.md](../../projects/repo-development/docs/mango-ba-prompts-repository-migration-plan-2026-06.md)).
+  (ср. [projects/repo-development/docs/mango-ba-prompts-repository-migration-plan-2026-06.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/projects/repo-development/docs/mango-ba-prompts-repository-migration-plan-2026-06.md)).
 - Это **не** немедленное создание private-репозитория или Object Storage — RFC
   определяет, **что** туда выносить и **в каком порядке**, решение и исполнение —
   за Пользователем.
@@ -227,7 +227,7 @@ Private: `runs/`, feedback, артефакты, аудит. Object Storage: сы
 **Вариант C — мульти-репо «по доменам» (framework + operations + knowledge-vault
 как отдельный repo) или монорепо с строгими CODEOWNERS.**
 - *Минусы:* избыточная дробность (нарушает Anti-Inflation,
-  [ops/repo-model.md](../../ops/repo-model.md)); knowledge-vault логичнее как
+  [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md)); knowledge-vault логичнее как
   Object Storage, а не Git-репо (бинарные PDF/DOCX/транскрипты).
 
 ### 3.2. Независимое решение / Decision
@@ -393,11 +393,11 @@ s3://mango-vault/                   # доступ по аутентификац
   (Вывод 1 фаундера; принцип «проекты независимы»).
 - **Ручная инициация передачи опыта:** опыт спока → Хаб только через RFC,
   заводимый человеком; в споке — `docs/rfc/`, в Хабе — соответствующий
-  `research/mango/` или [docs/rfc/](../../docs/rfc/README.md). Автосинхронизации нет.
+  `research/mango/` или [docs/rfc/](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/README.md). Автосинхронизации нет.
 - **Служебный промпт синхронизации:** `governance/prompts/hub-sync-prompt.md` —
   governance-инструмент, **не** в каталоге `prompts/` (там только БА-методология).
 - Хаб остаётся источником рекомендаций, а не блокирующих правил
-  ([AI_GOVERNANCE.md](../../ai-governance/ai-governance.md), [ops/repo-model.md](../../ops/repo-model.md)).
+  ([AI_GOVERNANCE.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ai-governance/ai-governance.md), [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md)).
 
 ### 5.2. Связь с порталом `open-ai.ru` / Portal Integration (последовательно)
 
@@ -512,7 +512,7 @@ status: success | partial | failed
 **Зависимость:** оптимизация документации по токенам (full vs executable,
 Index/Summary/Full уровни) — следующая задача, опирающаяся на принятую здесь
 структуру. Прямая аналогия с уже существующей в Хабе рамкой баланса
-[docs/rfc/documentation-architecture-balance.md](../../docs/rfc/documentation-architecture-balance.md).
+[docs/rfc/documentation-architecture-balance.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/documentation-architecture-balance.md).
 
 ---
 
@@ -550,8 +550,8 @@ Index/Summary/Full уровни) — следующая задача, опира
 - Дерево `G-Ivan-A/mango_ba_prompts@main` (снимок 2026-06-19).
 - 4 видения: команды C, Q, G, фаундера (вложения issue
   [#253](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/253)).
-- Hub-контекст: [ops/repo-model.md](../../ops/repo-model.md) (Anti-Inflation),
-  [docs/rfc/README.md](../../docs/rfc/README.md) (статус RFC),
+- Hub-контекст: [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md) (Anti-Inflation),
+  [docs/rfc/README.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/README.md) (статус RFC),
   [research/mango/README.md](README.md),
-  [projects/repo-development/docs/mango-ba-prompts-repository-migration-plan-2026-06.md](../../projects/repo-development/docs/mango-ba-prompts-repository-migration-plan-2026-06.md),
-  [docs/project-summaries/mango-ba-prompts-context-Summary.md](../../docs/project-summaries/mango-ba-prompts-context-Summary.md).
+  [projects/repo-development/docs/mango-ba-prompts-repository-migration-plan-2026-06.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/projects/repo-development/docs/mango-ba-prompts-repository-migration-plan-2026-06.md),
+  [docs/project-summaries/mango-ba-prompts-context-Summary.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/project-summaries/mango-ba-prompts-context-Summary.md).

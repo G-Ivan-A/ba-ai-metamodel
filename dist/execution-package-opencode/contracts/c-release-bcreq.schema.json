@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-opencode/contracts/c-release-bcreq.schema.json",
+  "$id": "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-opencode/contracts/c-release-bcreq.schema.json",
   "title": "Deterministic BCREQ client Release",
   "type": "object",
   "additionalProperties": false,

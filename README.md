@@ -43,7 +43,7 @@ MANGO** (все домены полного снимка таксономии), 
 
 ## Структура Source
 
-- [`ba-meta-model/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/00-introduction.md)
+- [`ba-meta-model/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/00-introduction.md)
   — каноническая мета-модель БА (issue
   [#563](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/563),
   версия 0.2 — [#571](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571)):
@@ -52,25 +52,25 @@ MANGO** (все домены полного снимка таксономии), 
   `DP-1`…`DP-5`, правила работы с наследием `LG-1`…`LG-6`, контракт
   `SKILL.md` (`SK-0`…`SK-10`), маршрутный лист, Golden Set и план вертикального
   MVP-среза с метриками `M-1`…`M-5`. Вложенные
-  [`process-taxonomy/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/process-taxonomy/00-introduction.md)
-  и [`operation-taxonomy/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/operation-taxonomy/00-introduction.md)
+  [`process-taxonomy/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/process-taxonomy/00-introduction.md)
+  и [`operation-taxonomy/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/operation-taxonomy/00-introduction.md)
   задают соответственно 33 навыка-подпроцесса и 31 атомарную операцию;
-  [`product-taxonomy/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/ba-meta-model/product-taxonomy)
+  [`product-taxonomy/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/ba-meta-model/product-taxonomy)
   хранит версионированные снимки 42 продуктовых capabilities MANGO и их 42
   отраслевых соответствий ИТ/телеком для компиляции в Distribution.
-- [`meta-model-guides/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/meta-model-guides/README.md)
+- [`meta-model-guides/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/meta-model-guides/README.md)
   — инструкции человеку: подготовка чистой директории, локальной KB,
   Confluence MCP, запуск/возобновление task и изолированный debug.
-- [`tests/execution-package/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/tests/execution-package/README.md)
+- [`tests/execution-package/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/tests/execution-package/README.md)
   — mock-fixtures, assertions и детерминированная эмуляция графа без LLM и MCP.
-- [`dist/execution-package-gigacode-cli/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/README.md)
+- [`dist/execution-package-gigacode-cli/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/README.md)
   — копируемый пакет с `.gigacode/skills/`, явным dispatcher, debug-механизмом,
   контрактами, графом, Golden Set и машинным гейтом `G-mach`.
 - [`dist/execution-package-cline-vscode/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/issue-621-bd8c46c08849/projects/ba-ai-process/dist/execution-package-cline-vscode/README.md)
   — отдельный пилот Cline для синтетического BCREQ Working → Release с блокирующими
   hooks, независимым runner, CI gate, trace и политикой источников знания; Source
   сборки — `build/common/` и `build/adapters/cline-vscode/`.
-- [`dist/execution-package-opencode/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-opencode/README.md)
+- [`dist/execution-package-opencode/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-opencode/README.md)
   — пилот OpenCode на том же Source и runner: блокирующий плагин
   `tool.execute.before`, команды `/bcreq-start` и `/bcreq-gate`, CI gate и
   инструкция `docs/guides/` для Windows 10/11; Source сборки — `build/common/` и
@@ -81,25 +81,25 @@ MANGO** (все домены полного снимка таксономии), 
 
 Пакет — артефакт компиляции, а не новый RRP-модуль. Состав скопированного,
 преобразованного и отброшенного объявлен в
-[манифесте](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/package-manifest.yaml).
+[манифесте](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/package-manifest.yaml).
 Его `docs/kb/.gitkeep` и `meta-model/.gitkeep` обозначают copy-time входы; пакет
 не требует доступа к Source
 [`G-Ivan-A/hybrid-Intelligence-lab`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab)
 во время прогона.
 
 Project-scoped решения находятся в
-[`decisions/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/decisions),
+[`decisions/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/decisions),
 RFC — в
-[`docs/rfc/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/docs/rfc),
+[`docs/rfc/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/docs/rfc),
 отладка фреймворка изолируется в `experiments/`, а проверяемые Distribution —
 в `dist/`. Архитектурная граница принята в
-[ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md).
+[ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md).
 
 Принятые как целевые кандидаты эталонные формы BCREQ для API, ЛК и Контактного центра вместе с
 проверкой реализуемости описаны в
-[анализе issue #601](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md).
+[анализе issue #601](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md).
 Принятые правила уровня абстракции и остальных гейтов зафиксированы отдельно в
-[RFC](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md);
+[RFC](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md);
 принятая issue #603 часть о ранней MANGO-атрибуции реализована в Distribution.
 Классификатор направления поиска и двойная отраслевая привязка пока остаются
 дельтой Source.
@@ -107,23 +107,23 @@ RFC — в
 Форензика всех 67 legacy-прогонов и приложенных к issue #605 диалогов,
 негативные примеры и строгие инварианты FR/UC/NFR и TM Forum binding находятся
 в
-[анализе прогонов требований](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md).
+[анализе прогонов требований](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md).
 
 Конвейер от типизированного рабочего baseline к клиентской Release-проекции,
 включая NFR→FR, обратную совместимость и правила компиляции, принят в
-[RFC Working Document → Release Document](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-working-release-pipeline.md).
+[RFC Working Document → Release Document](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-working-release-pipeline.md).
 Согласование [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609),
 сквозные зависимости и граница готовности Source зафиксированы в
-[анализе архитектурной сходимости](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md).
+[анализе архитектурной сходимости](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md).
 
-[RFC проверки единого Source на пилоте GigaCode CLI и Cline](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-source-pilot-verification.md)
+[RFC проверки единого Source на пилоте GigaCode CLI и Cline](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-source-pilot-verification.md)
 по issue #630 классифицирует 20 точек трения и фиксирует результаты локального
 синтетического цикла; парные боевые прогоны остаются открытым gate.
 
 ## Решение о GigaCode CLI
 
 Предложение и доказательства среды сохранены в
-[`docs/rfc/2026-09-mango-ba-ai-runtime-cli-deployment.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-mango-ba-ai-runtime-cli-deployment.md).
+[`docs/rfc/2026-09-mango-ba-ai-runtime-cli-deployment.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-mango-ba-ai-runtime-cli-deployment.md).
 Issue [#593](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/593)
 реализует проверяемую часть в Source
 [`G-Ivan-A/hybrid-Intelligence-lab`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab)
@@ -150,10 +150,10 @@ Issue [#593](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/593)
 эволюция от репозитория промптов к мета-модели, прорыв в оцифровке
 когнитивных операций и вектор от пилота на АРМ к Среде 4.
 
-- [Шаблон слайдов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/presentation/2026-09-29-meta-model-presentation-slides.md)
+- [Шаблон слайдов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/presentation/2026-09-29-meta-model-presentation-slides.md)
   — 10 слайдов в стиле Assertion-Evidence с источниками и промптами для
   изображений;
-- [Сценарий для диктора](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/presentation/2026-09-29-meta-model-presentation-speaker-script.md)
+- [Сценарий для диктора](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/presentation/2026-09-29-meta-model-presentation-speaker-script.md)
   — текст по тем же номерам слайдов, мостики и ответы на вопросы технического
   руководителя.
 
@@ -167,7 +167,7 @@ Issue [#593](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/593)
   — пересборка таксономии процессов и операций от индустриального базиса;
 - [ADR-016](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/docs/adr/2026-09-adr-016-skill-form-and-contract-format.md)
   — навык как форма поставки, формат контракта как вычисляемое свойство;
-- [ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md)
+- [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md)
   — принятая граница Source, Distribution, Runtime и Feedback.
 - [ADR-018](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/issue-615-ab7082802ba9/projects/ba-ai-process/docs/adr/2026-09-adr-018-gigacode-cli-execution-boundary.md)
   — предлагаемая граница детерминированного исполнения GigaCode CLI.

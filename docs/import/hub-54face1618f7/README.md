@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | E1 Скелет генома | ✅ | #2 | `genome.tsv`, `manifest.tsv` |
 | E2 Импорт с историей | ✅ | #3 | `verify-import.json`, `verify-filtered.json`, `commit-map.txt`, `commit-count.txt`, `history.txt` |
-| E3 Ссылки | ⬜ | | `rewrite-links.jsonl`, `verify-links.json` |
+| E3 Ссылки | ✅ | #4 | `rewrite-links.jsonl`, `verify-links.json` |
 | E4 Код и CI | ⬜ | | `scan-before.txt`, `scan-after.txt`, `adapted.txt` |
 | E5 Бэклог | ⬜ | | `backlog-ids.txt` |
 | E6 Проверка | ⬜ | | `verify-final.json` |
@@ -17,6 +17,6 @@
 | --- | --- |
 | Файлов в манифесте | |
 | Коммитов истории | |
-| Событий ссылок по видам | |
+| Событий ссылок по видам | `file-in` 0, `dir-in` 0, `file-out` 64, `dir-out` 0, `url-in` 490, `unresolved` 0, `outside-repo` 0 (всего 554, `rewrite-links.jsonl`) |
 | Адаптированных файлов | |
 | Строк бэклога | |

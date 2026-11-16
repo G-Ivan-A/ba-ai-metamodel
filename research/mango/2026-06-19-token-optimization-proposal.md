@@ -34,7 +34,7 @@ temperature: 0.1
   совместимо.
 - Стандарт-адресат: `standards/research-profile.md` (legacy)
   (структура research-документа, frontmatter, цитирование).
-- Anti-Inflation principle Хаба: [`ops/repo-model.md`](../../ops/repo-model.md).
+- Anti-Inflation principle Хаба: [`ops/repo-model.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md).
 - Эталон проблемы: [`AI_SESSION_HANDOVER_PROMPT.md`](https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/AI_SESSION_HANDOVER_PROMPT.md).
 
 **Метод / Method.** `internal-analysis` + `comparative-analysis`: снимок дерева
@@ -130,7 +130,7 @@ LLM, (2) объяснение для человека, (3) запись исто
 Разделение `Full`/`Executable` (R1) естественно ложится на разделение
 Public/Private и на единый контракт `runs/RUN-XXXX/`. Дедупликация (R2)
 усиливает принцип «один мост к Хабу» и Anti-Inflation principle
-([`ops/repo-model.md`](../../ops/repo-model.md)). Намеренный split
+([`ops/repo-model.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md)). Намеренный split
 `ADR ↔ Standard` Хаба **сохраняется** — мы оптимизируем загрузку слоёв, а не
 ломаем практику обоснования решений.
 
@@ -365,7 +365,7 @@ baseline) и context caching на стороне SDK.
 
 - [RFC: Независимое видение структуры](2026-06-19-repository-structure-vision.md) (PR #254) — целевая архитектура.
 - `standards/research-profile.md` — legacy-структура и frontmatter research-документа.
-- [`ops/repo-model.md`](../../ops/repo-model.md) — Anti-Inflation principle.
+- [`ops/repo-model.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md) — Anti-Inflation principle.
 - Issue [#255](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/255) — постановка задачи (traceability).
 
 **Внешние / External:**

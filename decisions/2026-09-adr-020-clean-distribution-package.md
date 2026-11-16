@@ -20,12 +20,12 @@ decision-type: methodology
 | Owner | G-Ivan-A |
 | Source | [issue #617](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/617) |
 | Impacted artifacts | Все пакеты в `projects/ba-ai-process/dist/` и их будущие сборщики и валидаторы |
-| Supersedes | none; уточняет [ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) |
+| Supersedes | none; уточняет [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) |
 | Superseded by | none |
 
 ## Context
 
-[ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) требует собирать каждый Distribution из общего слоя и одного адаптера среды, отделяя его от Source и rationale. Однако это ещё не определяет, можно ли включать в текст пакета сравнения с другими средами и объяснения решений, отброшенных при сборке. [Issue #617](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/617) требует единого правила для всех пакетов.
+[ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) требует собирать каждый Distribution из общего слоя и одного адаптера среды, отделяя его от Source и rationale. Однако это ещё не определяет, можно ли включать в текст пакета сравнения с другими средами и объяснения решений, отброшенных при сборке. [Issue #617](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/617) требует единого правила для всех пакетов.
 
 ## Decision
 
@@ -71,6 +71,6 @@ decision-type: methodology
 
 ## Related Artifacts
 
-- [ADR-017: Source и Distribution](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md)
-- [Пакет GigaCode CLI](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/dist/execution-package-gigacode-cli)
+- [ADR-017: Source и Distribution](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md)
+- [Пакет GigaCode CLI](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/dist/execution-package-gigacode-cli)
 - [ADR Structure Standard](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/standards/adr-structure-standard.md)

@@ -1682,7 +1682,7 @@ lookup_request:
 
 Процесс добавления/изменения атомарной функции (lightweight, по
 `research-profile.md` и
-[issue-workflow.md](../../standards/issue-workflow.md)):
+[issue-workflow.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/standards/issue-workflow.md)):
 
 | Шаг | Кто | Действие |
 | --- | --- | --- |

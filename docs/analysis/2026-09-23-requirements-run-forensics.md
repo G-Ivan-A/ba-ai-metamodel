@@ -8,9 +8,9 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/605"
 scope: mango-only
 based_on: "https://github.com/G-Ivan-A/mango_ba_prompts/tree/8cbf82aa73129ec5747af07f790aaf438b0fb6e9/runs"
 related_artifacts:
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md"
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md"
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/20-taxonomy.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/20-taxonomy.md"
 ---
 
 # Форензика прогонов требований и строгий семантический контракт
@@ -28,7 +28,7 @@ related_artifacts:
 детерминированным, семантическим и человеческим.
 
 Предлагаемые ниже правила усиливают, но не заменяют действующий
-[RFC уровня абстракции и продуктовой маршрутизации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md).
+[RFC уровня абстракции и продуктовой маршрутизации](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md).
 Инварианты приняты как основание для Source-контрактов в
 [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609),
 но сами по себе не являются разрешением менять runtime-пакет. Предложенный
@@ -386,9 +386,9 @@ reason, owner и open question.
 
 - [Issue #605](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/605)
 - [Legacy runs snapshot](https://github.com/G-Ivan-A/mango_ba_prompts/tree/8cbf82aa73129ec5747af07f790aaf438b0fb6e9/runs)
-- [Анализ эталонных форм BCREQ](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md)
-- [RFC уровня абстракции и маршрутизации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md)
-- [Мета-модель: taxonomy](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/20-taxonomy.md)
+- [Анализ эталонных форм BCREQ](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md)
+- [RFC уровня абстракции и маршрутизации](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md)
+- [Мета-модель: taxonomy](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/20-taxonomy.md)
 - [TM Forum Capability Framework](https://www.tmforum.org/open-digital-architecture/capability-framework/)
 - [TM Forum Business Architecture](https://www.tmforum.org/open-digital-architecture/business-architecture-framework/)
 - [ISO/IEC/IEEE 29148:2018](https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso-iec-ieee%3A29148%3Aed-2%3Av1%3Aen)

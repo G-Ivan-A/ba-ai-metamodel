@@ -19,17 +19,17 @@ decision-type: methodology
 | Decision date | 2026-09-22 |
 | Owner | G-Ivan-A |
 | Source | [issue #595](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/595); human approval and physical Source migration — [issue #599](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/599) and [PR #600](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/600) |
-| Impacted artifacts | Source [`projects/ba-ai-process/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process), runtime [`G-Ivan-A/mango-ba-ai-runtime-cli`](https://github.com/G-Ivan-A/mango-ba-ai-runtime-cli), исследования [`research/mango/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/research/mango) и [`research/ai-education/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/research/ai-education), канонический backlog [`ops/backlog.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/ops/backlog.md) |
+| Impacted artifacts | Source [`projects/ba-ai-process/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main), runtime [`G-Ivan-A/mango-ba-ai-runtime-cli`](https://github.com/G-Ivan-A/mango-ba-ai-runtime-cli), исследования [`research/mango/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/research/mango) и [`research/ai-education/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/research/ai-education), канонический backlog [`ops/backlog.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/ops/backlog.md) |
 | Supersedes | none |
 | Superseded by | none |
 
 ## Context
 
-Текущий проект [`projects/ba-ai-process/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process)
+Текущий проект [`projects/ba-ai-process/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main)
 одновременно хранит исследуемую мета-модель, концептуальные руководства, тесты
 сборки и пакет для одной среды. Имя проекта связывает общую работу с конкретным
 инструментом, хотя действующий
-[`package-manifest.yaml`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/package-manifest.yaml)
+[`package-manifest.yaml`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/package-manifest.yaml)
 уже различает исходные материалы, преобразованные файлы и отброшенное rationale.
 Скомпилированный MVP развернут в отдельном runtime-репозитории
 [`G-Ivan-A/mango-ba-ai-runtime-cli`](https://github.com/G-Ivan-A/mango-ba-ai-runtime-cli),
@@ -48,7 +48,7 @@ decision-type: methodology
   локально проверенную модель универсальной.
 
 Последний пункт задаёт существенную границу решения. Текущая
-[`ba-meta-model`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/ba-meta-model)
+[`ba-meta-model`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/ba-meta-model)
 имеет `scope: mango-only`; одного домена и одной среды недостаточно, чтобы
 подтвердить переносимость её содержания. Настоящий ADR делает универсальной
 **архитектуру поставки**, но сохраняет универсальность содержимого как
@@ -75,7 +75,7 @@ decision-type: methodology
 проекта `ba-ai-process`. Отдельный implementation gate пройден в
 [issue #599](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/599):
 Source размещён в
-[`projects/ba-ai-process/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process),
+[`projects/ba-ai-process/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main),
 а Distribution — в его `dist/`.
 
 ### D1. Source: единственный дом модели и rationale
@@ -117,7 +117,7 @@ Source README ссылается на его проектные записи; в
 `projects/ba-ai-process/` не создаются. Это сохраняет SSOT и Anti-Inflation.
 
 Source связан с
-[`research/mango/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/research/mango)
+[`research/mango/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/research/mango)
 двунаправленно:
 
 - глобальная гипотеза из `research/mango/` входит в Source как явно
@@ -259,7 +259,7 @@ Runtime получает `docs/kb/` и `meta-model/` вместе с Distributio
 
 ### D4. Два слоя руководств с явным происхождением
 
-[`meta-model-guides/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/meta-model-guides)
+[`meta-model-guides/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/meta-model-guides)
 в Source содержит conceptual, explanation и reference-документы в Markdown для
 архитекторов и Senior BA: почему модель устроена так, границы применимости и
 связи с исследованиями.
@@ -325,7 +325,7 @@ workflow. Базовый транспорт — экспорт/PR выбранн
 `projects/ba-ai-process/ops/feedback/inbox/<environment>/<instance>/<report-id>.yaml`.
 Анализ и обобщение создаются отдельно: локальная находка меняет Source только
 после проверки, а глобальная гипотеза — только после синтеза в
-[`research/mango/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/research/mango).
+[`research/mango/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/research/mango).
 
 ### D6. Поток и границы статусов
 
@@ -408,7 +408,7 @@ privacy boundary; поэтому по умолчанию он ручной и al
 7. Feedback импортируется только из allowlist, проходит schema/privacy checks и
    сохраняет различие environment, instance и reporter.
 8. Source и
-   [`research/mango/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/research/mango)
+   [`research/mango/`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/research/mango)
    содержат взаимные абсолютные ссылки, но lifecycle-статус повышается только
    по доказательству.
 9. Distribution validator отклоняет отсутствие `docs/kb/.gitkeep`,
@@ -446,11 +446,11 @@ feedback inbox создаётся только при первом реальн�
 
 - [Issue #595](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/595) — постановка решения и Definition of Done.
 - [PR #594](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/594) — текущее выделение исполняемого пакета.
-- [Текущий Source README](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/README.md) — действующий локальный scope.
-- [Текущий package manifest](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/package-manifest.yaml) — provenance, allowlist и хеши выходов сборки.
+- [Текущий Source README](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/README.md) — действующий локальный scope.
+- [Текущий package manifest](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/package-manifest.yaml) — provenance, allowlist и хеши выходов сборки.
 - [Issue #599](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/599) — принятие решения и физическая миграция Source/Distribution.
 - [Runtime `G-Ivan-A/mango-ba-ai-runtime-cli`](https://github.com/G-Ivan-A/mango-ba-ai-runtime-cli) — действующая среда исполнения.
-- [Research Mango](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/research/mango) — глобальные гипотезы домена.
+- [Research Mango](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/research/mango) — глобальные гипотезы домена.
 - [AI Education](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/research/ai-education) — исследовательские основания guides.
 - [Project Structure Inheritance](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/standards/project-structure-inheritance.md) — правила project-scoped структуры.
 - [ADR Structure Standard](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/standards/adr-structure-standard.md) — обязательная форма ADR.

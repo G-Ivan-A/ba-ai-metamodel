@@ -14,10 +14,10 @@ rfc-scope: C
 | Поле | Значение |
 | --- | --- |
 | Owner | G-Ivan-A |
-| RFC status | `accepted`; решение владельца в [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609), уточнения и границы — в [сквозной проверке](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md) |
+| RFC status | `accepted`; решение владельца в [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609), уточнения и границы — в [сквозной проверке](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md) |
 | Source issue | [#601](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/601) |
-| Evidence and golden-form candidates | [Анализ трёх форм BCREQ](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md) |
-| Run forensics and semantic contracts | [Форензика 67 прогонов и двух диалогов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md) |
+| Evidence and golden-form candidates | [Анализ трёх форм BCREQ](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md) |
+| Run forensics and semantic contracts | [Форензика 67 прогонов и двух диалогов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md) |
 | Impacted artifacts | Мета-модель и Source-контракты; затем отдельная компиляция Distribution и изменение runtime |
 | Decision record | Владелец принял вариант 1 с уточнениями в приложенном к [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609) диалоге; принятие runtime Golden Set и публикация остаются отдельными решениями |
 | Archetype scope | `C` — Product Spoke / Runtime |
@@ -62,7 +62,7 @@ RFC описывает изменение Source. Физическая прав�
    либо создать фиктивное ФТ для каждого варианта.
 
 Полная доказательная таблица и три кандидата Golden Form находятся в
-[анализе реализуемости](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md).
+[анализе реализуемости](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md).
 
 ### Проверенные альтернативы
 
@@ -121,7 +121,7 @@ RFC описывает изменение Source. Физическая прав�
 
 Это внутренняя семантическая группировка, а не обязательный клиентский профиль.
 Клиентский `BCREQ-client-v1` из
-[RFC Working → Release](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-working-release-pipeline.md)
+[RFC Working → Release](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-working-release-pipeline.md)
 заменяет 2.3 «Задачи» на «Границы изменения», называет раздел 4
 «Функциональный дизайн решения» и публикует раздел 7 только по разрешённому
 профилю. Проектор не переносит детали между слотами и не скрывает пустоту во
@@ -197,8 +197,8 @@ Citation отвечает на вопрос «откуда утверждени�
 цепочек `domain → capability → feature → atomic function` из версионированных
 снимков:
 
-- [таксономия продуктов MANGO](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/product-taxonomy/mango-products.yaml);
-- [отраслевые соответствия ИТ/телеком](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/product-taxonomy/telecom-products.yaml).
+- [таксономия продуктов MANGO](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/product-taxonomy/mango-products.yaml);
+- [отраслевые соответствия ИТ/телеком](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/product-taxonomy/telecom-products.yaml).
 
 | Вход и цель | Первичная ось | Вторая ось и результат |
 | --- | --- | --- |
@@ -226,7 +226,7 @@ Citation отвечает на вопрос «откуда утверждени�
 не запрещает чистый поиск в KB, но запрещает заявлять подтверждённую двойную
 привязку. Dispatcher не содержит безусловного `contact-center`.
 
-Существующий [узел `n0`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/routes/rg-bcreq-v1.yaml)
+Существующий [узел `n0`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/routes/rg-bcreq-v1.yaml)
 из PR #604 подтверждает MANGO-цепочку до `n1`, но ещё не содержит этого
 классификатора намерения и двунаправленного сопоставления. Это обязательная
 дельта следующей компиляции Source → Distribution, а не описание уже
@@ -261,7 +261,7 @@ Source владеет семантикой слотов, лестницей ур
 профиль при разных MANGO-capabilities; Talker может сочетаться с API или ЛК.
 Контакт-центр здесь — предмет коммуникаций, не синоним продукта «КЦ Манго».
 Видеоконференции сами по себе не требуют отдельного профиля: известная
-[таксономия](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/product-taxonomy/mango-products.yaml)
+[таксономия](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/product-taxonomy/mango-products.yaml)
 содержит capability `voice-ucaas/video-conferencing`, но не доказывает
 отдельный способ rendering. Новые профили появляются по повторяющемуся
 контрпримеру, который нельзя выразить сочетанием существующих. Overlay не
@@ -310,7 +310,7 @@ coverage:
 
 Форензика полного legacy-корпуса уточняет лестницу абстракции тремя
 инвариантами. Полные определения, негативные примеры и evidence находятся в
-[анализе прогонов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md).
+[анализе прогонов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md).
 
 - `FR-INV-01`: один FR выражает одну независимо проверяемую capability
   целевой системы; UI, шаг, правило, constraint и implementation detail сами по
@@ -373,13 +373,13 @@ binding принимает `G-human`, а `G-mach` проверяет membership 
 
 | Артефакт | Предлагаемое изменение | Было в PR #602 |
 | --- | --- | --- |
-| [Мета-модель: taxonomy](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/20-taxonomy.md) | Закрепить product binding и версионирование snapshot. | Только snapshot и навигация. |
-| [Мета-модель: decision framework](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/30-decision-framework.md) | Добавить `C-REQ-MAP`, relevance/abstraction/coverage invariants. | Нет. |
-| [Мета-модель: practice](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/40-practice-and-cases.md) | После приёмки оформить три кейса Golden Set. | Нет. |
+| [Мета-модель: taxonomy](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/20-taxonomy.md) | Закрепить product binding и версионирование snapshot. | Только snapshot и навигация. |
+| [Мета-модель: decision framework](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/30-decision-framework.md) | Добавить `C-REQ-MAP`, relevance/abstraction/coverage invariants. | Нет. |
+| [Мета-модель: practice](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/40-practice-and-cases.md) | После приёмки оформить три кейса Golden Set. | Нет. |
 | Source contracts/schemas | Описать pre-decomposition и coverage contracts. | Нет. |
 | Source templates | Описать 14→7 projection и сочетаемые content overlays. | Нет. |
-| [BCREQ skeleton](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/templates/bcreq-skeleton.md) | Скомпилировать принятую проекцию. | Нет. |
-| [Output schema](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/contracts/c-out-bcreq.schema.json) | Добавить versioned mapping/coverage representation либо отдельную schema. | Нет. |
+| [BCREQ skeleton](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/templates/bcreq-skeleton.md) | Скомпилировать принятую проекцию. | Нет. |
+| [Output schema](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/contracts/c-out-bcreq.schema.json) | Добавить versioned mapping/coverage representation либо отдельную schema. | Нет. |
 | Skills, dispatcher, route | Добавить product preflight, новую декомпозицию и гейты. | Нет. |
 | Package validator/evaluation | Проверять routing data и новые структурные invariants. | В этом PR — только целостность taxonomy snapshots. |
 
@@ -472,7 +472,7 @@ version без ручного drift Distribution.
 документ фиксирует проверяемую формулировку. Порог 80% и точный SID binding
 не являются готовыми исполняемыми предикатами без указанных источников и
 правил измерения; границы зафиксированы в
-[сквозной проверке](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md).
+[сквозной проверке](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md).
 
 Снимки продуктовой и отраслевой таксономий, добавленные PR #602, являются
 операционными routing inputs для будущей компиляции. Они не исполняют и не

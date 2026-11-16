@@ -6,7 +6,7 @@ temperature: 0.1
 type: analysis
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/644"
-based_on: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-cline-package-expectation-gap.md"
+based_on: "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-cline-package-expectation-gap.md"
 related_artifacts:
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/645"
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/654"
@@ -27,7 +27,7 @@ The package must preserve its hashed bytes during checkout.
 
 Issue [#644](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/644)
 targets the copied Cline package on Windows 10/11 x64 with Git installed. The
-existing [Cline gap analysis](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-cline-package-expectation-gap.md#в-физика-работы-python-hooks-mcp-режимы-cline)
+existing [Cline gap analysis](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-cline-package-expectation-gap.md#в-физика-работы-python-hooks-mcp-режимы-cline)
 records the initial negative cases (Г-10, Г-11, Г-15). This note records the
 execution choice and its falsification tests, rather than a new product model.
 

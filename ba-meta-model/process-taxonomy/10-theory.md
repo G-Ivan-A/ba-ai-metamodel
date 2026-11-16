@@ -85,7 +85,7 @@ Requirements Analysis and Design Definition; **SE** — Solution Evaluation.
 ## 4. Уровень оркестрации и форма поставки — разные вопросы
 
 Действующая мета-модель объявляет `Skill` реализацией `Operation`
-([`ba-meta-model/10-theory.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/10-theory.md), §2)
+([`ba-meta-model/10-theory.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/10-theory.md), §2)
 и тем сводит иерархию к двум уровням. Онтология спицы при этом объявляет
 сущность «Подпроцесс» с ребром `Процесс → Подпроцесс` (1→N), а ADR-009 спицы
 называет шесть подпроцессов `П1`–`П6` и вешает на их границы три человеческих
@@ -189,7 +189,7 @@ Requirements Analysis and Design Definition; **SE** — Solution Evaluation.
 | `RG-5` | Граф маршрута ацикличен по умолчанию; цикл допускается только явно объявленным ребром возврата с условием выхода из цикла (например, «не более `N` итераций уточнения»). |
 
 `RG-1`–`RG-5` заменяют формулировку §6 таблицы напряжений
-[`ba-meta-model/10-theory.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/10-theory.md);
+[`ba-meta-model/10-theory.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/10-theory.md);
 согласование с мета-моделью выполнено в её версии 0.2.
 
 ## 7. Исполнимость агентом как критерий включения
@@ -210,7 +210,7 @@ Requirements Analysis and Design Definition; **SE** — Solution Evaluation.
 
 - Базис взят из одного свода знаний (BABOK Guide v3). Совместимость с IREB
   CPRE и SWEBOK не проверялась и вынесена в
-  [`50-open-research.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/process-taxonomy/50-open-research.md).
+  [`50-open-research.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/process-taxonomy/50-open-research.md).
 - Уровни `L2` и `L3` выведены из предметной области Манго КК и подтверждены
   синтетическими кейсами, а не статистикой прогонов: исторический корпус не
   использовал словарь процессов (`D7`) и потому не может служить основанием.

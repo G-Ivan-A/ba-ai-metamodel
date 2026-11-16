@@ -22,9 +22,9 @@ related_issues:
 # Практика: модель производства артефакта и вертикальный срез
 
 > Файл опирается на основание модуля: закон производства и сущности —
-> [`10-theory.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/10-theory.md), таксономии и депрекация —
-> [`20-taxonomy.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/20-taxonomy.md), состав пакета —
-> [`30-decision-framework.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/30-decision-framework.md).
+> [`10-theory.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/10-theory.md), таксономии и депрекация —
+> [`20-taxonomy.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/20-taxonomy.md), состав пакета —
+> [`30-decision-framework.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/30-decision-framework.md).
 
 ## 1. Модель производства артефакта: BCREQ
 
@@ -168,9 +168,9 @@ flowchart TD
 
 К пяти метрикам пакета версия 0.2 добавляет метрики новых таксономий:
 `MP-1`…`MP-6` для процессов и навыков
-([`process-taxonomy/40-practice-and-cases.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/process-taxonomy/40-practice-and-cases.md))
+([`process-taxonomy/40-practice-and-cases.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/process-taxonomy/40-practice-and-cases.md))
 и `MO-1`…`MO-5` для операций
-([`operation-taxonomy/40-practice-and-cases.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/operation-taxonomy/40-practice-and-cases.md)).
+([`operation-taxonomy/40-practice-and-cases.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/operation-taxonomy/40-practice-and-cases.md)).
 Пересечения нет: `M-1`…`M-5` измеряют прогон пакета, `MP-*` и `MO-*` — качество
 самой таксономии.
 
@@ -222,4 +222,4 @@ flowchart TD
 - Срез описан в словаре версии 0.2 (`P-01`, `P-03`, навыки `SK-*`); прежнее
   описание среза в терминах `fr-generation` и шести операций депрекировано
   вместе со словарём
-  ([`20-taxonomy.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/20-taxonomy.md), §4).
+  ([`20-taxonomy.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/20-taxonomy.md), §4).

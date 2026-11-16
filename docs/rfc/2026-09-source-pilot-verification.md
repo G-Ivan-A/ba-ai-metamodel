@@ -17,7 +17,7 @@ rfc-scope: C
 | RFC status | Предложен к review; принятие остаётся решением человека |
 | Source issue | [#630](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/630) |
 | Impacted artifacts | `projects/ba-ai-process/ba-meta-model/`, `build/common/`, `build/adapters/cline-vscode/`, оба `dist/execution-package-*`, руководства обоих пакетов — **после** решения, не в этом PR |
-| Decision record | [ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) задаёт действующую границу; новое решение пока не принято |
+| Decision record | [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) задаёт действующую границу; новое решение пока не принято |
 | Implementation link | [PR #633](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/633) содержит только RFC и проверку текущего состояния |
 | Archetype scope | C, проектный Source и два пакета исполнения |
 
@@ -43,7 +43,7 @@ GigaCode CLI охватывает `A-IN → A-CORE → BCREQ`, Cline сейча�
 проверки мог бы описать ещё не существующую возможность как работающую.
 
 Согласно [концепции Хаба](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/docs/concept.md)
-и [ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md),
+и [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md),
 Source хранит причины и общую модель, Distribution содержит автономный пакет,
 а наблюдения runtime возвращаются в Source с происхождением. Поэтому пилот
 должен различать нормативное расхождение и адаптерную форму, а не объявлять
@@ -66,7 +66,7 @@ Source хранит причины и общую модель, Distribution со
 
 ### Решение о границе Source
 
-Сохранять границу [ADR-017, D1–D3](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md):
+Сохранять границу [ADR-017, D1–D3](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md):
 одна мета-модель и общие контракты в Source, исполняемые различия в адаптерах.
 Основание ограничено тремя проверками текущего дерева:
 
@@ -74,8 +74,8 @@ Source хранит причины и общую модель, Distribution со
    `95a32a69ffb10e46798dbdc574f4de6e76ba53466f552594c3b6da5a4ddc658f`.
 2. Схемы `c-working-bcreq.schema.json` в пакетах при сравнении отличаются
    только абсолютным `$id` своего пакета; это адрес схемы, не правило поля.
-3. [Маршрут GigaCode](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/routes/rg-bcreq-v1.yaml)
-   включает 15 узлов от `A-IN` до Release и human gates. [Маршрут Cline](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-cline-vscode/routes/pilot.json)
+3. [Маршрут GigaCode](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/routes/rg-bcreq-v1.yaml)
+   включает 15 узлов от `A-IN` до Release и human gates. [Маршрут Cline](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-cline-vscode/routes/pilot.json)
    объявляет только три машинных шага `validate-working`, `compile`,
    `validate-release` из уже утверждённого Working. Разная полнота пилота
    установлена статически; её причина ещё не доказана средой.
@@ -94,10 +94,10 @@ Source хранит причины и общую модель, Distribution со
 среда/интеграция. Класс описывает **проверяемую причину**, а не виновника.
 `Док` означает подтверждение текстом или кодом, `Лок` — локальный
 синтетический прогон, `?` — гипотеза до прогона на АРМ. Якоря:
-[Cline guides](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/dist/execution-package-cline-vscode/docs/guides),
-[Cline runner](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/build/adapters/cline-vscode/tools/run_task.py),
-[Cline source policy](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/build/adapters/cline-vscode/docs/kb-policy.md),
-[Cline AGENTS](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/build/adapters/cline-vscode/AGENTS.md).
+[Cline guides](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/dist/execution-package-cline-vscode/docs/guides),
+[Cline runner](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/build/adapters/cline-vscode/tools/run_task.py),
+[Cline source policy](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/build/adapters/cline-vscode/docs/kb-policy.md),
+[Cline AGENTS](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/build/adapters/cline-vscode/AGENTS.md).
 
 | № | Точка трения | Класс и статус | Проверка / граница вывода |
 | --- | --- | --- | --- |
@@ -275,6 +275,6 @@ Source менять отдельной задачей, затем дорабат
 ## Related Artifacts
 
 - [Issue #630](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/630) и [исходный диалог](https://github.com/user-attachments/files/32743482/2.280926.txt).
-- [ADR-017: Source → Distribution → Runtime → Feedback](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md).
-- [ADR-018: GigaCode CLI](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/adr/2026-09-adr-018-gigacode-cli-execution-boundary.md) и [ADR-019: Cline](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/adr/2026-09-adr-019-cline-mango-ai-pilot.md).
-- [Source README](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/README.md), [Cline package](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-cline-vscode/README.md), [GigaCode package](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/README.md).
+- [ADR-017: Source → Distribution → Runtime → Feedback](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md).
+- [ADR-018: GigaCode CLI](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/adr/2026-09-adr-018-gigacode-cli-execution-boundary.md) и [ADR-019: Cline](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/adr/2026-09-adr-019-cline-mango-ai-pilot.md).
+- [Source README](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/README.md), [Cline package](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-cline-vscode/README.md), [GigaCode package](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/README.md).
