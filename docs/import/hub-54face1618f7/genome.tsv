@@ -1,0 +1,16 @@
+# spoke-extraction manifest v1
+# hub_sha: 54face1618f74154ae0f072bc3e5bfb3c4817754
+# map: templates/htom/.github/ISSUE_TEMPLATE/=.github/ISSUE_TEMPLATE/
+# map: templates/htom/tools/validate-agents-bootstrap.sh=tools/validate-agents-bootstrap.sh
+# map: templates/spoke/=
+# exclude: templates/spoke/README.md
+# files: 9
+100644	f7d46064c7ee825a73dd86a828a27c4fa0a32fb3	.github/ISSUE_TEMPLATE/task-creative.md	templates/htom/.github/ISSUE_TEMPLATE/task-creative.md
+100644	d62647f424c818c98afe6566262956998d350889	.github/ISSUE_TEMPLATE/task.md	templates/htom/.github/ISSUE_TEMPLATE/task.md
+100644	a11f2725d38e55bd63154e29efa9145f861139bd	.github/workflows/ci.yml	templates/spoke/.github/workflows/ci.yml
+100644	7a45f0870d6ce2fe35ee5bfccb61d02cc3482f42	.hub-profile.json	templates/spoke/.hub-profile.json
+100644	833f86507cf63cb7fbd51e5f0d9e9daad88ef25e	AGENTS.md	templates/spoke/AGENTS.md
+100644	a60506a1cc1305187edebf49e145e8f3489a54c3	CONTRIBUTING.md	templates/spoke/CONTRIBUTING.md
+100644	aa4ec5d4d68599f325b6a6d55c248da1f1f77342	docs/README.md	templates/spoke/docs/README.md
+100755	4531fe74cfdbc4cfaebb6240d073cbde948d9481	tools/validate-agents-bootstrap.sh	templates/htom/tools/validate-agents-bootstrap.sh
+100755	9542c29b257456e19810aea56398617207b93611	tools/validate-file-naming.sh	templates/spoke/tools/validate-file-naming.sh
