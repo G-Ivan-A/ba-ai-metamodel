@@ -6,13 +6,13 @@ temperature: 0.3
 type: presentation
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/646"
-based_on: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/ba-meta-model"
+based_on: "https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/ba-meta-model"
 related_artifacts:
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/presentation/2026-09-29-meta-model-presentation-speaker-script.md"
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md"
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/presentation/2026-09-29-meta-model-presentation-speaker-script.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md"
   - "https://github.com/G-Ivan-A/mango_ba_prompts"
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/docs/ba-meta-model-overview.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/ba-meta-model-overview.md"
 related_issues:
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/646"
 ---
@@ -22,7 +22,7 @@ related_issues:
 Пакет из двух документов для презентации Руководителю отдела AI-разработки
 Mango. Этот документ — слайды. Устный текст, мостики между слайдами и ответы
 на вопросы — в
-[сценарии для диктора](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/presentation/2026-09-29-meta-model-presentation-speaker-script.md);
+[сценарии для диктора](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/presentation/2026-09-29-meta-model-presentation-speaker-script.md);
 номера слайдов в обоих документах совпадают.
 
 ## Как собран пакет
@@ -102,7 +102,7 @@ generous negative space, no text, no letters, no logos, 16:9
 ```
 
 **Источники:**
-[мета-модель](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/ba-meta-model),
+[мета-модель](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/ba-meta-model),
 [репозиторий прогонов `mango_ba_prompts`](https://github.com/G-Ivan-A/mango_ba_prompts).
 
 ---
@@ -139,8 +139,8 @@ generous negative space, no text, no letters, no logos, 16:9
 ```
 
 **Источники:**
-[таксономия продуктов Mango](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/product-taxonomy/mango-products.yaml),
-[таксономия продуктов IT/телеком](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/product-taxonomy/telecom-products.yaml).
+[таксономия продуктов Mango](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/product-taxonomy/mango-products.yaml),
+[таксономия продуктов IT/телеком](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/product-taxonomy/telecom-products.yaml).
 
 ---
 
@@ -177,9 +177,9 @@ generous negative space, no text, no letters, no logos, 16:9
 ```
 
 **Источники:**
-[форензика 67 прогонов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md),
+[форензика 67 прогонов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md),
 [замер структуры артефактов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/2026-09-08-artifact-structure-variance-facts.md),
-[базовая линия метрик](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/40-practice-and-cases.md),
+[базовая линия метрик](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/40-practice-and-cases.md),
 [базовая линия 6%](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/methodology-unification/40-practice-and-cases.md).
 
 ---
@@ -228,7 +228,7 @@ generous negative space, no text, no letters, no logos, 16:9
 [влияние наследия на норму](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/2026-09-09-legacy-normative-influence-facts.md),
 [ADR-014: наследие — свидетельство](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/docs/adr/2026-09-adr-014-legacy-evidence-not-baseline.md),
 [ADR-013: отказ от режимов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/docs/adr/2026-09-adr-013-run-modes-deprecation.md),
-[форензика прогонов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md).
+[форензика прогонов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md).
 
 ---
 
@@ -266,10 +266,10 @@ generous negative space, no text, no letters, no logos, 16:9
 ```
 
 **Источники:**
-[теория мета-модели](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/10-theory.md),
-[таксономия сущностей](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/20-taxonomy.md),
-[таксономия процессов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/process-taxonomy/20-taxonomy.md),
-[таксономия операций](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/operation-taxonomy/20-taxonomy.md).
+[теория мета-модели](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/10-theory.md),
+[таксономия сущностей](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/20-taxonomy.md),
+[таксономия процессов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/process-taxonomy/20-taxonomy.md),
+[таксономия операций](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/operation-taxonomy/20-taxonomy.md).
 
 ---
 
@@ -316,9 +316,9 @@ generous negative space, no text, no letters, no logos, 16:9
 ```
 
 **Источники:**
-[пять когнитивных классов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/operation-taxonomy/10-theory.md),
-[золотые формы BCREQ и опровержение «улучшить промпт»](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md),
-[форензика прогонов](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md),
+[пять когнитивных классов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/operation-taxonomy/10-theory.md),
+[золотые формы BCREQ и опровержение «улучшить промпт»](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md),
+[форензика прогонов](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md),
 [кейс RUN-0018](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/methodology-unification/40-practice-and-cases.md).
 
 ---
@@ -365,10 +365,10 @@ generous negative space, no text, no letters, no logos, 16:9
 ```
 
 **Источники:**
-[вертикальный срез BCREQ](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/40-practice-and-cases.md),
-[RFC Working → Release](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-working-release-pipeline.md),
-[золотые кейсы](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/golden),
-[гипотеза Г-16 о детерминизме Release](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-cline-package-expectation-gap.md).
+[вертикальный срез BCREQ](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/40-practice-and-cases.md),
+[RFC Working → Release](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-working-release-pipeline.md),
+[золотые кейсы](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/dist/execution-package-gigacode-cli/golden),
+[гипотеза Г-16 о детерминизме Release](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-cline-package-expectation-gap.md).
 
 ---
 
@@ -405,10 +405,10 @@ generous negative space, no text, no letters, no logos, 16:9
 ```
 
 **Источники:**
-[мета-модель → среды → инструменты](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md),
-[ADR-017: Source → Distribution → Runtime](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md),
-[ADR-018: граница GigaCode CLI](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/adr/2026-09-adr-018-gigacode-cli-execution-boundary.md),
-[ADR-019: пилот Cline + Mango AI](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/adr/2026-09-adr-019-cline-mango-ai-pilot.md).
+[мета-модель → среды → инструменты](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md),
+[ADR-017: Source → Distribution → Runtime](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md),
+[ADR-018: граница GigaCode CLI](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/adr/2026-09-adr-018-gigacode-cli-execution-boundary.md),
+[ADR-019: пилот Cline + Mango AI](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/adr/2026-09-adr-019-cline-mango-ai-pilot.md).
 
 ---
 
@@ -448,9 +448,9 @@ generous negative space, no text, no letters, no logos, 16:9
 
 **Источники:**
 [860 разделов в 14 слотах](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/2026-09-08-kb-slot-fit-facts.md),
-[метрики M-1…M-5 и порог решения](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/40-practice-and-cases.md),
-[ADR-017: обратная связь в Source](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md),
-[сходимость архитектуры](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md).
+[метрики M-1…M-5 и порог решения](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/40-practice-and-cases.md),
+[ADR-017: обратная связь в Source](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md),
+[сходимость архитектуры](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md).
 
 ---
 
@@ -485,8 +485,8 @@ generous negative space, no text, no letters, no logos, 16:9
 ```
 
 **Источники:**
-[рекомендации по средам и порог опровержения](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md),
-[RFC проверки Source на пилоте](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-source-pilot-verification.md),
+[рекомендации по средам и порог опровержения](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md),
+[RFC проверки Source на пилоте](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-source-pilot-verification.md),
 [бэклог B-211…B-218](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/ops/backlog.md).
 
 ---
@@ -496,12 +496,12 @@ generous negative space, no text, no letters, no logos, 16:9
 | Утверждение | Где проверить |
 | --- | --- |
 | 69 прогонов (апрель — сентябрь 2026), 583 коммита | [`mango_ba_prompts/runs`](https://github.com/G-Ivan-A/mango_ba_prompts/tree/main/runs), [снимок корпуса](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/2026-08-25-mango-runs-empirical-snapshot.md) |
-| 67 прогонов разобраны по дефектам, 4 класса отказов | [форензика](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md) |
+| 67 прогонов разобраны по дефектам, 4 класса отказов | [форензика](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md) |
 | `M-1 = 0.0`, 17 документов — 17 структур | [замер структуры](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/2026-09-08-artifact-structure-variance-facts.md) |
 | 6% прогонов с вердиктом приняты без правки | [базовая линия](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/methodology-unification/40-practice-and-cases.md) |
 | 10 из 12 конструкций отсутствуют в 24 промптах | [влияние наследия](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/research/ba-requirements/2026-09-09-legacy-normative-influence-facts.md) |
-| Инварианты `MM-1`…`MM-4` | [теория мета-модели](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/10-theory.md) |
-| 31 операция, 5 когнитивных классов | [теория операций](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/operation-taxonomy/10-theory.md) |
-| Одна форма BCREQ из 7 разделов для трёх продуктов | [золотые формы](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md) |
-| Release побайтно воспроизводим | [Г-16](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-cline-package-expectation-gap.md) |
-| У оркестратора нет исполнителя; «lorem ipsum» проходит n1–n3 | [мета-модель → среды → инструменты](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md) |
+| Инварианты `MM-1`…`MM-4` | [теория мета-модели](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/10-theory.md) |
+| 31 операция, 5 когнитивных классов | [теория операций](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/operation-taxonomy/10-theory.md) |
+| Одна форма BCREQ из 7 разделов для трёх продуктов | [золотые формы](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md) |
+| Release побайтно воспроизводим | [Г-16](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-cline-package-expectation-gap.md) |
+| У оркестратора нет исполнителя; «lorem ipsum» проходит n1–n3 | [мета-модель → среды → инструменты](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-29-ba-ai-process-runtime-options.md) |

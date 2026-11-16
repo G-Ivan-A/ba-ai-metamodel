@@ -13,12 +13,12 @@ temperature: 0.3
 > **Trust & Evidence:** все AI-подпроцессы ниже размечены как `Candidate`
 > (доверие E1–E2). Ни один из них **не вводится как стандарт** этим документом —
 > он фиксирует формализацию и предложение по интеграции, решение остаётся за
-> Пользователем ([AI_GOVERNANCE.md](../../ai-governance/ai-governance.md), правило 4).
+> Пользователем ([AI_GOVERNANCE.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ai-governance/ai-governance.md), правило 4).
 
 ## Назначение
 
 Документ продолжает линию исследования Вигерса
-([research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../external-knowledge/2026-06-18-wigers-requirements-analysis.md))
+([research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/2026-06-18-wigers-requirements-analysis.md))
 и синхронизирующего RFC
 ([research/mango/2026-06-18-requirements-engineering-ai-era.md](2026-06-18-requirements-engineering-ai-era.md)).
 Если RFC отвечал на вопрос «**что** в онтологии mango стоит синхронизировать с
@@ -48,7 +48,7 @@ AI-подпроцессы устроены внутри (операции / ар
   Хаба и заготовки для issue, не правки.
 - **Не** заменяет классические операции AI-версиями (см. §«Что мы отвергли»).
 - **Не** создаёт новые каталоги или стандарты «впрок» (Anti-Inflation,
-  [ops/repo-model.md](../../ops/repo-model.md)).
+  [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md)).
 
 ## Терминологическая рамка (двуязычие)
 
@@ -61,8 +61,8 @@ AI-подпроцессы устроены внутри (операции / ар
 | Инжиниринг промптов | Prompt engineering | Подпроцесс, а не тип требования и не операция верхнего уровня. |
 | Спецификация промпта | Prompt specification | **Описательный** документ промпта (назначение, контекст, критерии), не исполнимый артефакт. |
 | AI-ассистированная операция | AI-assisted operation | Классическая операция, усиленная AI, с обязательной валидацией вывода (E0–E4). |
-| Доверие вывода | Trust & Evidence | Ось E0–E4 разметки уверенности AI-вывода ([methodology RFC](../../docs/rfc/methodology-research-and-proposals.md)). |
-| Статус знания | Knowledge Status | `Candidate` → `Applied`: зрелость практики ([research-memory RFC](../../docs/rfc/research-memory-source-intelligence.md)). |
+| Доверие вывода | Trust & Evidence | Ось E0–E4 разметки уверенности AI-вывода ([methodology RFC](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/methodology-research-and-proposals.md)). |
+| Статус знания | Knowledge Status | `Candidate` → `Applied`: зрелость практики ([research-memory RFC](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/research-memory-source-intelligence.md)). |
 
 > **Якорь классификации (из Этапа 3).** `Prompt = интерфейс к Tool` (не сам Tool);
 > `Prompt engineering = подпроцесс` (не операция, не тип требования);
@@ -138,9 +138,9 @@ spec промпта — это требование к AI-компоненту, 
 доверием E0–E4.
 
 **Опора (trusted source).** LangChain (`ext-016`,
-[реестр](../external-knowledge/external-sources-registry.md)) — паттерны
+[реестр](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/external-sources-registry.md)) — паттерны
 prompt-templates; инсайт о компонуемых паттернах
-([building-effective-agents](../external-knowledge/external-insights/2026-06-13-building-effective-agents.md),
+([building-effective-agents](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/external-insights/2026-06-13-building-effective-agents.md),
 `ext-001`): промпт как простой компонуемый шаг, сложность — только под боль.
 
 ### 2. Настройка RAG (RAG Configuration)
@@ -218,7 +218,7 @@ RAG. Утверждения о применимости — доверие E1–
 **Опора (trusted source).** Anthropic «Building Effective Agents» (`ext-001`) —
 паттерны orchestrator-workers / routing / evaluator-optimizer; CrewAI (`ext-017`) —
 примеры мультиагентной координации; 12-factor agents
-([insight](../external-knowledge/external-insights/2026-06-13-12-factor-agents.md)) —
+([insight](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/external-insights/2026-06-13-12-factor-agents.md)) —
 дисциплина границ агента. Все — `Candidate`.
 
 ### 4. Тестирование AI-компонентов (AI Testing)
@@ -441,7 +441,7 @@ AI-ассистированная операция требует осознан
   ed., Microsoft Press, 2013 (рус. «Разработка требований к ПО», 2020) — главы 9, 10,
   12, 17, 19.
 - **Доверенные AI-фреймворки (по реестру
-  [external-sources-registry.md](../external-knowledge/external-sources-registry.md)):**
+  [external-sources-registry.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/external-sources-registry.md)):**
   - LangChain — `ext-016` (<https://github.com/langchain-ai/langchain>)
   - CrewAI — `ext-017` (<https://github.com/crewAIInc/crewAI-examples>)
   - Microsoft Foundry samples — `ext-018`
@@ -449,9 +449,9 @@ AI-ассистированная операция требует осознан
     `ext-019`
   - Microsoft — Agentic AI adoption maturity model — `ext-029`
 - **Инсайты Хаба:**
-  [building-effective-agents](../external-knowledge/external-insights/2026-06-13-building-effective-agents.md)
+  [building-effective-agents](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/external-insights/2026-06-13-building-effective-agents.md)
   (`ext-001`),
-  [12-factor-agents](../external-knowledge/external-insights/2026-06-13-12-factor-agents.md).
+  [12-factor-agents](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/external-insights/2026-06-13-12-factor-agents.md).
 - **mango-ADR (внешний репозиторий `mango_ba_prompts`, не редактируются здесь):**
   ADR-003 <https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/docs/adr/003-ba-ontology.md> ·
   ADR-004 <https://github.com/G-Ivan-A/mango_ba_prompts/blob/main/docs/adr/004-operations-taxonomy.md> ·
@@ -461,13 +461,13 @@ AI-ассистированная операция требует осознан
 
 - [research/mango/2026-06-18-requirements-engineering-ai-era.md](2026-06-18-requirements-engineering-ai-era.md)
   — RFC синхронизации Вигерс ↔ mango (С1–С5); базовый контракт этого документа.
-- [research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](../external-knowledge/2026-06-18-wigers-requirements-analysis.md)
+- [research/external-knowledge/2026-06-18-wigers-requirements-analysis.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/research/external-knowledge/2026-06-18-wigers-requirements-analysis.md)
   — независимое извлечение системы Вигерса (доказательная база).
-- [docs/rfc/research-memory-source-intelligence.md](../../docs/rfc/research-memory-source-intelligence.md)
+- [docs/rfc/research-memory-source-intelligence.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/research-memory-source-intelligence.md)
   — Knowledge Status (`Candidate`/`Applied`) для разметки AI-практик.
-- [docs/rfc/methodology-research-and-proposals.md](../../docs/rfc/methodology-research-and-proposals.md)
+- [docs/rfc/methodology-research-and-proposals.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/docs/rfc/methodology-research-and-proposals.md)
   — ось доверия E0–E4.
 - [research/mango/2026-05-26-rag-mapping-roadmap.md](2026-05-26-rag-mapping-roadmap.md)
   — roadmap автоматизации БА и RAG-навигатор Mango (контекст RAG-подпроцесса).
-- [ops/repo-model.md](../../ops/repo-model.md) — Anti-Inflation
+- [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md) — Anti-Inflation
   principle.

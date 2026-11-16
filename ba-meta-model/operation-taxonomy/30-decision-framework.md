@@ -20,7 +20,7 @@ related_issues:
 ## 1. Тест уровня: операция, навык или процесс
 
 Тест применяется к описанию работы и даёт ровно один уровень. Он вызывается из
-[`process-taxonomy/30-decision-framework.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/process-taxonomy/30-decision-framework.md), §2.
+[`process-taxonomy/30-decision-framework.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/process-taxonomy/30-decision-framework.md), §2.
 
 | Шаг | Вопрос | Да | Нет |
 | --- | --- | --- | --- |
@@ -99,4 +99,4 @@ related_issues:
    контрактом шести полей и классом. Использовать значение до внесения в
    каталог запрещено (`T-1`).
 4. Записать случай в
-   [`50-open-research.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/operation-taxonomy/50-open-research.md), §2.
+   [`50-open-research.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/operation-taxonomy/50-open-research.md), §2.

@@ -186,7 +186,7 @@ def render_documents() -> dict[str, str]:
     mappings = parse_industry(lines, by_path)
 
     mango = {
-        "generated_by": "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/build/compiler/compile-product-taxonomies.py",
+        "generated_by": "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/build/compiler/compile-product-taxonomies.py",
         "taxonomy": "mango-products",
         "closed": True,
         "version": "3.0",
@@ -197,7 +197,7 @@ def render_documents() -> dict[str, str]:
         "domains": domains,
     }
     telecom = {
-        "generated_by": "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/build/compiler/compile-product-taxonomies.py",
+        "generated_by": "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/build/compiler/compile-product-taxonomies.py",
         "taxonomy": "telecom-products",
         "closed": True,
         "version": "3.0",

@@ -62,7 +62,7 @@ Source и в пакет не компилируется (`EP-C3`).
 жизненным циклом. Его дом — исполняющая среда (репозиторий спицы или отдельный
 release-каталог), а Source хранит **спецификацию** пакета, то есть настоящий
 модуль. Обоснование выбора и альтернативы —
-[`50-open-research.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/50-open-research.md), §2.
+[`50-open-research.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/50-open-research.md), §2.
 
 ## 3. Контракт скомпилированного `SKILL.md`
 
@@ -83,7 +83,7 @@ issue [#571](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571)
 инструкции. Граница дельты объявлена в правиле `SK-0`. Значение
 `contact-center` ниже — пример одной ветви, не значение по умолчанию:
 фактическую цепочку для любого домена подтверждает `n0` по
-[принятому правилу атрибуции](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md).
+[принятому правилу атрибуции](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md).
 
 ```markdown
 ---

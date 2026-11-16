@@ -562,7 +562,7 @@ evidence**, а не на вопрос **как устроена taxonomy** ил�
   spoke-проекта Mango и будущей `kb/` структуры.
 - `standards/research-profile.md` -
   профиль research-артефактов.
-- [ops/repo-model.md](../../ops/repo-model.md) -
+- [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md) -
   Anti-Inflation principle и правила размещения.
 
 Внешние источники на срезе `2026-05-26`:

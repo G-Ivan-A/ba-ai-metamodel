@@ -21,7 +21,7 @@ related_issues:
 ## 1. Правила словаря
 
 Правила `T-1`–`T-5`
-([`ba-meta-model/20-taxonomy.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/20-taxonomy.md), §1)
+([`ba-meta-model/20-taxonomy.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/20-taxonomy.md), §1)
 действуют без изменений. К ним добавляются три правила уровней.
 
 | Правило | Формулировка |
@@ -72,7 +72,7 @@ solution requirements (functional и non-functional) → transition requirements
 ## 4. `L2` — процессы Манго КК (дельта)
 
 Каждая строка удовлетворяет `PR-1`–`PR-5` и `DL-1`–`DL-3`
-([`10-theory.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/process-taxonomy/10-theory.md)).
+([`10-theory.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/process-taxonomy/10-theory.md)).
 Состояния артефакта — из машины состояний
 `raw → draft → in-review → validated → approved → baselined`, дополненной
 состоянием `needs-clarification`.
@@ -154,7 +154,7 @@ solution requirements (functional и non-functional) → transition requirements
 
 Итого: **33 подпроцесса** на **10 процессов**. Разложение подпроцессов на
 атомарные операции — в
-[`operation-taxonomy/20-taxonomy.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/operation-taxonomy/20-taxonomy.md), §4.
+[`operation-taxonomy/20-taxonomy.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/operation-taxonomy/20-taxonomy.md), §4.
 
 ## 6. Реестр депрекации: прежние девять процессов
 
@@ -168,7 +168,7 @@ solution requirements (functional и non-functional) → transition requirements
 | `uc-us-modeling` | «преобразование требований в UC и US» | **подтверждён** как `P-06` `scenario-modeling` | родитель `RADD` `Specify and Model Requirements`; имя обобщено, так как модель шире двух форматов |
 | `uml-bpmn-visualization` | «построение диаграмм процессов и взаимодействий» | **поглощён** `P-06` | диаграмма — проекция модели, а не отдельный процесс: собственного информационного содержания у неё нет (`DL-3`) |
 | `po-pm-support` | «резюме встреч, письма, уточняющие вопросы» | **разделён**: уточняющие вопросы → `P-02`, резюме встречи → побочный выход `P-01` | перечисление разнородных результатов (`D4`); «поддержка роли» не является преобразованием информации и родителя в `L1` не имеет |
-| `statistics` | «сбор и агрегация статистики по артефактам» | **депрекирован** как процесс | не производит требований и не меняет их состояние; относится к наблюдаемости исполнения, а не к бизнес-анализу; перенесён в метрики [`40-practice-and-cases.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/process-taxonomy/40-practice-and-cases.md) §4 |
+| `statistics` | «сбор и агрегация статистики по артефактам» | **депрекирован** как процесс | не производит требований и не меняет их состояние; относится к наблюдаемости исполнения, а не к бизнес-анализу; перенесён в метрики [`40-practice-and-cases.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/process-taxonomy/40-practice-and-cases.md) §4 |
 | `impact-analysis` | «оценка влияния изменений на продукт» | **подтверждён** как `P-09` `change-impact-assessment` | родитель `RLCM` `Assess Requirements Changes`; уточнён вход: `A-TRACE` обязателен, иначе процесс неисполним |
 | `risk-analysis` | «оценка рисков требований и готовности к релизу» | **депрекирован** как самостоятельный процесс | объединял два предмета: риск требования — атрибут элемента `A-BCREQ` (`SK-value-hypothesis`, `SK-feasibility-verdict`), готовность к релизу — вердикт `P-07`; общего выхода нет (`PR-2`) |
 
@@ -188,7 +188,7 @@ solution requirements (functional и non-functional) → transition requirements
 - `L2` и `L3` специализированы под предметную область Манго КК и среду
   GigaCode. Совпадение с процессами другой компании не утверждается.
 - Полнота `L2` проверена синтетическими кейсами
-  ([`40-practice-and-cases.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/process-taxonomy/40-practice-and-cases.md), §2),
+  ([`40-practice-and-cases.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/process-taxonomy/40-practice-and-cases.md), §2),
   а не статистикой прогонов: словарь процессов историческим корпусом не
   использовался (`D7`).
 - Ярусы `G1`–`G7` в §5 назначены проектно по критерию обратимости (`AE-2`,

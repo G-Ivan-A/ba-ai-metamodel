@@ -8,7 +8,7 @@ outputs: [preflight_registers]
 contracts: [C-WORKING-BCREQ]
 gates: [G-self, G-mach, G-semantic, G-human]
 compiled_from: { package: execution-package-gigacode-cli, route: RG-BCREQ-v1 }
-derived_from: [https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md, https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-working-release-pipeline.md]
+derived_from: [https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md%2C https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-working-release-pipeline.md%5D
 compiled_at: 2026-09-24
 status: draft
 version: 1.0

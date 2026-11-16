@@ -19,7 +19,7 @@ rfc-scope: C
 | Implementation link | [PR #608](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/608) |
 | Evidence | Девять вложений issue #607, прочитанных только во временной рабочей области; ранее принятые изменения [PR #602](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/602), [PR #604](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/604) и [PR #606](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/606) |
 | Impacted artifacts | Для реализации: BCREQ Source schema, skills, gates, compiler, release profiles и Distribution |
-| Decision record | Владелец принял пять пунктов конвейера в приложенном к [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609) диалоге; границы сопоставлены в [сквозной проверке](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md) |
+| Decision record | Владелец принял пять пунктов конвейера в приложенном к [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609) диалоге; границы сопоставлены в [сквозной проверке](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md) |
 | Archetype scope | `C` — Product Spoke / Runtime |
 
 ## Summary
@@ -159,7 +159,7 @@ User Story обязательна в Working и связывает actor, цел
 — в FR, качество — в NFR, запрет — в constraint, способ реализации — в дизайне.
 
 Это уточняет предложенную в
-[RFC уровня абстракции и продуктовой маршрутизации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md)
+[RFC уровня абстракции и продуктовой маршрутизации](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md)
 внутреннюю проекцию бизнес-контекста. Оба RFC приняты в
 [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609):
 этот RFC владеет клиентской Release-проекцией, а RFC абстракции — семантикой
@@ -445,7 +445,7 @@ cases. Нужны stage gates до baseline и отдельная проверк
 | Golden tests | Положительные и отрицательные fixtures для API, ЛК, КЦ и multi-product. |
 
 RFC пересекается с разделами 1, 6–9
-[RFC уровня абстракции и продуктовой маршрутизации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md).
+[RFC уровня абстракции и продуктовой маршрутизации](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md).
 Разделение внутренней семантики и клиентского rendering синхронизировано в
 [issue #609](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/609);
 отдельного второго источника для Release не создаётся.
@@ -513,13 +513,13 @@ review. Принятие архитектуры само по себе не ут
 
 - [Issue #607](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/607)
   — постановка, вложения и Definition of Done.
-- [Анализ Golden Form](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md)
+- [Анализ Golden Form](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-bcreq-golden-forms-and-feasibility.md)
   — уровни абстракции, семь разделов и feasibility Source/Distribution.
-- [Форензика требований](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-23-requirements-run-forensics.md)
+- [Форензика требований](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-23-requirements-run-forensics.md)
   — инварианты FR/UC/NFR, evidence и gate boundary.
-- [RFC уровня абстракции и продуктовой маршрутизации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md)
+- [RFC уровня абстракции и продуктовой маршрутизации](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md)
   — принятая семантика внутренних слотов, абстракции и маршрутизации.
-- [ADR-017 Source/Distribution](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md)
+- [ADR-017 Source/Distribution](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md)
   — принятая граница Source, Distribution, Runtime и Feedback.
 - [IREB CPRE Glossary](https://cpre.ireb.org/en/downloads-and-resources/glossary)
   и [ISO/IEC/IEEE 29148:2018](https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso-iec-ieee%3A29148%3Aed-2%3Av1%3Aen)

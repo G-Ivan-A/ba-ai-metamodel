@@ -7,9 +7,9 @@ type: analysis
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/601"
 related_artifacts:
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/ba-meta-model/20-taxonomy.md"
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/templates/bcreq-skeleton.md"
-  - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/ba-meta-model/20-taxonomy.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/templates/bcreq-skeleton.md"
+  - "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md"
 ---
 
 # Эталонные формы BCREQ и реализуемость в RG-BCREQ-v1
@@ -23,7 +23,7 @@ related_artifacts:
 варианты поведения раскрываются через сценарии и техническую спецификацию.
 
 Текущий пакет исполнения
-[`execution-package-gigacode-cli`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/dist/execution-package-gigacode-cli)
+[`execution-package-gigacode-cli`](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/dist/execution-package-gigacode-cli)
 может **представить** такой результат своими 14 слотами, но не может
 **надёжно получить** его автоматически. Машинный гейт проверяет форму, ссылки и
 полноту слотов, а не уровень абстракции, релевантность утверждений или
@@ -39,7 +39,7 @@ related_artifacts:
 assertions и отдельный human gate. Оценка текущего runtime ниже относится к
 снимку до [PR #604](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/604);
 актуальная дельта приведена в
-[сквозной проверке](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md).
+[сквозной проверке](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/analysis/2026-09-24-architecture-convergence-and-readiness.md).
 
 ## Доказательная база и метод
 
@@ -91,7 +91,7 @@ JSON-экспорты, текст диалога, извлечённый тек�
 | 7. Внутренняя техническая спецификация | Интерфейсы, модели, матрицы состояний и покрытия, trace. | `S-TRACE`, `S-INTEGRATION`; раскрытие проекции `V-DEV` |
 
 Эта композиция сохраняет правило полного скелета из
-[`bcreq-skeleton.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/templates/bcreq-skeleton.md):
+[`bcreq-skeleton.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/templates/bcreq-skeleton.md):
 пустой слот по-прежнему получает причину. Меняется не семантический контракт, а
 форма чтения человеком.
 
@@ -357,4 +357,4 @@ UI-раскрытие содержит место выбора, поиск и г
 
 Конкретное предложение, границы следующей реализации и критерии приёмки
 описаны в
-[`RFC: абстракция ФТ и продуктовая маршрутизация`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md).
+[`RFC: абстракция ФТ и продуктовая маршрутизация`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-abstraction-and-product-routing.md).

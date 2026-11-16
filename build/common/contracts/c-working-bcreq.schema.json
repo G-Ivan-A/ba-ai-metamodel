@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/build/common/contracts/c-working-bcreq.schema.json",
+  "$id": "https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/build/common/contracts/c-working-bcreq.schema.json",
   "title": "Approved typed BCREQ Working baseline",
   "type": "object",
   "additionalProperties": false,

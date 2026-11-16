@@ -20,12 +20,12 @@ decision-type: runtime
 | Owner | G-Ivan-A |
 | Source | [issue #615](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/615), [комментарий команды D](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/615#issuecomment-5832987604) |
 | Impacted artifacts | `projects/ba-ai-process/dist/execution-package-gigacode-cli/`; будущий runtime `G-Ivan-A/mango-ba-ai-runtime-cli` |
-| Supersedes | none; уточняет [ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) для одной среды |
+| Supersedes | none; уточняет [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) для одной среды |
 | Superseded by | none |
 
 ## Context
 
-Цель пользователя — повторяемый запуск `A-IN → A-CORE → A-BCREQ` на АРМ БА. Существующий [пакет](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/dist/execution-package-gigacode-cli) содержит граф, dispatcher skill, JSON Schema, Python-валидатор и детерминированный компилятор Working → Release. Его [dispatcher](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/.gigacode/skills/rg-bcreq-v1-dispatcher/SKILL.md) описывает вычисление следующего узла **текстом для агента** и требует `python3 tools/validate-package.py` на preflight. [README пакета](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/README.md) предлагает команды валидатора и компилятора. Исполняемого контроллера, который сам читает `routes/rg-bcreq-v1.yaml`, вызывает Python на каждом переходе и блокирует следующий узел по exit code, в пакете нет. Поэтому успешный тест Python-функции доказывает поведение функции **при вызове**, но не факт её вызова агентом.
+Цель пользователя — повторяемый запуск `A-IN → A-CORE → A-BCREQ` на АРМ БА. Существующий [пакет](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/dist/execution-package-gigacode-cli) содержит граф, dispatcher skill, JSON Schema, Python-валидатор и детерминированный компилятор Working → Release. Его [dispatcher](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/.gigacode/skills/rg-bcreq-v1-dispatcher/SKILL.md) описывает вычисление следующего узла **текстом для агента** и требует `python3 tools/validate-package.py` на preflight. [README пакета](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/README.md) предлагает команды валидатора и компилятора. Исполняемого контроллера, который сам читает `routes/rg-bcreq-v1.yaml`, вызывает Python на каждом переходе и блокирует следующий узел по exit code, в пакете нет. Поэтому успешный тест Python-функции доказывает поведение функции **при вызове**, но не факт её вызова агентом.
 
 По [официальной документации GigaCode CLI](https://gitverse.ru/docs/ai/ai-assistant-gigacode/gigacode-cli/skills) проектные skills обнаруживаются в `.gigacode/skills/`, вызываются через `/skills`, а автоматическое применение зависит от контекста. [Команды CLI](https://gitverse.ru/docs/ai/ai-assistant-gigacode/gigacode-cli/commands) позволяют запускать shell через `!` и смотреть `/tools` и `/mcp`. Это доказывает возможность **локального** запуска Python при наличии интерпретатора и разрешения, но не обязательный запуск по графу. Гипотеза команды Q из [приложенного диалога](https://github.com/user-attachments/files/32652327/-.Q.250926.txt) о том, что Tool Calling сам превращает описание шага в обязательный вызов, не следует из документации или кода пакета.
 
@@ -70,7 +70,7 @@ decision-type: runtime
 
 ## Decision Drivers
 
-- Принцип [ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md): runtime автономен от Source, Distribution версионируется и проверяется.
+- Принцип [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md): runtime автономен от Source, Distribution версионируется и проверяется.
 - Приоритет пользователя: доказанное исполнение маршрута и гейтов, затем удобство джуна БА.
 - Возможность shell в CLI подтверждена [документацией](https://gitverse.ru/docs/ai/ai-assistant-gigacode/gigacode-cli/commands); гарантированный порядок вызовов этой возможностью не подтверждён.
 - Комментарий команды D верно различает вызов скрипта и результат скрипта, но предложение заменить исполняемый Python «чтением как контракт» не удовлетворяет детерминизму.
@@ -100,7 +100,7 @@ decision-type: runtime
 
 ## Related Artifacts
 
-- [Пакет GigaCode CLI](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/tree/main/projects/ba-ai-process/dist/execution-package-gigacode-cli)
-- [RFC deployment CLI](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/docs/rfc/2026-09-mango-ba-ai-runtime-cli-deployment.md)
+- [Пакет GigaCode CLI](https://github.com/G-Ivan-A/ba-ai-metamodel/tree/main/dist/execution-package-gigacode-cli)
+- [RFC deployment CLI](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-mango-ba-ai-runtime-cli-deployment.md)
 - [Официальные GigaCode CLI skills](https://gitverse.ru/docs/ai/ai-assistant-gigacode/gigacode-cli/skills) и [команды](https://gitverse.ru/docs/ai/ai-assistant-gigacode/gigacode-cli/commands)
 - [ADR Structure Standard](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/standards/adr-structure-standard.md)

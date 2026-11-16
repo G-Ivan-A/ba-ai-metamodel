@@ -22,11 +22,11 @@ Mango от сырого сигнала заказчика до согласов�
 
 | Параметр | Значение |
 | --- | --- |
-| Operating Mode | `creative` — моделируем кейсы, предлагаем варианты структуры стандарта, адаптируем под телеком-контекст Mango (см. [standards/glossary.md](../../standards/glossary.md)). |
+| Operating Mode | `creative` — моделируем кейсы, предлагаем варианты структуры стандарта, адаптируем под телеком-контекст Mango (см. [standards/glossary.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/standards/glossary.md)). |
 | В фокусе | Запросы на доработку системы и новые фичи; декомпозиция составных требований; обработка неопределенности (этапы `0.1 → 0.5`, бизнес-слой `1`). |
 | Вне фокуса | Валидация готовых тендерных ТЗ и расчет tender-fit — это отдельный процесс, уже описанный в [2026-05-22-requirements-flow.md](2026-05-22-requirements-flow.md). |
 | Опора | Уточненный поток требования и 4 уровня автоматизации из issue #55; Unified Capability Taxonomy из [2026-05-26-taxonomy-concept.md](2026-05-26-taxonomy-concept.md). |
-| Принцип | Anti-Inflation ([ops/repo-model.md](../../ops/repo-model.md)): не плодим новый стандарт и не дублируем существующие исследования; этот файл — research draft, а не canonical правило. |
+| Принцип | Anti-Inflation ([ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md)): не плодим новый стандарт и не дублируем существующие исследования; этот файл — research draft, а не canonical правило. |
 
 ### Уточненный поток требования (рабочая модель из issue #55)
 
@@ -467,9 +467,9 @@ human-in-the-loop точки, не убирая обязательные точ�
   классификация и compliance overlay.
 - [research/mango/2026-05-22-classification-tz.md](2026-05-22-classification-tz.md) — анализ корпуса
   ТЗ как источник реалистичных кейсов.
-- [standards/glossary.md](../../standards/glossary.md) — контролируемый словарь
+- [standards/glossary.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/standards/glossary.md) — контролируемый словарь
   терминов governance и AI-assisted work.
-- [ops/repo-model.md](../../ops/repo-model.md) — Anti-Inflation
+- [ops/repo-model.md](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/repo-model.md) — Anti-Inflation
   principle и правила размещения.
 - [mango_ba_prompts](https://github.com/G-Ivan-A/mango_ba_prompts) — связь Mango как
   spoke-проекта и подход mini-agent + `kb/`.

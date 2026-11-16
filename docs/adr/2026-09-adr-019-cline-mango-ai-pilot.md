@@ -20,7 +20,7 @@ decision-type: runtime
 | Owner | G-Ivan-A |
 | Source | [issue #615](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/615) и [параметры AI Core](https://github.com/user-attachments/files/32652321/default.txt) |
 | Impacted artifacts | будущий `dist/execution-package-cline-vscode/`, отдельный runtime `mango-ba-ai-runtime-cline`; проектный контур проверки среды 4 |
-| Supersedes | none; конкретизирует [ADR-017](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) |
+| Supersedes | none; конкретизирует [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md) |
 | Superseded by | none |
 
 ## Context
@@ -118,7 +118,7 @@ decision-type: runtime
 
 Выбор клиента однозначен, но интеграция **не считается проверенной** до пилота с выданным ключом и корпоративным MCP. Нужны отдельная сборка Cline-пакета, фиксированные версии VS Code/Cline/Python/модели, операторский guide без настройки других клиентов, сгенерированный и проверяемый указатель `.clinerules`, runner и CI с отрицательными тестами. Пилот должен проверить 401/отозванный ключ, недоступную сеть, отсутствие tool calls, недоступный MCP, пропуск gate, изменённый script, reject и возобновление TASK после новой сессии.
 
-Ключевой открытый вход — контракт MCP (адрес/transport, tool names, права, тестовые Jira/Confluence ресурсы и кто их выдаёт). Без него можно проверить локальную работу и API модели, но нельзя заявить корпоративную KB интеграцию. Сохранять локальную `docs/kb/` и внешнюю KB как **дополняющие** каналы с human source confirmation согласно действующему [контракту пакета](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/main/projects/ba-ai-process/dist/execution-package-gigacode-cli/AGENTS.md); не превращать их в скрытый fallback.
+Ключевой открытый вход — контракт MCP (адрес/transport, tool names, права, тестовые Jira/Confluence ресурсы и кто их выдаёт). Без него можно проверить локальную работу и API модели, но нельзя заявить корпоративную KB интеграцию. Сохранять локальную `docs/kb/` и внешнюю KB как **дополняющие** каналы с human source confirmation согласно действующему [контракту пакета](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/AGENTS.md); не превращать их в скрытый fallback.
 
 ## Compliance and Validation
 
