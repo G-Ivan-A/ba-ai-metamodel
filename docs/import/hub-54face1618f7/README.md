@@ -9,7 +9,7 @@
 | E3 Ссылки | ✅ | #4 | `rewrite-links.jsonl`, `verify-links.json` |
 | E4 Код и CI | ✅ | #5 | `scan-before.txt`, `scan-after.txt`, `adapted.txt`, `validation.log`, `ci-validation.json` |
 | E5 Бэклог | ✅ | #6 | `backlog-ids.txt`, `e5-preparation.json`, `e5-validation.log` |
-| E6 Проверка | ✅ | отдельный PR E6 по поручению в #6 | `verify-final.json`, `e6-preparation.json`, `e6-validation.log` |
+| E6 Проверка | ✅ | [#7](https://github.com/G-Ivan-A/ba-ai-metamodel/pull/7) | `verify-final.json`, `e6-preparation.json`, `e6-validation.log` |
 
 ## Итог
 
@@ -153,7 +153,7 @@ OpenCode проверяет существующая матрица CI PR E6. И
 | Шаг | Состояние | SSOT |
 | --- | --- | --- |
 | Предыдущий: B-247 / E5 | принят, PR #6 слит | [PR #6](https://github.com/G-Ivan-A/ba-ai-metamodel/pull/6) |
-| Текущий: B-247 / E6 | проверки выполнены, результат передан на review | [Контракт E6](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/hub-project-extraction-contract.md#этап-e6-проверка), `verify-final.json`, `e6-validation.log` |
+| Текущий: B-247 / E6 | проверки выполнены, результат передан на review | [PR #7](https://github.com/G-Ivan-A/ba-ai-metamodel/pull/7), [контракт E6](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/hub-project-extraction-contract.md#этап-e6-проверка), `verify-final.json`, `e6-validation.log` |
 | Следующий: B-248 → B-249 → B-250 | отдельная работа Хаба после принятия E6 | [PR #739](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/pull/739), [поручение владельца](https://github.com/G-Ivan-A/ba-ai-metamodel/pull/6#issuecomment-6940681550) |
 
 Запись B-247 находится в спринте 30 Хаба, вне импортированного снимка. В этом
