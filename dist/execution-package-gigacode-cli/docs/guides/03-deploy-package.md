@@ -38,9 +38,9 @@ Terminal.
 
 | Папка | Что в ней | Откуда | Зачем |
 |-------|-----------|--------|-------|
-| `$env:USERPROFILE\bcreq-pilot\runtime\` | [Пакет](01-junior-pilot.md#term-package). **В этой папке вы запускаете `gigacode` и команды runner** | Папка `projects/ba-ai-process/dist/execution-package-gigacode-cli/` репозитория [hybrid-Intelligence-lab](https://github.com/G-Ivan-A/hybrid-Intelligence-lab) | Правила, схемы, навыки, runner |
+| `$env:USERPROFILE\bcreq-pilot\runtime\` | [Пакет](01-junior-pilot.md#term-package). **В этой папке вы запускаете `gigacode` и команды runner** | Папка `dist/execution-package-gigacode-cli/` репозитория [ba-ai-metamodel](https://github.com/G-Ivan-A/ba-ai-metamodel) | Правила, схемы, навыки, runner |
 | `$env:USERPROFILE\bcreq-pilot\kb-source\` | [KB](01-junior-pilot.md#term-kb) — база знаний о продуктах | Клон репозитория [mango-ba-ai-runtime-cli](https://github.com/G-Ivan-A/mango-ba-ai-runtime-cli) | Цитаты и подтверждения для требований |
-| `$env:USERPROFILE\bcreq-pilot\source-lab\` | [Исходный репозиторий](01-junior-pilot.md#term-source) | Клон hybrid-Intelligence-lab | Обновление пакета и [режим отладки](05-commands-reference.md#режим-отладки) |
+| `$env:USERPROFILE\bcreq-pilot\source-lab\` | [Исходный репозиторий](01-junior-pilot.md#term-source) | Клон ba-ai-metamodel | Обновление пакета и [режим отладки](05-commands-reference.md#режим-отладки) |
 
 Почему `kb-source` лежит **рядом** с пакетом, а не внутри:
 «Проверить пакет» сверяет с `package-manifest.yaml` каждый файл в `runtime\`,
@@ -91,7 +91,7 @@ runtime-репозиторий с пакетом.**
 - **Команды** — выполняйте по одной:
 
   ```powershell
-  git clone --depth 1 https://github.com/G-Ivan-A/hybrid-Intelligence-lab.git source-lab
+  git clone --depth 1 https://github.com/G-Ivan-A/ba-ai-metamodel.git source-lab
   Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-gigacode-cli runtime
   ```
 

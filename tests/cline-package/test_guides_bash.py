@@ -21,9 +21,9 @@ import unittest
 
 
 PACKAGE = Path(__file__).resolve().parents[2] / "dist/execution-package-cline-vscode"
-PACKAGE_PATH = "projects/ba-ai-process/dist/execution-package-cline-vscode"
+PACKAGE_PATH = "dist/execution-package-cline-vscode"
 GUIDES = PACKAGE / "docs/guides"
-LAB_URL = "https://github.com/G-Ivan-A/hybrid-Intelligence-lab.git"
+LAB_URL = "https://github.com/G-Ivan-A/ba-ai-metamodel.git"
 KB_URL = "https://github.com/G-Ivan-A/mango-ba-ai-runtime.git"
 PLACEHOLDER = re.compile(r"<[^>\n]+>")
 TIMEOUT = 300

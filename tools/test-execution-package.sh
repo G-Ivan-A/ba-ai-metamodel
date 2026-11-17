@@ -13,7 +13,7 @@ export PYTHONDONTWRITEBYTECODE=1
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
-PROJECT="projects/ba-ai-process"
+PROJECT="."
 PACKAGE="$PROJECT/dist/execution-package-gigacode-cli"
 PROJECT_TESTS="$PROJECT/tests/execution-package"
 DECISION="$PROJECT/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md"

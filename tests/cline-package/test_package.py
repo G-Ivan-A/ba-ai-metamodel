@@ -23,7 +23,7 @@ class PackageTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             source = Path(temporary) / "source"
             clone = Path(temporary) / "clone"
-            target = source / "projects/ba-ai-process"
+            target = source
             (target / "build").mkdir(parents=True)
             shutil.copy2(project / "build/compile-cline-package.py", target / "build")
             shutil.copytree(project / "build/common", target / "build/common")
@@ -34,7 +34,7 @@ class PackageTest(unittest.TestCase):
             subprocess.run(["git", "-C", str(source), "-c", "user.name=Test", "-c", "user.email=test@example.invalid",
                             "commit", "-qm", "test source and package"], check=True)
             subprocess.run(["git", "-c", "core.autocrlf=true", "clone", "-q", str(source), str(clone)], check=True)
-            result = subprocess.run([sys.executable, str(clone / "projects/ba-ai-process/build/compile-cline-package.py"), "--check"],
+            result = subprocess.run([sys.executable, str(clone / "build/compile-cline-package.py"), "--check"],
                                     cwd=clone, text=True, capture_output=True)
             self.assertEqual(result.returncode, 0, result.stderr)
 
@@ -226,7 +226,7 @@ class PackageTest(unittest.TestCase):
 
         manifest = json.loads((PACKAGE / "package-manifest.yaml").read_text(encoding="utf-8"))
         pinned = (f"{manifest['source']['repository']}/blob/{manifest['source']['revision']}"
-                  "/projects/ba-ai-process/build/")
+                  "/build/")
         checked = 0
         for path in PACKAGE.rglob("*.md"):
             if "docs/kb" in path.relative_to(PACKAGE).as_posix():

@@ -15,8 +15,8 @@ import re
 import sys
 
 
-REPOSITORY_ROOT = Path(__file__).resolve().parents[4]
-PROJECT_ROOT = REPOSITORY_ROOT / "projects/ba-ai-process"
+REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = REPOSITORY_ROOT
 CLASSIFICATION = REPOSITORY_ROOT / "research/mango/2026-05-22-classification.md"
 SOURCE_TAXONOMY = PROJECT_ROOT / "ba-meta-model/product-taxonomy"
 DIST_TAXONOMY = PROJECT_ROOT / "dist/execution-package-gigacode-cli/taxonomy"

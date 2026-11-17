@@ -11,8 +11,8 @@ source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/563"
 based_on:
   - research/ba-requirements/2026-09-08-meta-model-inputs-facts.md
   - research/ba-requirements/2026-09-10-process-taxonomy-defects-facts.md
-  - projects/ba-ai-process/ba-meta-model/process-taxonomy/20-taxonomy.md
-  - projects/ba-ai-process/ba-meta-model/operation-taxonomy/20-taxonomy.md
+  - ba-meta-model/process-taxonomy/20-taxonomy.md
+  - ba-meta-model/operation-taxonomy/20-taxonomy.md
   - research/ba-requirements/artifact-rendering/20-taxonomy.md
   - standards/product-taxonomy-reference.md
 related_issues:

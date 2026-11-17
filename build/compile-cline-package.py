@@ -19,7 +19,7 @@ COMMON = PROJECT / "build/common"
 ADAPTER = PROJECT / "build/adapters/cline-vscode"
 OUTPUT = PROJECT / "dist/execution-package-cline-vscode"
 MUTABLE = {"runs", "submissions", "docs/kb", "meta-model"}
-REPOSITORY = "https://github.com/G-Ivan-A/hybrid-Intelligence-lab"
+REPOSITORY = "https://github.com/G-Ivan-A/ba-ai-metamodel"
 FENCE = re.compile(r"^ *```.*?^ *```[^\n]*$", re.M | re.S)
 LINK = re.compile(r"\]\(([^()\s]+)\)")
 
@@ -58,7 +58,7 @@ def pin_links(text: str, relative: Path, origins: dict[str, Path], revision: str
         if resolved not in origins:
             raise ValueError(f"{relative.as_posix()}: link outside the package: {target}")
         source = origins[resolved].relative_to(PROJECT / "build").as_posix()
-        url = f"{REPOSITORY}/blob/{revision}/projects/ba-ai-process/build/{source}"
+        url = f"{REPOSITORY}/blob/{revision}/build/{source}"
         return f"]({url}{'#' + anchor if anchor else ''})"
 
     parts, start = [], 0
@@ -103,13 +103,13 @@ def compile_into(root: Path, revision: str) -> None:
         "package_version": "0.3.0",
         "compiled_at": "2026-10-07",
         "source": {
-            "repository": "https://github.com/G-Ivan-A/hybrid-Intelligence-lab",
+            "repository": "https://github.com/G-Ivan-A/ba-ai-metamodel",
             "revision": revision,
         },
         "adapter": {"name": "cline-vscode", "version": "0.3.0"},
         "inputs": {"allowlist": [
-            "projects/ba-ai-process/build/common/",
-            "projects/ba-ai-process/build/adapters/cline-vscode/",
+            "build/common/",
+            "build/adapters/cline-vscode/",
         ]},
         "outputs": {"hash_algorithm": "sha256", "hashes": dict(sorted(hashes.items()))},
     }

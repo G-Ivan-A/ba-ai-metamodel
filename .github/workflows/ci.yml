@@ -1,13 +1,7 @@
-# CI/CD шаблон для spoke-репозитория ba-ai-metamodel.
-#
-# Базовый pipeline: линт + тесты на каждый push и pull request. Шаги намеренно
-# провайдер-агностичны и оформлены как заглушки — адаптируйте их под стек
-# продукта (язык, менеджер пакетов, команды сборки/тестов/деплоя).
 name: ci
 
 on:
   push:
-    branches: [main]
   pull_request:
 
 jobs:
@@ -18,17 +12,150 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate documentation file naming
         run: ./tools/validate-file-naming.sh
-      - name: Run linters
-        run: |
-          echo "TODO: подставьте команду линта продукта, например:"
-          echo "  npm run lint  /  ruff check .  /  golangci-lint run"
+      - name: Validate agent bootstrap
+        run: bash tools/validate-agents-bootstrap.sh
+      - name: Validate shell syntax
+        run: bash -n tools/*.sh
 
   test:
     name: Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run tests
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install Python dependencies
+        # Валидатор и локальный runner используют зависимости пакета исполнения.
+        run: pip install -r dist/execution-package-gigacode-cli/requirements.txt
+
+      - name: Test execution package gate
+        env:
+          # Блоки инструкций БА исполняются в PowerShell 7; без pwsh тест падает, а не пропускается.
+          GUIDE_SHELL: pwsh
+        run: bash tools/test-execution-package.sh
+
+      - name: Test Cline execution package
+        run: bash tools/test-cline-package.sh
+
+      - name: Test OpenCode execution package
+        run: bash tools/test-opencode-package.sh
+
+      - name: Test BCREQ Working/Release pipeline contract
+        run: bash tools/test-bcreq-working-release-pipeline.sh
+
+      - name: Test BA meta-model stakeholder overview
+        run: bash tools/test-ba-meta-model-overview.sh
+
+      - name: Validate MVP BCREQ execution package (G-mach)
+        run: sh dist/execution-package-gigacode-cli/tools/validate-package.sh
+
+  cline-windows:
+    runs-on: windows-2022
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check compiled Cline package
+        run: python build/compile-cline-package.py --check
+      - name: Test Cline Windows hooks, paths, and runner
+        run: python tests/cline-package/test_package.py
+      - name: Run Cline guide commands verbatim in Git Bash
+        # БА работает в терминале Git Bash из Git for Windows; блоки ```bash руководств исполняются дословно.
+        shell: bash
+        env:
+          GUIDE_BASH: C:\Program Files\Git\bin\bash.exe
+        run: python tests/cline-package/test_guides_bash.py
+
+  opencode:
+    # The OpenCode pilot runs on Windows 10/11 x64; the real OpenCode binary drives the
+    # guard plugin, permission rules and package commands against a scripted mock model.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check compiled OpenCode package
+        run: python build/compile-opencode-package.py --check
+      - name: Test OpenCode guard, package commands, paths, and runner
+        run: python tests/opencode-package/test_package.py
+      - name: Install OpenCode 1.18.35
+        run: npm install -g opencode-ai@1.18.35
+      - name: Run real OpenCode against the package (E2E)
+        shell: bash
         run: |
-          echo "TODO: подставьте команду тестов продукта, например:"
-          echo "  npm test  /  pytest  /  go test ./..."
+          binary="$(npm root -g)/opencode-ai/bin/opencode"
+          [ -f "$binary.exe" ] && binary="$binary.exe"
+          "$binary" --version
+          python experiments/issue_652_opencode_e2e.py \
+            dist/execution-package-opencode --opencode "$binary"
+
+  windows-guides:
+    # Целевая среда БА — Windows 10/11 (x64): инструкции пакета GigaCode исполняются
+    # дословно в Windows PowerShell 5.1 и PowerShell 7 на клоне с настройками Git for Windows.
+    runs-on: windows-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        shell: [powershell, pwsh]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Python dependencies
+        # pywinpty даёт runner настоящую консоль для ввода строки APPROVE.
+        run: python -m pip install -r dist/execution-package-gigacode-cli/requirements.txt pywinpty
+
+      - name: Validate GigaCode package (G-mach)
+        run: python dist/execution-package-gigacode-cli/tools/validate-package.py
+
+      # Каждая команда — отдельный шаг: многострочный pwsh-шаг падает только по коду последней.
+      - name: Test GigaCode package gate (G-mach negatives, BCREQ compile)
+        run: python tests/execution-package/tests/test_package_gate.py
+
+      - name: Test GigaCode route emulation
+        run: python tests/execution-package/tests/test_emulation.py
+
+      - name: Test GigaCode semantic regression
+        run: python tests/execution-package/tests/test_semantic_regression.py
+
+      - name: Test GigaCode runner
+        run: python tests/execution-package/tests/test_runner.py
+
+      - name: Execute BA guides in ${{ matrix.shell }}
+        env:
+          GUIDE_SHELL: ${{ matrix.shell }}
+        run: python tests/execution-package/tests/test_guides.py
+
+      - name: Run issue 638 smoke guide experiment in ${{ matrix.shell }}
+        env:
+          GUIDE_SHELL: ${{ matrix.shell }}
+        run: python experiments/issue_638_gigacode_smoke_guide.py
+
+      - name: Run issue 638 input checks experiment
+        run: python experiments/issue_638_gigacode_input_checks.py
+
+      - name: Run issue 638 smoke flow experiment
+        run: python experiments/issue_638_gigacode_smoke_flow.py
+
+      - name: Run issue 638 full route experiment in ${{ matrix.shell }}
+        env:
+          GUIDE_SHELL: ${{ matrix.shell }}
+        run: python experiments/issue_638_gigacode_full_route.py
