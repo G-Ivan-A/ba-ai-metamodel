@@ -1,0 +1,65 @@
+{
+  "stage": "E6",
+  "verified_at": "2026-11-17T08:02:31.441071+00:00",
+  "hub_repository": "G-Ivan-A/hybrid-Intelligence-lab",
+  "hub_sha": "54face1618f74154ae0f072bc3e5bfb3c4817754",
+  "hub_main_checked": "546ebabb13a4679c6801d0eb5f344c6c3f6db177",
+  "hub_sha_is_ancestor": true,
+  "source_paths": [
+    "projects/ba-ai-process/",
+    "research/mango/",
+    "docs/ba-meta-model-overview.md",
+    "tools/test-execution-package.sh",
+    "tools/test-cline-package.sh",
+    "tools/test-opencode-package.sh",
+    "tools/test-bcreq-working-release-pipeline.sh",
+    "tools/test-ba-meta-model-overview.sh"
+  ],
+  "source_commits_after_pin": [],
+  "manifest_matches": true,
+  "manifest_files": 324,
+  "manifest_sha256": "3275ada1400fbd016aab8e934cbe9e7dcaac7b6b0c820d3ae75fa1c6e1212133",
+  "tool_git_blob": "5e470c5cf862939ef313780359e63435321c0154",
+  "target_repository": "G-Ivan-A/ba-ai-metamodel",
+  "target_branch": "issue-1-f7e10ea3d3f2",
+  "target_base": "fb5afa5041a719139f1e64e33248f7cbd8b9cbf3",
+  "owner_request": "https://github.com/G-Ivan-A/ba-ai-metamodel/pull/6#issuecomment-6940681550",
+  "headings": [
+    "## Спринт 14:",
+    "## Спринт 15:",
+    "## Спринт 16:",
+    "## Спринт 17:",
+    "## Спринт 18:",
+    "## Спринт 19:",
+    "## Спринт 20:",
+    "## Спринт 21:",
+    "## Спринт 24:",
+    "## Спринт 25:",
+    "## Спринт 26:",
+    "## Спринт 27:",
+    "## Спринт 28:"
+  ],
+  "required_sub_issues": [],
+  "adapted_paths_sha256": "698bc2da2d086881444002a6306458ea5f0b824ca6d7afd2d49f94f9de58dbef",
+  "final_comparison": {
+    "files": 324,
+    "matching_after_links": 275,
+    "accepted_content_mismatches": 49,
+    "accepted_adapted_paths": 50,
+    "missing": [],
+    "mode_mismatch": [],
+    "unexplained": [],
+    "raw_verify_exit": 1,
+    "contract_guard_exit": 0
+  },
+  "backlog": {
+    "sections": 13,
+    "task_rows": 100,
+    "distinct_ids": 99,
+    "duplicate_ids": {
+      "B-223": 2
+    },
+    "sha256": "dfa705692d646fb8447e40c80969918d787ea2be290f736e622f158c6ad6912f",
+    "unchanged_from_e5": true
+  }
+}
