@@ -37,9 +37,9 @@ Git Bash установлен вместе с Git, но команды `New-Item
 
 | Папка | Что в ней | Откуда | Зачем |
 |-------|-----------|--------|-------|
-| `C:\Users\<логин>\bcreq-pilot\runtime\` | [Пакет](01-junior-pilot.md#term-package) — **в этой папке вы запускаете OpenCode** | Папка `projects/ba-ai-process/dist/execution-package-opencode/` репозитория [hybrid-Intelligence-lab](https://github.com/G-Ivan-A/hybrid-Intelligence-lab) | Правила, схемы, runner, защита |
+| `C:\Users\<логин>\bcreq-pilot\runtime\` | [Пакет](01-junior-pilot.md#term-package) — **в этой папке вы запускаете OpenCode** | Папка `dist/execution-package-opencode/` репозитория [ba-ai-metamodel](https://github.com/G-Ivan-A/ba-ai-metamodel) | Правила, схемы, runner, защита |
 | `C:\Users\<логин>\bcreq-pilot\runtime\docs\kb\` | [KB](01-junior-pilot.md#term-kb) — резервная база знаний | Папка `docs/kb/` репозитория [mango-ba-ai-runtime](https://github.com/G-Ivan-A/mango-ba-ai-runtime/tree/main/docs/kb) | Подтверждения для требований, если корпоративные источники недоступны |
-| `C:\Users\<логин>\bcreq-pilot\source-lab\` | [Исходный репозиторий](01-junior-pilot.md#term-source) | Клон hybrid-Intelligence-lab | Обновление пакета и [режим отладки](05-commands-reference.md#режим-отладки) |
+| `C:\Users\<логин>\bcreq-pilot\source-lab\` | [Исходный репозиторий](01-junior-pilot.md#term-source) | Клон ba-ai-metamodel | Обновление пакета и [режим отладки](05-commands-reference.md#режим-отладки) |
 | `C:\Users\<логин>\bcreq-pilot\kb-source\` | Клон репозитория с KB | Клон mango-ba-ai-runtime | Обновление KB |
 | `C:\Users\<логин>\bcreq-pilot\debug\` | Результаты ручных проверок в режиме отладки | Создаёте вы | Чтобы не смешивать отладку с настоящими прогонами |
 | `C:\Users\<логин>\.config\opencode\` | Ваши глобальные настройки OpenCode (`opencode.json`) | Создали при [установке](02-install.md#опишите-провайдера-mango-ai) | Подключение модели; не часть пакета |
@@ -93,13 +93,13 @@ runtime-репозиторий с пакетом.**
 - **Команды** — выполняйте по одной:
 
   ```powershell
-  git clone --depth 1 https://github.com/G-Ivan-A/hybrid-Intelligence-lab.git source-lab
+  git clone --depth 1 https://github.com/G-Ivan-A/ba-ai-metamodel.git source-lab
   New-Item -ItemType Directory -Force runtime
-  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\* runtime\
-  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.opencode runtime\
-  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.github runtime\
-  Copy-Item -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.gitattributes runtime\
-  Copy-Item -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.gitignore runtime\
+  Copy-Item -Recurse -Force source-lab\dist\execution-package-opencode\* runtime\
+  Copy-Item -Recurse -Force source-lab\dist\execution-package-opencode\.opencode runtime\
+  Copy-Item -Recurse -Force source-lab\dist\execution-package-opencode\.github runtime\
+  Copy-Item -Force source-lab\dist\execution-package-opencode\.gitattributes runtime\
+  Copy-Item -Force source-lab\dist\execution-package-opencode\.gitignore runtime\
   ```
 
 - **Что делают:** скачивают исходный репозиторий в `source-lab`, создают

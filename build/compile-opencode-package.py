@@ -64,13 +64,13 @@ def compile_into(root: Path, revision: str) -> None:
         "package_version": "0.2.0",
         "compiled_at": "2026-09-29",
         "source": {
-            "repository": "https://github.com/G-Ivan-A/hybrid-Intelligence-lab",
+            "repository": "https://github.com/G-Ivan-A/ba-ai-metamodel",
             "revision": revision,
         },
         "adapter": {"name": "opencode", "version": "0.1.0"},
         "inputs": {"allowlist": [
-            "projects/ba-ai-process/build/common/",
-            "projects/ba-ai-process/build/adapters/opencode/",
+            "build/common/",
+            "build/adapters/opencode/",
         ]},
         "outputs": {"hash_algorithm": "sha256", "hashes": dict(sorted(hashes.items()))},
     }

@@ -1,0 +1,158 @@
+test_human_gate_persists_markdown_checkpoint (__main__.RouteEmulationTest.test_human_gate_persists_markdown_checkpoint) ... ERROR
+test_input_contract_uses_taxonomy_paths_and_explicit_confirmation (__main__.RouteEmulationTest.test_input_contract_uses_taxonomy_paths_and_explicit_confirmation) ... ok
+test_preflight_and_release_are_unskippable (__main__.RouteEmulationTest.test_preflight_and_release_are_unskippable) ... ok
+test_product_attribution_is_the_first_mandatory_human_gate (__main__.RouteEmulationTest.test_product_attribution_is_the_first_mandatory_human_gate) ... ok
+test_runtime_skills_have_no_contact_center_binding (__main__.RouteEmulationTest.test_runtime_skills_have_no_contact_center_binding) ... ERROR
+test_straight_through_route (__main__.RouteEmulationTest.test_straight_through_route) ... ERROR
+test_validator_resolves_non_contact_center_product_from_taxonomy (__main__.RouteEmulationTest.test_validator_resolves_non_contact_center_product_from_taxonomy) ... ok
+
+======================================================================
+ERROR: test_human_gate_persists_markdown_checkpoint (__main__.RouteEmulationTest.test_human_gate_persists_markdown_checkpoint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tests/test_emulation.py", line 149, in test_human_gate_persists_markdown_checkpoint
+    self.assert_scenario("human-gate")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tests/test_emulation.py", line 121, in assert_scenario
+    result = MODULE.emulate(PACKAGE, fixture, Path(directory))
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tools/emulate-route.py", line 48, in emulate
+    skills = _skill_index(package)
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tools/emulate-route.py", line 26, in _skill_index
+    fields = _frontmatter(path)
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tools/emulate-route.py", line 20, in _frontmatter
+    return yaml.safe_load(raw) or {}
+           ~~~~~~~~~~~~~~^^^^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 110, in compose_sequence_node
+    while not self.check_event(SequenceEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/parser.py", line 483, in parse_flow_sequence_entry
+    raise ParserError("while parsing a flow sequence", self.marks[-1],
+            "expected ',' or ']', but got %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a flow sequence
+  in "<unicode string>", line 11, column 15:
+    derived_from: [https://github.com/G-Ivan-A/ba- ... 
+                  ^
+expected ',' or ']', but got ':'
+  in "<unicode string>", line 12, column 12:
+    compiled_at: 2026-09-24
+               ^
+
+======================================================================
+ERROR: test_runtime_skills_have_no_contact_center_binding (__main__.RouteEmulationTest.test_runtime_skills_have_no_contact_center_binding)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tests/test_emulation.py", line 65, in test_runtime_skills_have_no_contact_center_binding
+    fields = MODULE._frontmatter(skill)
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tools/emulate-route.py", line 20, in _frontmatter
+    return yaml.safe_load(raw) or {}
+           ~~~~~~~~~~~~~~^^^^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 110, in compose_sequence_node
+    while not self.check_event(SequenceEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/parser.py", line 483, in parse_flow_sequence_entry
+    raise ParserError("while parsing a flow sequence", self.marks[-1],
+            "expected ',' or ']', but got %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a flow sequence
+  in "<unicode string>", line 11, column 15:
+    derived_from: [https://github.com/G-Ivan-A/ba- ... 
+                  ^
+expected ',' or ']', but got ':'
+  in "<unicode string>", line 12, column 12:
+    compiled_at: 2026-09-24
+               ^
+
+======================================================================
+ERROR: test_straight_through_route (__main__.RouteEmulationTest.test_straight_through_route)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tests/test_emulation.py", line 137, in test_straight_through_route
+    self.assert_scenario("straight-through")
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tests/test_emulation.py", line 121, in assert_scenario
+    result = MODULE.emulate(PACKAGE, fixture, Path(directory))
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tools/emulate-route.py", line 48, in emulate
+    skills = _skill_index(package)
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tools/emulate-route.py", line 26, in _skill_index
+    fields = _frontmatter(path)
+  File "/tmp/ba-e4-context/baseline/tests/execution-package/tools/emulate-route.py", line 20, in _frontmatter
+    return yaml.safe_load(raw) or {}
+           ~~~~~~~~~~~~~~^^^^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/composer.py", line 110, in compose_sequence_node
+    while not self.check_event(SequenceEndEvent):
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ~~~~~~~~~~^^
+  File "/tmp/ba-e4-context/venv/lib/python3.15/site-packages/yaml/parser.py", line 483, in parse_flow_sequence_entry
+    raise ParserError("while parsing a flow sequence", self.marks[-1],
+            "expected ',' or ']', but got %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a flow sequence
+  in "<unicode string>", line 11, column 15:
+    derived_from: [https://github.com/G-Ivan-A/ba- ... 
+                  ^
+expected ',' or ']', but got ':'
+  in "<unicode string>", line 12, column 12:
+    compiled_at: 2026-09-24
+               ^
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.226s
+
+FAILED (errors=3)

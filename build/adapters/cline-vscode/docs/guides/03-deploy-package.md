@@ -38,9 +38,9 @@ VS Code, убедиться, что пакет цел, и настроить Cli
 
 | Папка | Что в ней | Откуда | Зачем |
 |-------|-----------|--------|-------|
-| `C:\Users\<логин>\bcreq-pilot\runtime\` | [Пакет](01-junior-pilot.md#term-package) — **эту папку вы открываете в VS Code** | Папка `projects/ba-ai-process/dist/execution-package-cline-vscode/` репозитория [hybrid-Intelligence-lab](https://github.com/G-Ivan-A/hybrid-Intelligence-lab) | Правила, схемы, runner |
+| `C:\Users\<логин>\bcreq-pilot\runtime\` | [Пакет](01-junior-pilot.md#term-package) — **эту папку вы открываете в VS Code** | Папка `dist/execution-package-cline-vscode/` репозитория [ba-ai-metamodel](https://github.com/G-Ivan-A/ba-ai-metamodel) | Правила, схемы, runner |
 | `C:\Users\<логин>\bcreq-pilot\runtime\docs\kb\` | [KB](01-junior-pilot.md#term-kb) — резервная база знаний | Папка `docs/kb/` репозитория [mango-ba-ai-runtime](https://github.com/G-Ivan-A/mango-ba-ai-runtime/tree/main/docs/kb) | Подтверждения для требований, если корпоративные источники недоступны |
-| `C:\Users\<логин>\bcreq-pilot\source-lab\` | [Исходный репозиторий](01-junior-pilot.md#term-source) | Клон hybrid-Intelligence-lab | Обновление пакета и [режим отладки](05-commands-reference.md#режим-отладки) |
+| `C:\Users\<логин>\bcreq-pilot\source-lab\` | [Исходный репозиторий](01-junior-pilot.md#term-source) | Клон ba-ai-metamodel | Обновление пакета и [режим отладки](05-commands-reference.md#режим-отладки) |
 | `C:\Users\<логин>\bcreq-pilot\kb-source\` | Клон репозитория с KB | Клон mango-ba-ai-runtime | Обновление KB |
 | `C:\Users\<логин>\bcreq-pilot\debug\` | Результаты ручных проверок в режиме отладки | Создаёте вы | Чтобы не смешивать отладку с настоящими прогонами |
 
@@ -94,9 +94,9 @@ runtime-репозиторий с пакетом.**
 - **Команды** — выполняйте по одной:
 
   ```bash
-  git clone --depth 1 https://github.com/G-Ivan-A/hybrid-Intelligence-lab.git source-lab
+  git clone --depth 1 https://github.com/G-Ivan-A/ba-ai-metamodel.git source-lab
   mkdir -p runtime
-  cp -r source-lab/projects/ba-ai-process/dist/execution-package-cline-vscode/. runtime/
+  cp -r source-lab/dist/execution-package-cline-vscode/. runtime/
   ```
 
 - **Что делают:** скачивают исходный репозиторий в `source-lab`, создают

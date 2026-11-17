@@ -8,7 +8,7 @@ outputs: [A-BCREQ, release_manifest]
 contracts: [C-WORKING-BCREQ, C-RELEASE-BCREQ]
 gates: [G-self, G-mach, G-release, G-human]
 compiled_from: { package: execution-package-gigacode-cli, route: RG-BCREQ-v1 }
-derived_from: [https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-working-release-pipeline.md%5D
+derived_from: [https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/rfc/2026-09-bcreq-working-release-pipeline.md]
 compiled_at: 2026-09-24
 status: draft
 version: 1.0

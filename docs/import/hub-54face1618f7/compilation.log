@@ -1,0 +1,10 @@
++ python3 build/compile-cline-package.py --write --source-revision 8afc640aeb7b7aa000d0174bd0f67ecfd4fc7cfc
+Compiled Cline package from 8afc640aeb7b7aa000d0174bd0f67ecfd4fc7cfc
++ python3 build/compile-opencode-package.py --write --source-revision 8afc640aeb7b7aa000d0174bd0f67ecfd4fc7cfc
+Compiled OpenCode package from 8afc640aeb7b7aa000d0174bd0f67ecfd4fc7cfc
++ python3 build/compiler/compile-product-taxonomies.py --check
+Product taxonomy compilation check passed (2 Source snapshots + 2 Distribution copies).
++ python3 build/compile-cline-package.py --check
+Cline package matches Source
++ python3 build/compile-opencode-package.py --check
+OpenCode package matches Source

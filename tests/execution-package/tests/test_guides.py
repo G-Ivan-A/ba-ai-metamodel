@@ -22,10 +22,10 @@ import unittest
 
 
 PACKAGE = Path(__file__).resolve().parents[3] / "dist/execution-package-gigacode-cli"
-PACKAGE_PATH = "projects/ba-ai-process/dist/execution-package-gigacode-cli"
+PACKAGE_PATH = "dist/execution-package-gigacode-cli"
 GUIDES = PACKAGE / "docs/guides"
 FIXTURE = Path(__file__).resolve().parents[1] / "fixtures/working-valid.json"
-LAB_URL = "https://github.com/G-Ivan-A/hybrid-Intelligence-lab.git"
+LAB_URL = "https://github.com/G-Ivan-A/ba-ai-metamodel.git"
 KB_URL = "https://github.com/G-Ivan-A/mango-ba-ai-runtime-cli.git"
 APPROVAL = re.compile(r"Type exactly: (APPROVE \S+ sha256:[0-9a-f]{64})")
 ANSI = re.compile(r"\x1b\[[0-?]*[ -/]*[@-~]|\x1b\][^\x07\x1b]*(?:\x07|\x1b\\)|\x1b[=>]")

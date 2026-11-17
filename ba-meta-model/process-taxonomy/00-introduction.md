@@ -10,11 +10,11 @@ scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571"
 based_on:
   - research/ba-requirements/2026-09-10-process-taxonomy-defects-facts.md
-  - projects/ba-ai-process/ba-meta-model/20-taxonomy.md
+  - ba-meta-model/20-taxonomy.md
   - research/ai-education/task-processing/20-taxonomy.md
 related_artifacts:
-  - "projects/ba-ai-process/ba-meta-model/operation-taxonomy/00-introduction.md"
-  - "projects/ba-ai-process/ba-meta-model/00-introduction.md"
+  - "ba-meta-model/operation-taxonomy/00-introduction.md"
+  - "ba-meta-model/00-introduction.md"
   - "docs/adr/2026-09-adr-015-process-operation-taxonomy-rebuild.md"
 related_issues:
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571"

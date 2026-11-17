@@ -66,7 +66,7 @@ MANGO** (все домены полного снимка таксономии), 
 - [`dist/execution-package-gigacode-cli/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-gigacode-cli/README.md)
   — копируемый пакет с `.gigacode/skills/`, явным dispatcher, debug-механизмом,
   контрактами, графом, Golden Set и машинным гейтом `G-mach`.
-- [`dist/execution-package-cline-vscode/`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/issue-621-bd8c46c08849/projects/ba-ai-process/dist/execution-package-cline-vscode/README.md)
+- [`dist/execution-package-cline-vscode/`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/dist/execution-package-cline-vscode/README.md)
   — отдельный пилот Cline для синтетического BCREQ Working → Release с блокирующими
   hooks, независимым runner, CI gate, trace и политикой источников знания; Source
   сборки — `build/common/` и `build/adapters/cline-vscode/`.
@@ -75,7 +75,7 @@ MANGO** (все домены полного снимка таксономии), 
   `tool.execute.before`, команды `/bcreq-start` и `/bcreq-gate`, CI gate и
   инструкция `docs/guides/` для Windows 10/11; Source сборки — `build/common/` и
   `build/adapters/opencode/`.
-- [`meta-model-guides/qwen-chat-runtime-migration-instruction.md`](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/issue-615-ab7082802ba9/projects/ba-ai-process/meta-model-guides/qwen-chat-runtime-migration-instruction.md)
+- [`meta-model-guides/qwen-chat-runtime-migration-instruction.md`](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/meta-model-guides/qwen-chat-runtime-migration-instruction.md)
   — мандат для отдельной задачи на подготовку существующего runtime к временному
   quick-check в Qwen Chat; это не execution package.
 
@@ -169,9 +169,9 @@ Issue [#593](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/593)
   — навык как форма поставки, формат контракта как вычисляемое свойство;
 - [ADR-017](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/decisions/2026-09-adr-017-ba-ai-process-source-distribution.md)
   — принятая граница Source, Distribution, Runtime и Feedback.
-- [ADR-018](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/issue-615-ab7082802ba9/projects/ba-ai-process/docs/adr/2026-09-adr-018-gigacode-cli-execution-boundary.md)
+- [ADR-018](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/adr/2026-09-adr-018-gigacode-cli-execution-boundary.md)
   — предлагаемая граница детерминированного исполнения GigaCode CLI.
-- [ADR-019](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/issue-615-ab7082802ba9/projects/ba-ai-process/docs/adr/2026-09-adr-019-cline-mango-ai-pilot.md)
+- [ADR-019](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/docs/adr/2026-09-adr-019-cline-mango-ai-pilot.md)
   — предлагаемый выбор Cline для пилота с Mango AI.
 
 ## Политика ссылок

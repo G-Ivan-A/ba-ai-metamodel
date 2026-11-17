@@ -9,9 +9,9 @@ method: production-model-visualization + slice-planning + case-modeling
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/563"
 based_on:
-  - projects/ba-ai-process/ba-meta-model/10-theory.md
-  - projects/ba-ai-process/ba-meta-model/20-taxonomy.md
-  - projects/ba-ai-process/ba-meta-model/30-decision-framework.md
+  - ba-meta-model/10-theory.md
+  - ba-meta-model/20-taxonomy.md
+  - ba-meta-model/30-decision-framework.md
 related_issues:
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/563"
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571"

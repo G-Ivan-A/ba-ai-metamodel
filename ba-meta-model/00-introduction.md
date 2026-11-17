@@ -16,8 +16,8 @@ based_on:
 related_artifacts:
   - "docs/adr/2026-09-adr-013-run-modes-deprecation.md"
   - "docs/adr/2026-09-adr-015-process-operation-taxonomy-rebuild.md"
-  - "projects/ba-ai-process/ba-meta-model/process-taxonomy/20-taxonomy.md"
-  - "projects/ba-ai-process/ba-meta-model/operation-taxonomy/20-taxonomy.md"
+  - "ba-meta-model/process-taxonomy/20-taxonomy.md"
+  - "ba-meta-model/operation-taxonomy/20-taxonomy.md"
   - "standards/product-taxonomy-reference.md"
   - "research/ba-requirements/orchestration/00-introduction.md"
   - "ops/backlog.md"

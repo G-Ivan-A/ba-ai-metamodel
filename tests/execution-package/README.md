@@ -18,7 +18,7 @@ human gate сохраняет читаемый Markdown checkpoint. Регрес
 Запуск из корня репозитория:
 
 ```sh
-python3 projects/ba-ai-process/tests/execution-package/tests/test_emulation.py
+python3 tests/execution-package/tests/test_emulation.py
 ```
 
 `test_package_gate.py` — отрицательные тесты `G-mach`: каждый случай ломает
@@ -52,9 +52,9 @@ exit code, отсутствие human checkpoint, потеря trace и ложн
 Полный набор в Windows 10/11 (PowerShell, из корня репозитория):
 
 ```powershell
-python -m pip install -r projects/ba-ai-process/dist/execution-package-gigacode-cli/requirements.txt pywinpty
+python -m pip install -r dist/execution-package-gigacode-cli/requirements.txt pywinpty
 $env:GUIDE_SHELL = "powershell"
-python -m unittest discover -s projects/ba-ai-process/tests/execution-package/tests -v
+python -m unittest discover -s tests/execution-package/tests -v
 ```
 
 В Linux тот же набор вместе с проверками Source-раскладки запускает

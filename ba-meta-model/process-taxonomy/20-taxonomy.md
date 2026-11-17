@@ -9,7 +9,7 @@ method: standard-decomposition + delta-design + per-item-verification
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571"
 based_on:
-  - projects/ba-ai-process/ba-meta-model/process-taxonomy/10-theory.md
+  - ba-meta-model/process-taxonomy/10-theory.md
   - research/ba-requirements/2026-09-10-process-taxonomy-defects-facts.md
 related_issues:
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571"

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-rfc="$repo_root/projects/ba-ai-process/docs/rfc/2026-09-bcreq-working-release-pipeline.md"
+rfc="$repo_root/docs/rfc/2026-09-bcreq-working-release-pipeline.md"
 
 required_markers=(
   "working_baseline_id"

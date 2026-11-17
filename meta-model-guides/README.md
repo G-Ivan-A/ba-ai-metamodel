@@ -12,7 +12,7 @@ temperature: 0.1
 `dist/execution-package-gigacode-cli/`; здесь нет их второй копии.
 
 Для отдельной задачи на временный сценарий Qwen Chat в существующем runtime
-подготовлен [мандат модернизации](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/issue-615-ab7082802ba9/projects/ba-ai-process/meta-model-guides/qwen-chat-runtime-migration-instruction.md).
+подготовлен [мандат модернизации](https://github.com/G-Ivan-A/ba-ai-metamodel/blob/main/meta-model-guides/qwen-chat-runtime-migration-instruction.md).
 Это Source-инструкция для будущего PR, а не готовый execution package.
 
 ## Подготовка чистой рабочей директории

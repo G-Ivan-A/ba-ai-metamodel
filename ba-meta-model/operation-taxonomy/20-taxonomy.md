@@ -9,8 +9,8 @@ method: contract-design + closed-vocabulary + per-item-verification
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571"
 based_on:
-  - projects/ba-ai-process/ba-meta-model/operation-taxonomy/10-theory.md
-  - projects/ba-ai-process/ba-meta-model/process-taxonomy/20-taxonomy.md
+  - ba-meta-model/operation-taxonomy/10-theory.md
+  - ba-meta-model/process-taxonomy/20-taxonomy.md
 related_issues:
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571"
   - "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/577"

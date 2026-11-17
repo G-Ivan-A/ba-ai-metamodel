@@ -23,7 +23,7 @@ class PackageTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             source = Path(temporary) / "source"
             clone = Path(temporary) / "clone"
-            target = source / "projects/ba-ai-process"
+            target = source
             (target / "build").mkdir(parents=True)
             shutil.copy2(PROJECT / "build/compile-opencode-package.py", target / "build")
             shutil.copytree(PROJECT / "build/common", target / "build/common")
@@ -34,7 +34,7 @@ class PackageTest(unittest.TestCase):
             subprocess.run(["git", "-C", str(source), "-c", "user.name=Test", "-c", "user.email=test@example.invalid",
                             "commit", "-qm", "test source and package"], check=True)
             subprocess.run(["git", "-c", "core.autocrlf=true", "clone", "-q", str(source), str(clone)], check=True)
-            result = subprocess.run([sys.executable, str(clone / "projects/ba-ai-process/build/compile-opencode-package.py"), "--check"],
+            result = subprocess.run([sys.executable, str(clone / "build/compile-opencode-package.py"), "--check"],
                                     cwd=clone, text=True, capture_output=True)
             self.assertEqual(result.returncode, 0, result.stderr)
 

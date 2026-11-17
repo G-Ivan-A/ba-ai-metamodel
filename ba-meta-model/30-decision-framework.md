@@ -9,7 +9,7 @@ method: package-design + contract-modeling + environment-documentation
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/563"
 based_on:
-  - projects/ba-ai-process/ba-meta-model/20-taxonomy.md
+  - ba-meta-model/20-taxonomy.md
   - research/ba-requirements/2026-09-10-gigacode-environment-facts.md
   - research/ba-requirements/artifact-micro-structure/30-decision-framework.md
   - research/ba-requirements/methodology-unification/30-decision-framework.md

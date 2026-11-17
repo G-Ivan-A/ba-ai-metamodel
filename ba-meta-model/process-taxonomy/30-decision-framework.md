@@ -9,7 +9,7 @@ method: decision-tree-design + gate-mapping
 scope: mango-only
 source: "https://github.com/G-Ivan-A/hybrid-Intelligence-lab/issues/571"
 based_on:
-  - projects/ba-ai-process/ba-meta-model/process-taxonomy/20-taxonomy.md
+  - ba-meta-model/process-taxonomy/20-taxonomy.md
   - research/ba-requirements/2026-09-10-gigacode-environment-facts.md
   - research/ai-education/task-processing/20-taxonomy.md
 related_issues:
