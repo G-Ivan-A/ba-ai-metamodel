@@ -1,0 +1,72 @@
+E6 local validation, 2026-11-17T08:02:31.441071+00:00
+Pinned source: G-Ivan-A/hybrid-Intelligence-lab@54face1618f74154ae0f072bc3e5bfb3c4817754
+Step 0: pinned SHA is ancestor of Hub main; 8 source paths unchanged; 324-file manifest byte-identical.
+Preparation evidence: e6-preparation.json; accepted adapted.txt is unchanged.
+
+Full verify --links: raw exit 1 is expected for accepted E4 adaptations.
+{"files": 324, "ok": 275, "missing": [], "mode_mismatch": [], "extra": []}
+Content mismatches: 49; accepted adapted paths: 50 (includes CI outside the import manifest).
+Contract guard:
+{"missing": [], "unexplained": []}
+
+Backlog: sections --check for all issue BACKLOG prefixes:
+sections: 13 from ops/backlog.md at 54face1618f74154ae0f072bc3e5bfb3c4817754; link events {"dir-out": 1, "file-out": 6, "url-in": 46}
+sections: 13 from ops/backlog.md at 54face1618f74154ae0f072bc3e5bfb3c4817754; link events {"dir-out": 1, "file-out": 6, "url-in": 46}
+PASS: exact body/order, 13 headings, 100 ordered IDs, 99 distinct IDs, duplicates {'B-223': 2}.
+
+Boundary checks use two-file external fixtures; production files are never mutated.
+Known adapted content is allowed:
+{"missing": [], "unexplained": []}
+PASS: guard exit 0
+Unlisted content drift is rejected:
+{"missing": [], "unexplained": ["ba-meta-model/10-theory.md"]}
+PASS: guard exit 1
+Unlisted executable-mode drift is rejected:
+{"missing": [], "unexplained": ["ba-meta-model/10-theory.md"]}
+PASS: guard exit 1
+Missing adapted file is rejected:
+{"missing": ["README.md"], "unexplained": []}
+PASS: guard exit 1
+Changed backlog task row:
+sections: 13 from ops/backlog.md at 54face1618f74154ae0f072bc3e5bfb3c4817754; link events {"dir-out": 1, "file-out": 6, "url-in": 46}
+section absent or changed: ## Спринт 14:
+PASS: changed row rejected (exit 1).
+Missing backlog sprint:
+sections: 13 from ops/backlog.md at 54face1618f74154ae0f072bc3e5bfb3c4817754; link events {"dir-out": 1, "file-out": 6, "url-in": 46}
+section absent or changed: ## Спринт 28:
+PASS: missing sprint rejected (exit 1).
+
+All E6 comparison and boundary checks passed.
+
+Repository agent bootstrap:
+AGENTS.md bootstrap validation passed (B/local).
+
+Repository documentation naming:
+File naming validation passed.
+
+Shell syntax for every repository tools/*.sh script:
+PASS: all shell scripts parse.
+
+Working/Release documentation contract:
+BCREQ Working/Release pipeline contract: OK
+
+Stakeholder overview documentation contract:
+BA meta-model stakeholder overview contract test passed.
+
+Cline compiled package check:
+Cline package matches Source
+
+OpenCode compiled package check:
+OpenCode package matches Source
+
+Product taxonomy compiler check:
+Product taxonomy compilation check passed (2 Source snapshots + 2 Distribution copies).
+
+GigaCode package machine gate:
+G-mach: пакет принят (навыков: 16, узлов маршрута: 15).
+
+Whitespace validation:
+PASS: git diff --check.
+
+All local repository checks passed. Full product suites, Windows/PowerShell and real OpenCode are assigned to existing PR CI.
+Hub-only validators validate-frontmatter.sh, validate-repository-structure.sh and generate-manifest.py are not installed in this spoke.
