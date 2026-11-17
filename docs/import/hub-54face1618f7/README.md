@@ -8,7 +8,7 @@
 | E2 Импорт с историей | ✅ | #3 | `verify-import.json`, `verify-filtered.json`, `commit-map.txt`, `commit-count.txt`, `history.txt` |
 | E3 Ссылки | ✅ | #4 | `rewrite-links.jsonl`, `verify-links.json` |
 | E4 Код и CI | ✅ | #5 | `scan-before.txt`, `scan-after.txt`, `adapted.txt`, `validation.log`, `ci-validation.json` |
-| E5 Бэклог | ✅ | | `backlog-ids.txt`, `e5-preparation.json`, `e5-validation.log` |
+| E5 Бэклог | ✅ | #6 | `backlog-ids.txt`, `e5-preparation.json`, `e5-validation.log` |
 | E6 Проверка | ⬜ | | `verify-final.json` |
 
 ## Итог
@@ -102,7 +102,7 @@ Working/Release и stakeholder overview проходят; вывод — `e5-val
 | Шаг | Состояние | SSOT |
 | --- | --- | --- |
 | Предыдущий: B-246 / E4 | принят, PR #5 слит | [PR #5](https://github.com/G-Ivan-A/ba-ai-metamodel/pull/5) |
-| Текущий: B-247 / E5 | импорт подготовлен к review; часть B-247 | [Контракт, E5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/hub-project-extraction-contract.md#этап-e5-бэклог), `ops/backlog.md`, доказательства E5 |
+| Текущий: B-247 / E5 | импорт подготовлен к review в PR #6; часть B-247 | [PR #6](https://github.com/G-Ivan-A/ba-ai-metamodel/pull/6), [контракт, E5](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/hub-project-extraction-contract.md#этап-e5-бэклог), `ops/backlog.md`, доказательства E5 |
 | Следующий: B-247 / E6 | не выполнен; отдельный PR после принятия E5 | [Контракт, E6](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/hub-project-extraction-contract.md#этап-e6-проверка), [запись B-247 в Хабе](https://github.com/G-Ivan-A/hybrid-Intelligence-lab/blob/54face1618f74154ae0f072bc3e5bfb3c4817754/ops/backlog.md) |
 
 B-247 относится к спринту 30 Хаба и не входит в выбранные разделы. Его
