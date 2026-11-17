@@ -1,0 +1,13 @@
+build/adapters/opencode/docs/guides/03-deploy-package.md:98:  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\* runtime\
+build/adapters/opencode/docs/guides/03-deploy-package.md:99:  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.opencode runtime\
+build/adapters/opencode/docs/guides/03-deploy-package.md:100:  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.github runtime\
+build/adapters/opencode/docs/guides/03-deploy-package.md:101:  Copy-Item -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.gitattributes runtime\
+build/adapters/opencode/docs/guides/03-deploy-package.md:102:  Copy-Item -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.gitignore runtime\
+dist/execution-package-gigacode-cli/README.md:43:Copy-Item -Recurse -Force projects\ba-ai-process\dist\execution-package-gigacode-cli\* <чистая-папка>\
+dist/execution-package-gigacode-cli/docs/guides/03-deploy-package.md:95:  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-gigacode-cli runtime
+dist/execution-package-gigacode-cli/docs/guides/05-commands-reference.md:444:   Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-gigacode-cli\* runtime\
+dist/execution-package-opencode/docs/guides/03-deploy-package.md:98:  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\* runtime\
+dist/execution-package-opencode/docs/guides/03-deploy-package.md:99:  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.opencode runtime\
+dist/execution-package-opencode/docs/guides/03-deploy-package.md:100:  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.github runtime\
+dist/execution-package-opencode/docs/guides/03-deploy-package.md:101:  Copy-Item -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.gitattributes runtime\
+dist/execution-package-opencode/docs/guides/03-deploy-package.md:102:  Copy-Item -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.gitignore runtime\

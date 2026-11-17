@@ -4,7 +4,7 @@
   "compiled_at": "2026-09-29",
   "source": {
     "repository": "https://github.com/G-Ivan-A/ba-ai-metamodel",
-    "revision": "08da6c13355bfac48ffa8b54d2a19313b661e2be"
+    "revision": "8afc640aeb7b7aa000d0174bd0f67ecfd4fc7cfc"
   },
   "adapter": {
     "name": "opencode",
@@ -35,7 +35,7 @@
       "contracts/c-working-bcreq.schema.json": "ac8ae80856eb3bb9355c2a673a152f41a299b3770478e316b595828c851c1577",
       "docs/guides/01-junior-pilot.md": "9b3c3e62d7957469cc09ff340ef80352779caacf5324d95c2961bdd3b85a6dea",
       "docs/guides/02-install.md": "5450c41e9751032f134365725edfb5bd53df70c03943bcd770a7d7eb53c29265",
-      "docs/guides/03-deploy-package.md": "7cf6f4366b6b5b4a315b2cdacdb9b2461ff9a26a38520cffb3d4806e97905d3e",
+      "docs/guides/03-deploy-package.md": "fa7f167f96742924c5d5ab17e6596e589acea87465f379ab594bd60067bb7960",
       "docs/guides/04-smoke-test.md": "7ab2b97c5b2c9a12c991de4f12712de2b2173c2a5762c93e6e39c261491e16e5",
       "docs/guides/05-commands-reference.md": "ca41652189f220b85f473cc2ef34c17f6f017001cddf59ef7bc5754365abc85d",
       "docs/guides/06-working-with-opencode.md": "cfef52ed1720dd899662048bf51d51dc5b2ebbcc064fc649a0bd1c81e68b660f",

@@ -1,0 +1,20 @@
+Fork CI run 44023915584, SHA 234da3c6a466c176c936013ec8676a3a8d88273f, created 2026-11-17T05:24:39Z
+https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44023915584
+Numbered excerpts from downloaded ci-44023915584.log; complete log preserved in /tmp/ba-e4-context/ci-logs/.
+226:Tests	Test execution package gate	2026-11-17T05:25:08.5379581Z test_deploy_guide_runs_verbatim (__main__.PowerShellGuideTest.test_deploy_guide_runs_verbatim) ... FAIL
+238:Tests	Test execution package gate	2026-11-17T05:25:24.3233856Z FAIL: test_deploy_guide_runs_verbatim (__main__.PowerShellGuideTest.test_deploy_guide_runs_verbatim)
+246:Tests	Test execution package gate	2026-11-17T05:25:24.3243096Z AssertionError: 91 != 0 : New-Item -ItemType Directory -Force "$env:USERPROFILE\bcreq-pilot" | Out-Null
+272:Tests	Test execution package gate	2026-11-17T05:25:24.3248562Z ERROR: Cannot find path '/tmp/gigacode-guide-l3z0jht0/Иван Петров/bcreq-pilot/source-lab/projects/ba-ai-process/dist/execution-package-gigacode-cli' because it does not exist.
+278:Tests	Test execution package gate	2026-11-17T05:25:24.3249361Z FAILED (failures=1)
+572:windows-guides (powershell)	Execute BA guides in powershell	2026-11-17T05:25:52.5134138Z test_deploy_guide_runs_verbatim (__main__.PowerShellGuideTest.test_deploy_guide_runs_verbatim) ... FAIL
+590:windows-guides (powershell)	Execute BA guides in powershell	2026-11-17T05:26:07.2488208Z FAIL: test_deploy_guide_runs_verbatim (__main__.PowerShellGuideTest.test_deploy_guide_runs_verbatim)
+598:windows-guides (powershell)	Execute BA guides in powershell	2026-11-17T05:26:07.2498676Z AssertionError: 91 != 0 : New-Item -ItemType Directory -Force "$env:USERPROFILE\bcreq-pilot" | Out-Null
+632:windows-guides (powershell)	Execute BA guides in powershell	2026-11-17T05:26:07.2508757Z ERROR: Cannot find path 'C:\Users\runneradmin\AppData\Local\Temp\gigacode-guide-2x4xzq89\Иван Петров\bcreq-pilot\source-lab\projects\ba-ai-process\dist\execution-package-gigacode-cli' because it does not exist.
+638:windows-guides (powershell)	Execute BA guides in powershell	2026-11-17T05:26:07.2509889Z FAILED (failures=1)
+996:opencode (windows-2022)	Run real OpenCode against the package (E2E)	2026-11-17T05:27:21.0675051Z PASS /bcreq-gate gives the model the runner output (ERROR: run already exists)
+1252:opencode (ubuntu-latest)	Run real OpenCode against the package (E2E)	2026-11-17T05:25:35.5001712Z PASS /bcreq-gate gives the model the runner output (ERROR: run already exists)
+1563:windows-guides (pwsh)	Execute BA guides in pwsh	2026-11-17T05:25:34.2687969Z test_deploy_guide_runs_verbatim (__main__.PowerShellGuideTest.test_deploy_guide_runs_verbatim) ... FAIL
+1581:windows-guides (pwsh)	Execute BA guides in pwsh	2026-11-17T05:25:49.3431776Z FAIL: test_deploy_guide_runs_verbatim (__main__.PowerShellGuideTest.test_deploy_guide_runs_verbatim)
+1589:windows-guides (pwsh)	Execute BA guides in pwsh	2026-11-17T05:25:49.3442553Z AssertionError: 91 != 0 : New-Item -ItemType Directory -Force "$env:USERPROFILE\bcreq-pilot" | Out-Null
+1615:windows-guides (pwsh)	Execute BA guides in pwsh	2026-11-17T05:25:49.3450736Z ERROR: Cannot find path 'C:\Users\runneradmin\AppData\Local\Temp\gigacode-guide-_kfojrka\Иван Петров\bcreq-pilot\source-lab\projects\ba-ai-process\dist\execution-package-gigacode-cli' because it does not exist.
+1621:windows-guides (pwsh)	Execute BA guides in pwsh	2026-11-17T05:25:49.3452189Z FAILED (failures=1)

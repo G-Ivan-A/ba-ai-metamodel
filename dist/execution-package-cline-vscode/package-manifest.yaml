@@ -4,7 +4,7 @@
   "compiled_at": "2026-10-07",
   "source": {
     "repository": "https://github.com/G-Ivan-A/ba-ai-metamodel",
-    "revision": "08da6c13355bfac48ffa8b54d2a19313b661e2be"
+    "revision": "8afc640aeb7b7aa000d0174bd0f67ecfd4fc7cfc"
   },
   "adapter": {
     "name": "cline-vscode",
@@ -35,13 +35,13 @@
       "contracts/c-release-bcreq.schema.json": "c4e5145ad960a8d970bc720caa641a5ffd4e81f45511d3ccd9bc906339f49360",
       "contracts/c-release-manifest.schema.json": "fb857d21499bf8d01a0e4b5303eb1be03e4922a647d8d849d6adb5b9be165497",
       "contracts/c-working-bcreq.schema.json": "d7a75f700315eca66dc92a1d7c893af039ed7758eb33c082abd6142e5ac9fd59",
-      "docs/guides/01-junior-pilot.md": "f72ed887c70694f096a51cb77059847302b1db0a806b84a245f3d8ea078a16fe",
-      "docs/guides/02-install.md": "56717dee437728e519fd31cdef530a87e87752817c7d89ff00768944957d6cfd",
-      "docs/guides/03-deploy-package.md": "16d09854d0a812cbef3f6f73b606855a7104a38117902c1aac0b60901d330f98",
-      "docs/guides/04-smoke-test.md": "38c6e76cd6dc89153ae7528b92b71d2bb462b19914c7e87edfd81b3bfb7ed273",
-      "docs/guides/05-commands-reference.md": "8985746f4285ae8c9ba8b3c89a3fbe1fb62b982d36cde22f72095371036a31e7",
-      "docs/guides/06-working-with-cline.md": "29c33ada906ba8d31c711d83e377743d5f1b219bd0bacb5670f489832bc3b0c1",
-      "docs/guides/README.md": "d30431711de8894b77a3b50a7b06e39f23f2ea44d2edb7e30e66812797b9897a",
+      "docs/guides/01-junior-pilot.md": "76798dd598fec715e281a60b4e2c94a561ab64edd77179a50ff0527c69e48b51",
+      "docs/guides/02-install.md": "5040821f7981aead8c76a0be0a952218570a3c523ed34c949f7658ae218d555f",
+      "docs/guides/03-deploy-package.md": "42136b8c14ee0c2aac8daae543edda21abf6446b7f49fb91118f88a83e89529c",
+      "docs/guides/04-smoke-test.md": "aa58dd89afb24347a69fbf4c6ee7e700a3b23beaaa53011d3aeb30dd3c877196",
+      "docs/guides/05-commands-reference.md": "061cf69fb4cdc2348d685c8173f698314bd092997517b6a99210a9cba94c0751",
+      "docs/guides/06-working-with-cline.md": "a344cec0f9b28ab838680b7020ea167bd277c3ac496523ed2ef5289b0c6ba4f8",
+      "docs/guides/README.md": "528572d180003916cc980f10b5d7819b0dcf11eab7c057a15f87a2625213bdbf",
       "docs/kb-policy.md": "7a86c719ff85dab64cf39fad9e11a704a54f199af8ee1d46190706cb9425a71a",
       "evaluation/g-human-checklist.md": "e8db90d1f061c2559cf9ceddac8abe3e967f01071b504141b350c40c66e195ad",
       "golden/TASK-0001.json": "1a2a05e880866120bc8cda07c8a51a94741502ba39fa09737b174badd31fb8c5",

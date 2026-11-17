@@ -1,0 +1,10 @@
+{
+  "source_commit": "8afc640aeb7b7aa000d0174bd0f67ecfd4fc7cfc",
+  "manifest_files": 324,
+  "history_commits": 234,
+  "scan_before": 366,
+  "scan_after": 33,
+  "adapted_files": 50,
+  "windows_paths_before": 13,
+  "active_paths_after_normalizing_separators": 0
+}

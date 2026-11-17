@@ -95,11 +95,11 @@ runtime-репозиторий с пакетом.**
   ```powershell
   git clone --depth 1 https://github.com/G-Ivan-A/ba-ai-metamodel.git source-lab
   New-Item -ItemType Directory -Force runtime
-  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\* runtime\
-  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.opencode runtime\
-  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.github runtime\
-  Copy-Item -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.gitattributes runtime\
-  Copy-Item -Force source-lab\projects\ba-ai-process\dist\execution-package-opencode\.gitignore runtime\
+  Copy-Item -Recurse -Force source-lab\dist\execution-package-opencode\* runtime\
+  Copy-Item -Recurse -Force source-lab\dist\execution-package-opencode\.opencode runtime\
+  Copy-Item -Recurse -Force source-lab\dist\execution-package-opencode\.github runtime\
+  Copy-Item -Force source-lab\dist\execution-package-opencode\.gitattributes runtime\
+  Copy-Item -Force source-lab\dist\execution-package-opencode\.gitignore runtime\
   ```
 
 - **Что делают:** скачивают исходный репозиторий в `source-lab`, создают

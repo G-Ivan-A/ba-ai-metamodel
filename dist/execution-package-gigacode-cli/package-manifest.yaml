@@ -5,7 +5,7 @@ package_version: "5.1"
 compiled_at: 2026-09-29
 source:
   repository: https://github.com/G-Ivan-A/ba-ai-metamodel
-  revision: 08da6c13355bfac48ffa8b54d2a19313b661e2be
+  revision: 8afc640aeb7b7aa000d0174bd0f67ecfd4fc7cfc
 adapter:
   name: gigacode-cli
   version: "1.0"
