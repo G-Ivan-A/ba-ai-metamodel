@@ -15,7 +15,7 @@ jobs:
       - name: Validate agent bootstrap
         run: bash tools/validate-agents-bootstrap.sh
       - name: Validate shell syntax
-        run: bash -n tools/*.sh
+        run: for script in tools/*.sh; do bash -n "$script"; done
 
   test:
     name: Tests

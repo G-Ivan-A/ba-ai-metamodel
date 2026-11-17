@@ -171,3 +171,24 @@ AGENTS.md bootstrap validation passed (B/local).
 
 GigaCode gate after final provenance update
 G-mach: пакет принят (навыков: 16, узлов маршрута: 15).
+
+Final review: validate every shell script explicitly (bash -n accepts one script operand)
++ for script in tools/*.sh
++ bash -n tools/test-ba-meta-model-overview.sh
++ for script in tools/*.sh
++ bash -n tools/test-bcreq-working-release-pipeline.sh
++ for script in tools/*.sh
++ bash -n tools/test-cline-package.sh
++ for script in tools/*.sh
++ bash -n tools/test-execution-package.sh
++ for script in tools/*.sh
++ bash -n tools/test-opencode-package.sh
++ for script in tools/*.sh
++ bash -n tools/validate-agents-bootstrap.sh
++ for script in tools/*.sh
++ bash -n tools/validate-file-naming.sh
++ bash tools/validate-file-naming.sh
+File naming validation passed.
++ bash tools/validate-agents-bootstrap.sh
+AGENTS.md bootstrap validation passed (B/local).
++ git diff --check
