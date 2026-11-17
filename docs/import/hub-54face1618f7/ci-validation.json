@@ -1,0 +1,127 @@
+{
+  "implementation_commit": "79ca8f1862902a57d02fc7b8660f080a04b2282f",
+  "runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-17T05:30:29Z",
+      "databaseId": 44024585000,
+      "event": "pull_request",
+      "headSha": "79ca8f1862902a57d02fc7b8660f080a04b2282f",
+      "status": "completed",
+      "updatedAt": "2026-11-17T05:33:21Z",
+      "url": "https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000",
+      "jobs": [
+        {
+          "name": "cline-windows",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:31Z",
+          "completedAt": "2026-11-17T05:31:05Z",
+          "url": "https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000/job/133841765002"
+        },
+        {
+          "name": "opencode (ubuntu-latest)",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:31Z",
+          "completedAt": "2026-11-17T05:31:18Z",
+          "url": "https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000/job/133841765238"
+        },
+        {
+          "name": "windows-guides (powershell)",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:31Z",
+          "completedAt": "2026-11-17T05:32:15Z",
+          "url": "https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000/job/133841765314"
+        },
+        {
+          "name": "Tests",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:31Z",
+          "completedAt": "2026-11-17T05:31:26Z",
+          "url": "https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000/job/133841765316"
+        },
+        {
+          "name": "Lint",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:31Z",
+          "completedAt": "2026-11-17T05:30:40Z",
+          "url": "https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000/job/133841765335"
+        },
+        {
+          "name": "opencode (windows-2022)",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:31Z",
+          "completedAt": "2026-11-17T05:33:21Z",
+          "url": "https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000/job/133841765378"
+        },
+        {
+          "name": "windows-guides (pwsh)",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:31Z",
+          "completedAt": "2026-11-17T05:32:02Z",
+          "url": "https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000/job/133841765383"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "createdAt": "2026-11-17T05:30:24Z",
+      "databaseId": 44024575998,
+      "event": "push",
+      "headSha": "79ca8f1862902a57d02fc7b8660f080a04b2282f",
+      "status": "completed",
+      "updatedAt": "2026-11-17T05:32:46Z",
+      "url": "https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998",
+      "jobs": [
+        {
+          "name": "windows-guides (powershell)",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:27Z",
+          "completedAt": "2026-11-17T05:32:25Z",
+          "url": "https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998/job/133841737424"
+        },
+        {
+          "name": "Tests",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:26Z",
+          "completedAt": "2026-11-17T05:31:39Z",
+          "url": "https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998/job/133841737713"
+        },
+        {
+          "name": "opencode (windows-2022)",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:26Z",
+          "completedAt": "2026-11-17T05:32:45Z",
+          "url": "https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998/job/133841737744"
+        },
+        {
+          "name": "Lint",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:26Z",
+          "completedAt": "2026-11-17T05:30:31Z",
+          "url": "https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998/job/133841737760"
+        },
+        {
+          "name": "cline-windows",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:27Z",
+          "completedAt": "2026-11-17T05:30:59Z",
+          "url": "https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998/job/133841737814"
+        },
+        {
+          "name": "opencode (ubuntu-latest)",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:27Z",
+          "completedAt": "2026-11-17T05:31:12Z",
+          "url": "https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998/job/133841737879"
+        },
+        {
+          "name": "windows-guides (pwsh)",
+          "conclusion": "success",
+          "startedAt": "2026-11-17T05:30:26Z",
+          "completedAt": "2026-11-17T05:32:29Z",
+          "url": "https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998/job/133841737885"
+        }
+      ]
+    }
+  ]
+}

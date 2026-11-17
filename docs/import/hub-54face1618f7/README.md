@@ -7,7 +7,7 @@
 | E1 Скелет генома | ✅ | #2 | `genome.tsv`, `manifest.tsv` |
 | E2 Импорт с историей | ✅ | #3 | `verify-import.json`, `verify-filtered.json`, `commit-map.txt`, `commit-count.txt`, `history.txt` |
 | E3 Ссылки | ✅ | #4 | `rewrite-links.jsonl`, `verify-links.json` |
-| E4 Код и CI | ⏳ | #5 | `scan-before.txt`, `scan-after.txt`, `adapted.txt`, `validation.log`; CI проверяется |
+| E4 Код и CI | ✅ | #5 | `scan-before.txt`, `scan-after.txt`, `adapted.txt`, `validation.log`, `ci-validation.json` |
 | E5 Бэклог | ⬜ | | `backlog-ids.txt` |
 | E6 Проверка | ⬜ | | `verify-final.json` |
 
@@ -34,7 +34,11 @@
 `validation.log` сохраняет локальные проверки и структурное сравнение всех
 семи выбранных шагов и трёх заданий CI с закреплённым workflow Хаба после
 `MAP`. Linux-проверки выполнены; Windows, PowerShell и реальный OpenCode
-подтверждаются матрицей CI в [PR #5](https://github.com/G-Ivan-A/ba-ai-metamodel/pull/5).
+подтверждены матрицей CI в [PR #5](https://github.com/G-Ivan-A/ba-ai-metamodel/pull/5):
+все семь заданий прошли на коммите `79ca8f1862902a57d02fc7b8660f080a04b2282f` в
+[целевом репозитории](https://github.com/G-Ivan-A/ba-ai-metamodel/actions/runs/44024585000) и
+[fork](https://github.com/konard/G-Ivan-A-ba-ai-metamodel/actions/runs/44024575998). Ревизии, время запусков и итоги каждого задания
+сохранены в `ci-validation.json`.
 
 Первый запуск CI выявил границу закреплённого scanner: он ищет `/`, но не
 Windows-разделитель `\`. Команды развёртывания PowerShell сохранили старый
