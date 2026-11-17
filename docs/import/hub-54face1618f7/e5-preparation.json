@@ -1,0 +1,54 @@
+{
+  "stage": "E5",
+  "verified_at": "2026-11-17T06:07:26.458077+00:00",
+  "hub_repository": "G-Ivan-A/hybrid-Intelligence-lab",
+  "hub_sha": "54face1618f74154ae0f072bc3e5bfb3c4817754",
+  "hub_main_checked": "546ebabb13a4679c6801d0eb5f344c6c3f6db177",
+  "source_paths": [
+    "projects/ba-ai-process/",
+    "research/mango/",
+    "docs/ba-meta-model-overview.md",
+    "tools/test-execution-package.sh",
+    "tools/test-cline-package.sh",
+    "tools/test-opencode-package.sh",
+    "tools/test-bcreq-working-release-pipeline.sh",
+    "tools/test-ba-meta-model-overview.sh"
+  ],
+  "source_commits_after_pin": [],
+  "manifest_matches": true,
+  "manifest_files": 324,
+  "target_repository": "G-Ivan-A/ba-ai-metamodel",
+  "target_branch": "issue-1-f7e10ea3d3f2",
+  "target_base": "95e4ed7dbedb9ab2f0a826a5d957092f12b290e6",
+  "tool_git_blob": "5e470c5cf862939ef313780359e63435321c0154",
+  "headings": [
+    "## Спринт 14:",
+    "## Спринт 15:",
+    "## Спринт 16:",
+    "## Спринт 17:",
+    "## Спринт 18:",
+    "## Спринт 19:",
+    "## Спринт 20:",
+    "## Спринт 21:",
+    "## Спринт 24:",
+    "## Спринт 25:",
+    "## Спринт 26:",
+    "## Спринт 27:",
+    "## Спринт 28:"
+  ],
+  "section_count": 13,
+  "task_rows": 100,
+  "distinct_ids": 99,
+  "duplicate_ids": {
+    "B-223": 2
+  },
+  "sections_sha256": "96a55f165549be8841afcecb0964e83ce9107d88e238404aef47c7bba5df1bb7",
+  "backlog_sha256": "dfa705692d646fb8447e40c80969918d787ea2be290f736e622f158c6ad6912f",
+  "id_mapping": "identity; source order and repeated IDs preserved",
+  "link_events": {
+    "dir-out": 1,
+    "file-out": 6,
+    "url-in": 46
+  },
+  "next_stage": "E6; not executed in this PR"
+}

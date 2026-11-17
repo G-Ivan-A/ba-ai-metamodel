@@ -1,0 +1,41 @@
+E5 local validation, 2026-11-17
+Pinned source: G-Ivan-A/hybrid-Intelligence-lab@54face1618f74154ae0f072bc3e5bfb3c4817754
+Preparation: e5-preparation.json; 8 frozen source paths, 0 subsequent commits, manifest identical (324 files).
+sections: 13 from ops/backlog.md at 54face1618f74154ae0f072bc3e5bfb3c4817754; link events {"dir-out": 1, "file-out": 6, "url-in": 46}
+
+Check extracted sections in ops/backlog.md:
+sections: 13 from ops/backlog.md at 54face1618f74154ae0f072bc3e5bfb3c4817754; link events {"dir-out": 1, "file-out": 6, "url-in": 46}
+
+Independent checks: header, exact body, heading order, ordered source IDs, and preserved duplicate:
+PASS: exact body and 13 headings; all 100 ordered IDs match the source; B-223 occurs twice, as in source; max imported ID B-227.
+
+Boundary: changed task row must be rejected:
+sections: 13 from ops/backlog.md at 54face1618f74154ae0f072bc3e5bfb3c4817754; link events {"dir-out": 1, "file-out": 6, "url-in": 46}
+section absent or changed: ## Спринт 14:
+PASS: changed row rejected (exit 1).
+
+Boundary: omitted sprint must be rejected:
+sections: 13 from ops/backlog.md at 54face1618f74154ae0f072bc3e5bfb3c4817754; link events {"dir-out": 1, "file-out": 6, "url-in": 46}
+section absent or changed: ## Спринт 28:
+PASS: missing sprint rejected (exit 1).
+
+Repository documentation naming:
+File naming validation passed.
+
+Repository agent bootstrap:
+AGENTS.md bootstrap validation passed (B/local).
+
+Shell syntax for every repository tools/*.sh script:
+PASS: all shell scripts parse.
+
+Working/Release documentation contract:
+BCREQ Working/Release pipeline contract: OK
+
+Stakeholder overview documentation contract:
+BA meta-model stakeholder overview contract test passed.
+
+Whitespace validation:
+PASS: git diff --check.
+
+All E5 local checks passed. Product package suites, Windows and real OpenCode are covered by PR CI.
+Hub-only validators validate-frontmatter.sh, validate-repository-structure.sh and generate-manifest.py are not installed in this spoke.
