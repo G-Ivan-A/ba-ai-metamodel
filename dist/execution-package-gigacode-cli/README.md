@@ -40,7 +40,7 @@ CLI. Граница MANGO не означает ограничение Конт�
 ## Как развернуть
 
 ```powershell
-Copy-Item -Recurse -Force projects\ba-ai-process\dist\execution-package-gigacode-cli\* <чистая-папка>\
+Copy-Item -Recurse -Force dist\execution-package-gigacode-cli\* <чистая-папка>\
 Set-Location <чистая-папка>
 python -m pip install -r requirements.txt
 python tools/validate-package.py

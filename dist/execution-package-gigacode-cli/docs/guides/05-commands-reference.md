@@ -441,7 +441,7 @@ runner перестанет начинать задачи. Правила мен
    ```powershell
    Set-Location "$env:USERPROFILE\bcreq-pilot"
    git -C source-lab pull
-   Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-gigacode-cli\* runtime\
+   Copy-Item -Recurse -Force source-lab\dist\execution-package-gigacode-cli\* runtime\
    Set-Location runtime
    python tools/validate-package.py
    ```

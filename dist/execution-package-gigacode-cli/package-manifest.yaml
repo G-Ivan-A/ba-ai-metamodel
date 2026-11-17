@@ -41,7 +41,7 @@ outputs:
     .gitattributes: f89dac29fb0687b7741b5cf22935f25339b52b8879e6771498e3c8f37d8377f1
     .gitignore: e4822f86590d83ade18215bed4457622956a3fa680930aa450398d92d7ec2175
     AGENTS.md: 6df78000b31925550617392e832fd6552c6efceffc6bc402285e33c25664d7bc
-    README.md: 2c7ca7b25ec5b015002ffa8187fbd3e5527a8189818694205245f2a99d4bfe2f
+    README.md: 8022218a0f8d35507b9dcfe0f085b377381a7774faaa4e87352fe40e203c0417
     contracts/bcreq-client-v1.json: add9e5b2021da91ad9a242da2be3af32358f3cbd409f3a588babfa9ae74c4a7b
     contracts/c-core.schema.json: 38b80d072e7e1b4a21e9cf3f1b230f51f51f632f227667f675018720d4e555dd
     contracts/c-in.schema.json: 8e1dbfc3f773a3187bfe959c43588bc39ccb774a1b4f4070cbe61f458089f1c0
@@ -53,9 +53,9 @@ outputs:
     contracts/c-working-bcreq.schema.json: 2e28d9320c2f87df873a876736ead68b43734b9a0f8e07be0d08072a5e1f6ff7
     docs/guides/01-junior-pilot.md: 6ea39c8ad0aa54de00ca450a66a15eacfe8893d17d6772c7fc8c267918f84772
     docs/guides/02-install.md: 5c53f50bc4333a5aaa60d9bae15cd01b6dc7d0947dd749774769b2fb1732df14
-    docs/guides/03-deploy-package.md: 733500e8791627b75e393cbbdf3fa6d47ac9f78a859e7e946adc2bcbca58376b
+    docs/guides/03-deploy-package.md: f6c7f9d4f90a298ba94bcd4e93ef33ad562f311b3cff43a79db3125e0321098f
     docs/guides/04-smoke-test.md: 3a7f128fda980e77976f688cebf3ba4cb1f6873a6682758593a55426d8b851de
-    docs/guides/05-commands-reference.md: f3a52ef507b3ccaf224654f8c70b6d5ae7529f02ead86a8acea5db4619ad507b
+    docs/guides/05-commands-reference.md: d8164600df5cbf03d5605d9d1db40045b598b1ad93a7a3135d2e8b3ccc2f1d1b
     docs/guides/06-working-with-gigacode.md: e16a358d214ed85fd0f9fd6831bad37a92891fb7450f2c9cd90efc9152083dca
     docs/guides/README.md: 102ffc1f730e98c71eb03e741a13c519ced572a5d50602477670d164dee858ce
     evaluation/g-human-checklist.md: a0f0a354caab05321ce33e9d38ea8617482d7a2484c147dec4bc3357d461a272

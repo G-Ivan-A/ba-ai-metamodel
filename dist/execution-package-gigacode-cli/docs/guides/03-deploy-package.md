@@ -92,7 +92,7 @@ runtime-репозиторий с пакетом.**
 
   ```powershell
   git clone --depth 1 https://github.com/G-Ivan-A/ba-ai-metamodel.git source-lab
-  Copy-Item -Recurse -Force source-lab\projects\ba-ai-process\dist\execution-package-gigacode-cli runtime
+  Copy-Item -Recurse -Force source-lab\dist\execution-package-gigacode-cli runtime
   ```
 
 - **Что делают:** скачивают исходный репозиторий в `source-lab` и копируют
